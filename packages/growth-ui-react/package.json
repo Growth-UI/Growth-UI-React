@@ -23,10 +23,10 @@
     "coverage": "jest --coverage --color"
   },
   "peerDependencies": {
-    "@fluentui/react-component-ref": "*",
-    "lodash": "*",
-    "react": "*",
-    "react-dom": "*",
+    "@fluentui/react-component-ref": "^0.59.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.2",
     "styled-components": ">=4.1.0 <6"
   },
   "dependencies": {

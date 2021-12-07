@@ -1,6 +1,6 @@
 const CustomTheme = `
 ~~~jsx
-import { GrowthStyle } from 'growth-ui-react';
+import { GrowthStyle } from '@growth-ui/react';
 
 const customGlobalStyle = \`
   * {

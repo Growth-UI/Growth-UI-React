@@ -1,0 +1,10 @@
+{
+  "subheading": "React components for faster and easier web development. Build your own design system. The official Growth-UI-React integration.",
+  "sponsors": "A quick thank for our sponsors:",
+  "jqueryFree": "Jquery Free",
+  "jqueryFreeDescription": "jQuery is a DOM manipulation library. It reads from and writes to the DOM. React uses a virtual DOM (a JavaScript representation of the real DOM). React only writes patch updates to the DOM, but never reads from it.<0/><0/>It is not feasible to keep real DOM manipulations in sync with React's virtual DOM. Because of this, all jQuery functionality has been re-implemented in React.",
+  "install": "Install",
+  "usage": "Basic usage",
+  "setup": "Read the quick and easy set up guide.",
+  "importStyle": "After install, import GrowthStyle and wrap your app component."
+}

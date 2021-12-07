@@ -1,0 +1,10 @@
+{
+  "subheading": "빠르고 효율적이며 유연한 웹개발을 위한 리액트 컴포너트 입니다.",
+  "sponsors": "스폰서들에게 감사합니다.",
+  "jqueryFree": "Jquery Free",
+  "jqueryFreeDescription": "jQuery는 문서 객체 모델 (DOM) 조작 library입니다. React는 가상 DOM을 사용하여 효율적이며 유연하게 UI를 구성 구성하도록 돕습니다.<0/><0/>React의 가상 DOM과 진짜 DOM을 같이 사용하는 것은 알맞지 않기때문에 React에선 모든 jQuery 기능들이 재구현 됐습니다.",
+  "install": "설치",
+  "usage": "기본 사용법",
+  "setup": "설치 가이드 읽기.",
+  "importStyle": "설치후, GrowthStyle를 App component를 감사주세요."
+}

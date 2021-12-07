@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@growth-ui/react/*": ["packages/growth-ui-react/src/*"],
+      "docs/*": ["packages/docs/src/*"]
+    },
+    "noEmit": true
+  }
+}

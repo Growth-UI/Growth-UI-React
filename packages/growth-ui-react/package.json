@@ -1,0 +1,72 @@
+{
+  "name": "@growth-ui/react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kyuhak Yuk",
+  "license": "MIT",
+  "repository": "https://github.com/Growth-UI/Growth-UI-React",
+  "keywords": [
+    "growth-ui-react",
+    "react",
+    "ui",
+    "react-component"
+  ],
+  "homepage": "https://react.growth-ui.com",
+  "scripts": {
+    "build": "yarn run clean && yarn run build:types && yarn run build:js",
+    "build:types": "tsc -p tsconfig.build.json --emitDeclarationOnly",
+    "build:js": "babel src --presets minify --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
+    "postbuild": "cp package.json README.md dist",
+    "clean": "rimraf -rf ./dist",
+    "transpile": "babel . -d dist --ignore '**/*.spec.js,**/*.stories.js,node_modules,__tests__' --extensions '.ts,.js,.tsx,.jsx'",
+    "test": "jest --verbose --color",
+    "coverage": "jest --coverage --color"
+  },
+  "peerDependencies": {
+    "@fluentui/react-component-ref": "*",
+    "lodash": "*",
+    "react": "*",
+    "react-dom": "*",
+    "styled-components": ">=4.1.0 <6"
+  },
+  "dependencies": {
+    "@fluentui/react-component-ref": "^0.59.0",
+    "lodash": "^4.17.21",
+    "react": "~17.0.0",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/npm": "^8.0.2",
+    "@types/lodash": "^4.14.172",
+    "@types/node": "^16.7.6",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-test-renderer": "^17.0.1",
+    "@types/styled-components": "^5.1.13",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-tsconfig-paths": "^1.0.1",
+    "babel-preset-minify": "^0.5.1",
+    "glob": "^7.1.7",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.1.0",
+    "jest-styled-components": "^7.0.5",
+    "react-test-renderer": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^18.0.0",
+    "styled-components": "^5.3.1",
+    "typescript": "^4.4.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}

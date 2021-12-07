@@ -1,0 +1,86 @@
+{
+  "engines": {
+    "node": ">=14.6.0"
+  },
+  "author": "Kyuhak Yuk",
+  "repository": "https://github.com/Growth-UI/Growth-UI-React",
+  "keywords": [
+    "growth-ui-react",
+    "react",
+    "ui",
+    "react-component"
+  ],
+  "homepage": "https://react.growth-ui.com",
+  "private": true,
+  "devDependencies": {
+    "@types/styled-components": "^5.1.15",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "babel-plugin-styled-components": "^1.13.3",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.1",
+    "lerna": "^4.0.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "zx": "^4.2.0"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js --ext .ts --ext .md",
+    "lint:ci": "yarn lint . --format junit",
+    "format": "yarn lint --fix",
+    "commit": "cz",
+    "start": "lerna run start",
+    "build": "lerna run build --parallel",
+    "test": "lerna run test --parallel",
+    "clean": "lerna clean --yes",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "publish": "lerna run publish",
+    "release": "npx zx scripts/release.mjs",
+    "prepare": "husky install",
+    "diff": "lerna diff"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/rimraf",
+      "**/rimraf/**",
+      "**/react-native-elements",
+      "**/react-native-elements/**",
+      "**/react-native",
+      "**/react-native/**",
+      "**/expo",
+      "**/expo/**",
+      "**/react-native-typescript-transformer",
+      "**/react-native-typescript-transformer/**",
+      "**/metro-bundler-config-yarn-workspaces",
+      "**/metro-bundler-config-yarn-workspaces/**"
+    ]
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "styled-components": "^5.3.3"
+  }
+}

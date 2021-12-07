@@ -1,0 +1,1112 @@
+{
+  "button": {
+    "heading": "Button",
+    "subheading": "A Button indicates a possible user action.",
+    "type": "elements",
+    "button": {
+      "id": "standard-button",
+      "title": "Button",
+      "description": "A standard button."
+    },
+    "emphasis": {
+      "id": "emphasis",
+      "title": "Emphasis",
+      "description": "A button can be formatted to show different levels of emphasis."
+    },
+    "borderless": {
+      "id": "borderless",
+      "title": "Borderless",
+      "description": "A button may be borderless."
+    },
+    "basic": {
+      "id": "basic",
+      "title": "Basic",
+      "description": "The basic button has a subtle appearance."
+    },
+    "group": {
+      "id": "group",
+      "title": "Group",
+      "description": "Buttons can exist together as a group."
+    },
+    "roundGroupButton": {
+      "id": "roundGroupButton",
+      "title": "",
+      "description": "Buttons can be rounded just like a button :)"
+    },
+    "active": {
+      "id": "active",
+      "title": "Active",
+      "description": "A button can show it is currently the active user selection."
+    },
+    "loading": {
+      "id": "loadingButton",
+      "title": "Loading",
+      "description": "A button can show a loading indicator."
+    }
+  },
+  "input": {
+    "heading": "Input",
+    "subheading": "A input lets users enter and edit text.",
+    "type": "elements",
+    "input": {
+      "id": "standard-input",
+      "title": "Input",
+      "description": "A standard input."
+    },
+    "error": {
+      "id": "error-input",
+      "title": "Error",
+      "description": "An input field can show that the data contains errors."
+    },
+    "required": {
+      "id": "required",
+      "title": "Required",
+      "description": "A field can show that input is mandatory."
+    },
+    "disabled": {
+      "id": "disabled-input",
+      "title": "Disabled",
+      "description": "An input field can show that it is disabled."
+    },
+    "label": {
+      "id": "label-input",
+      "title": "Labeled",
+      "description": "An input can be formatted with a label."
+    },
+    "adornment": {
+      "id": "adornment",
+      "title": "Adornment",
+      "description": "This can be used to add a prefix, a suffix or an action to an element."
+    },
+    "filled": {
+      "id": "filled-input",
+      "title": "Filled",
+      "description": "An input's background can be filled."
+    },
+    "basic": {
+      "id": "basic-input",
+      "title": "Basic",
+      "description": "Basic looking Input"
+    },
+    "fluid": {
+      "id": "fluid-input",
+      "title": "Fluid",
+      "description": "An input can take on the size of its container."
+    },
+    "icon": {
+      "id": "icon-input",
+      "title": "Icon",
+      "description": "An input can be formatted with an icon."
+    },
+    "size": {
+      "id": "size-input",
+      "title": "Size",
+      "description": "An input can vary in size."
+    }
+  },
+  "heading": {
+    "heading": "Heading",
+    "subheading": "A heading provides a short summary of content.",
+    "type": "elements",
+    "headings": {
+      "id": "headings",
+      "title": "Headings",
+      "description": "Heading may be oriented to give the hierarchy of a section in the context of the page."
+    },
+    "content": {
+      "id": "content",
+      "title": "Content",
+      "description": "Heading may contain an content that describes the heading."
+    },
+    "icon": {
+      "id": "icon",
+      "title": "Icon",
+      "description": "Heading may contain an icon."
+    },
+    "textAlignment": {
+      "id": "textAlignment",
+      "title": "TextAlignment",
+      "description": "A heading can specify its text alignment."
+    },
+    "color": {
+      "id": "color",
+      "title": "Color",
+      "description": "A heading can be formatted with different colors."
+    }
+  },
+  "icon": {
+    "heading": "Icon",
+    "subheading": "An icon is a glyph used to represent something else.",
+    "type": "elements",
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "An icon can vary in size."
+    },
+    "color": {
+      "id": "color",
+      "title": "Color",
+      "description": "An icon can be formatted with different colors."
+    }
+  },
+  "image": {
+    "heading": "Image",
+    "subheading": "An image is a graphic representation of something.",
+    "type": "elements",
+    "image": {
+      "id": "image",
+      "title": "Image",
+      "description": "An image."
+    },
+    "hidden": {
+      "id": "hidden",
+      "title": "Hidden",
+      "description": "An image can be hidden."
+    },
+    "bordered": {
+      "id": "bordered",
+      "title": "Bodered",
+      "description": "An image may include a border to emphasize the edges of white or transparent content."
+    },
+    "rounded": {
+      "id": "rounded",
+      "title": "Rounded",
+      "description": "An image may appear rounded."
+    },
+    "circular": {
+      "id": "circular",
+      "title": "Circular",
+      "description": "An image may appear circular."
+    },
+    "center": {
+      "id": "center",
+      "title": "Center",
+      "description": "An image can appear centered in a content block."
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "An image may appear at different sizes."
+    }
+  },
+  "list": {
+    "heading": "List",
+    "subheading": "A list groups related content.",
+    "type": "elements",
+    "list": {
+      "id": "list",
+      "title": "List",
+      "description": "A list can mark items with a bullet."
+    },
+    "hoverColor": {
+      "id": "hoverColor",
+      "title": "Hover Color",
+      "description": "A list can style its items on hover."
+    },
+    "animated": {
+      "id": "animated",
+      "title": "Animated",
+      "description": "A list can animate to set the current item apart from the list."
+    },
+    "bulleted": {
+      "id": "bulleted",
+      "title": "Bulleted",
+      "description": ""
+    },
+    "active": {
+      "id": "active",
+      "title": "Active",
+      "description": "A item can show it is currently the active user selection."
+    },
+    "tree": {
+      "id": "tree",
+      "title": "Tree",
+      "description": ""
+    },
+    "horizontal": {
+      "id": "horizontal",
+      "title": "Horizontal",
+      "description": "A list can show divisions between content."
+    },
+    "horizontalDivided": {
+      "id": "horizontalDivided",
+      "title": "",
+      "description": ""
+    },
+    "divided": {
+      "id": "divided",
+      "title": "Divided",
+      "description": "A list can show divisions between content."
+    },
+    "selection": {
+      "id": "selection",
+      "title": "Selection",
+      "description": "A selection list formats list items as possible choices."
+    },
+    "padded": {
+      "id": "padded",
+      "title": "Padded",
+      "description": "A list can relax its padding to provide more negative space."
+    },
+    "relaxed": {
+      "id": "relaxed",
+      "title": "Relaxed",
+      "description": "A list can relax its padding to provide even more negative space."
+    },
+    "horizontalRelaxed": {
+      "id": "horizontalRelaxed",
+      "title": "",
+      "description": ""
+    },
+    "collapse": {
+      "id": "collapse",
+      "title": "Collapse",
+      "description": "A list can collapse its items."
+    }
+  },
+  "divider": {
+    "heading": "Divider",
+    "subheading": "A divider visually segments content into groups.",
+    "type": "elements",
+    "divider": {
+      "id": "standard-divider",
+      "title": "Divider",
+      "description": "A standard divider."
+    },
+    "vertical": {
+      "id": "vertical",
+      "title": "Vertical Divider",
+      "description": "A divider can divide content vertically."
+    },
+    "horizontal": {
+      "id": "horizontal",
+      "title": "Horizontal Divider",
+      "description": "A divider can divide content horizontally."
+    },
+    "horizontalIcon": {
+      "id": "horizontalIcon",
+      "title": "",
+      "description": ""
+    },
+    "inverted": {
+      "id": "inverted",
+      "title": "Inverted",
+      "description": "A divider can have its colors inverted."
+    }
+  },
+  "container": {
+    "heading": "Container",
+    "subheading": "A container limits content to a maximum width.",
+    "type": "elements",
+    "container": {
+      "id": "standard-container",
+      "title": "Container",
+      "description": "A standard container."
+    },
+    "compact": {
+      "id": "compact",
+      "title": "Compact",
+      "description": "A container takes up only the width of its child."
+    },
+    "textAlignment": {
+      "id": "textAlignment",
+      "title": "Text Alignment",
+      "description": "A container can specify its text alignment."
+    },
+    "shadow": {
+      "id": "shadow",
+      "title": "Shadow",
+      "description": "A container can show its shadow."
+    },
+    "padded": {
+      "id": "padded",
+      "title": "Padded",
+      "description": "A container can increase its padding."
+    },
+    "fluid": {
+      "id": "fluid",
+      "title": "Fluid",
+      "description": "A container can take the width of its container."
+    }
+  },
+  "min-height": {
+    "heading": "MinHeight",
+    "subheading": "A container that forces content to a minimum height.",
+    "type": "elements",
+    "min-height": {
+      "id": "standard-minHeight",
+      "title": "MinHeight",
+      "description": "A standard MinHeight."
+    }
+  },
+  "paragraph": {
+    "heading": "Paragraph",
+    "subheading": "A paragraph that presents your design and content as clearly and efficiently as possible.",
+    "type": "elements",
+    "paragraph": {
+      "id": "standard-paragraph",
+      "title": "Paragraph",
+      "description": "A standard Paragraph."
+    },
+    "align": {
+      "id": "align",
+      "title": "Text Alignment",
+      "description": "A paragraph can specify its text alignment."
+    },
+    "lineHeight": {
+      "id": "lineHeight",
+      "title": "Line Height",
+      "description": "A paragraph may control the leading (line height) of an element."
+    },
+    "color": {
+      "id": "color",
+      "title": "Colors",
+      "description": "A paragraph can be formatted with different colors."
+    },
+    "size": {
+      "id": "size",
+      "title": "Sizes",
+      "description": "A paragraph may appear at different sizes."
+    }
+  },
+  "spacer": {
+    "heading": "Spacer",
+    "subheading": "A Spacer that adds space between elements.",
+    "type": "elements",
+    "spacer": {
+      "id": "standard-spacer",
+      "title": "Spacer",
+      "description": "A standard Spacer that may add spaces both horizontally and vertically between elements."
+    },
+    "axis": {
+      "id": "axis",
+      "title": "Axis",
+      "description": "A Spacer may add space only to the specific axis."
+    }
+  },
+  "segment": {
+    "heading": "Segment",
+    "subheading": "A segment is used to create a grouping of related content.",
+    "type": "elements",
+    "segment": {
+      "id": "standard-segment",
+      "title": "Segmment",
+      "description": "A standard segment."
+    },
+    "basic": {
+      "id": "basic",
+      "title": "Basic",
+      "description": "A basic segment has no special formatting."
+    },
+    "compact": {
+      "id": "compact",
+      "title": "Compact",
+      "description": "A segment may take up only as much space as is necessary."
+    },
+    "emphasis": {
+      "id": "emphasis",
+      "title": "Emphasis",
+      "description": "A segment can be formatted to appear more or less noticeable."
+    },
+    "segments": {
+      "id": "segments",
+      "title": "Segments",
+      "description": "A group of segments can be formatted to appear together."
+    },
+    "horizontalSegments": {
+      "id": "horizontalSegments",
+      "title": "Horizontal Segments",
+      "description": "A segment group can appear horizontally."
+    },
+    "basicSegments": {
+      "id": "basicSegments",
+      "title": "Basic Segments",
+      "description": "A segment group has no special formatting."
+    },
+    "compactSegments": {
+      "id": "compactSegments",
+      "title": "Compact Segments",
+      "description": "A segment group takes up only as much space as is necessary."
+    }
+  },
+  "grid": {
+    "heading": "Grid",
+    "subheading": "A segment is used to create a grouping of related content.",
+    "type": "collections",
+    "grid": {
+      "id": "standard-grid",
+      "title": "Grid",
+      "description": "A standard grid."
+    },
+    "cloumnCount": {
+      "id": "cloumnCount",
+      "title": "Column Count",
+      "description": "A grid can have a different number of columns per row."
+    },
+    "flex": {
+      "id": "flex",
+      "title": "Flex",
+      "description": "How flex items both grow and shrink."
+    },
+    "cloumnWidth": {
+      "id": "cloumnWidth",
+      "title": "Column Width",
+      "description": "A column can vary in width taking up more than a single grid column."
+    },
+    "columnCountPerRow": {
+      "id": "columnCountPerRow",
+      "title": "",
+      "description": ""
+    },
+    "stretched": {
+      "id": "stretched",
+      "title": "Stretched",
+      "description": "A row can automatically resize all elements to split the available height evenly."
+    },
+    "horizontalStretched": {
+      "id": "horizontalStretched",
+      "title": "Horizontal Stretched",
+      "description": "A column can automatically resize all elements to split the available width evenly."
+    },
+    "floated": {
+      "id": "floated",
+      "title": "Floated",
+      "description": "A column can sit flush against the left or right edge of a row."
+    },
+    "padded": {
+      "id": "padded",
+      "title": "Padded",
+      "description": "A grid can preserve its vertical and/or horizontal space on columns."
+    },
+    "paddedVerically": {
+      "id": "paddedVerically",
+      "title": "",
+      "description": "A grid can preserve its vertical space on columns."
+    },
+    "paddedHorizontally": {
+      "id": "paddedHorizontally",
+      "title": "",
+      "description": "A grid can preserve its horizontal space on columns."
+    },
+    "relaxed": {
+      "id": "padded",
+      "title": "Relaxed",
+      "description": "A grid can preserve even more space on columns horizontally and/or vertically."
+    },
+    "colored": {
+      "id": "colored",
+      "title": "Colored",
+      "description": "A grid row or column can be colored."
+    },
+    "coloredRow": {
+      "id": "coloredRow",
+      "title": "",
+      "description": ""
+    },
+    "responsiveWidth": {
+      "id": "responsiveWidth",
+      "title": "Responsive Width",
+      "description": "A column can specify a width for a specific device."
+    },
+    "only": {
+      "id": "only",
+      "title": "Device Visibility",
+      "description": "A column or row can appear only for a specific device, or screen sizes."
+    },
+    "reversed": {
+      "id": "reversed",
+      "title": "Reversed",
+      "description": "A row can specify that its columns should reverse order."
+    },
+    "responsiveReverse": {
+      "id": "responsiveReverse",
+      "title": "Responsive Reverse",
+      "description": "A row can specify that its columns should reverse order at different device sizes."
+    }
+  },
+  "table": {
+    "heading": "Table",
+    "subheading": "A table displays a collections of data grouped into rows.",
+    "type": "collections",
+    "table": {
+      "id": "standard-table",
+      "title": "Table",
+      "description": "A standard table."
+    },
+    "padded": {
+      "id": "padded",
+      "title": "Padded",
+      "description": "A table may sometimes need to be more padded for legibility."
+    },
+    "basic": {
+      "id": "basic",
+      "title": "Basic",
+      "description": "A table can reduce its complexity to increase readability."
+    },
+    "celledBasic": {
+      "id": "celledBasic",
+      "title": "",
+      "description": ""
+    },
+    "celledStriped": {
+      "id": "celledStriped",
+      "title": "Striped",
+      "description": "A table can stripe alternate rows of content with a darker color to increase contrast."
+    },
+    "definition": {
+      "id": "definition",
+      "title": "Definition",
+      "description": "A table may be formatted to emphasize a first column that defines a row content."
+    },
+    "footer": {
+      "id": "footer",
+      "title": "Footer",
+      "description": "A table can have a footer."
+    },
+    "positiveNegative": {
+      "id": "positiveNegative",
+      "title": "Positive / Negative",
+      "description": "A cell or row may let a user know whether a value is good or bad."
+    },
+    "singleLine": {
+      "id": "singleLine",
+      "title": "Single Line",
+      "description": "A table can specify that its cell contents should remain on a single line. Content that does not fit in a single line will be replaced with \"...\" ellipsis."
+    },
+    "fixed": {
+      "id": "fixed",
+      "title": "Fixed",
+      "description": "A table can use fixed a special faster form of table rendering that does not resize table cells based on content."
+    },
+    "textAlignment": {
+      "id": "textAlignment",
+      "title": "Text Alignment",
+      "description": "A table, header, row, or cell can adjust its text alignment."
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "A table can also be small or large."
+    },
+    "large": {
+      "id": "large",
+      "title": "",
+      "description": ""
+    },
+    "unstackable": {
+      "id": "unstackable",
+      "title": "Unstackable",
+      "description": "A table can specify how it stacks table content responsively."
+    }
+  },
+  "checkbox": {
+    "heading": "Checkbox",
+    "subheading": "A checkbox allows a user to select a value from a small set of options, often binary.",
+    "type": "modules",
+    "checkbox": {
+      "id": "checkbox",
+      "title": "Checkbox",
+      "description": "A checkbox."
+    },
+    "radio": {
+      "id": "radio",
+      "title": "Radio",
+      "description": "A checkbox can be formatted as a radio element. This means it is an exclusive option."
+    },
+    "toggle": {
+      "id": "toggle",
+      "title": "Toggle",
+      "description": "A checkbox can toggle."
+    },
+    "slider": {
+      "id": "slider",
+      "title": "Slider",
+      "description": "A checkbox can look like a slider."
+    },
+    "colors": {
+      "id": "colors",
+      "title": "Colors",
+      "description": "A checkbox can be filled with different colors."
+    },
+    "disabled": {
+      "id": "disabled",
+      "title": "Disabled",
+      "description": "A checkbox can be read-only and unable to change states."
+    },
+    "rounded": {
+      "id": "rounded",
+      "title": "Rounded",
+      "description": "A checkbox may appear rounded."
+    },
+    "outline": {
+      "id": "outline",
+      "title": "Outline",
+      "description": "A checkbox's border also changes."
+    }
+  },
+  "sidebar": {
+    "heading": "Sidebar",
+    "subheading": "A sidebar hides additional content beside a page.",
+    "type": "modules",
+    "sidebar": {
+      "id": "sidebar",
+      "title": "Sidebar",
+      "description": "A sidebar"
+    },
+    "dimmed": {
+      "id": "dimmed",
+      "title": "Dimmed",
+      "description": "A pusher can be dimmed."
+    },
+    "transition": {
+      "id": "transition",
+      "title": "Transition",
+      "description": "Not all sidebar Transitions are available for every sidebar direction, or when multiple sidebars are visible at a time."
+    }
+  },
+  "menu": {
+    "heading": "Menu",
+    "subheading": "A menu displays grouped navigation actions.",
+    "type": "collections",
+    "menu": {
+      "id": "standard-menu",
+      "title": "Menu",
+      "description": "A standard menu."
+    },
+    "name": {
+      "id": "name",
+      "title": "",
+      "description": "The name prop will be used for content if neither children nor content props are defined."
+    },
+    "basic": {
+      "id": "basic",
+      "title": "Basic",
+      "description": "A menu can adjust its appearance to de-emphasize its contents."
+    },
+    "secondary": {
+      "id": "secondary",
+      "title": "Secondary",
+      "description": "A menu can adjust its appearance to de-emphasize its contents."
+    },
+    "pointing": {
+      "id": "pointing",
+      "title": "Pointing",
+      "description": "A menu can point to show its relationship to nearby content."
+    },
+    "tabular": {
+      "id": "tabular",
+      "title": "Tabular",
+      "description": "A menu can be formatted to show tabs of information."
+    },
+    "tabularOnLeft": {
+      "id": "tabularOnLeft",
+      "title": "",
+      "description": ""
+    },
+    "tabularOnRight": {
+      "id": "tabularOnRight",
+      "title": "",
+      "description": ""
+    },
+    "verticalMenu": {
+      "id": "verticalMenu",
+      "title": "Vertical Menu",
+      "description": "A vertical menu displays elements vertically."
+    },
+    "verticalPointing": {
+      "id": "verticalPointing",
+      "title": "",
+      "description": ""
+    },
+    "verticalSecondary": {
+      "id": "verticalSecondary",
+      "title": "",
+      "description": ""
+    },
+    "verticalBasic": {
+      "id": "verticalBasic",
+      "title": "",
+      "description": ""
+    },
+    "submenu": {
+      "id": "submenu",
+      "title": "Sub Menu",
+      "description": "A menu item may contain another menu nested inside that acts as a grouped sub-menu."
+    }
+  },
+  "dropdown": {
+    "heading": "Dropdown",
+    "subheading": "A dropdown allows a user to select a value from a series of options.",
+    "type": "modules",
+    "dropdown": {
+      "id": "standard-dropdown",
+      "title": "Dropdown",
+      "description": "A standard dropdown."
+    },
+    "selection": {
+      "id": "selection",
+      "title": "Selection",
+      "description": "A dropdown can be used to select between choices in a form."
+    },
+    "trigger": {
+      "id": "trigger",
+      "title": "Trigger",
+      "description": "A dropdown can render a node in place of the text."
+    },
+    "upward": {
+      "id": "upward",
+      "title": "Upward",
+      "description": "A dropdown can open its menu upward."
+    },
+    "scrolling": {
+      "id": "scrolling",
+      "title": "Scrolling",
+      "description": "A dropdown can have its menu scroll."
+    },
+    "scrollingNumber": {
+      "id": "scrollingNumber",
+      "title": "",
+      "description": "A dropdown menu can set its max height."
+    },
+    "icon": {
+      "id": "icon",
+      "title": "Icon",
+      "description": "A dropdown menu can contain an icon."
+    },
+    "simple": {
+      "id": "simple",
+      "title": "Simple",
+      "description": "A simple dropdown can open on hover."
+    },
+    "space": {
+      "id": "space",
+      "title": "Space",
+      "description": "A space between dropdown and its menu."
+    },
+    "simpleSpace": {
+      "id": "simpleSpace",
+      "title": "",
+      "description": ""
+    }
+  },
+  "ref": {
+    "heading": "Ref",
+    "subheading": "This component exposes the `innerRef` prop that supports functional and React.createRef()/React.useRef() API and returns the DOM node of both functional and class component children.",
+    "type": "addons",
+    "ref": {
+      "id": "standard-ref",
+      "title": "Ref",
+      "description": "A component exposes the innerRef prop that always returns the DOM node of both functional and class component children."
+    }
+  },
+  "progressive-image": {
+    "heading": "ProgressiveImage",
+    "subheading": "This component loads an image progressively for better performance and optiization.",
+    "type": "addons",
+    "progressive-image": {
+      "id": "standard-progressiveImage",
+      "title": "ProgressiveImage",
+      "description": "A component can load an image progressively."
+    }
+  },
+  "stepper": {
+    "heading": "Stepper",
+    "subheading": "A stepper shows the completion status of an activity in a series of activities.",
+    "type": "elements",
+    "stepper": {
+      "id": "stepper",
+      "title": "Stepper",
+      "description": "A set of steps."
+    },
+    "ordered": {
+      "id": "ordered",
+      "title": "Ordered",
+      "description": "A step can show a ordered sequence of steps."
+    },
+    "alternative": {
+      "id": "alternative",
+      "title": "Alternative",
+      "description": "A content can be placed below the step icon."
+    },
+    "vertical": {
+      "id": "vertical",
+      "title": "Vertical",
+      "description": "A step can be displayed stacked vertically."
+    },
+    "error": {
+      "id": "error",
+      "title": "Error",
+      "description": "A step may be formatted to display an error indicator."
+    },
+    "active": {
+      "id": "active",
+      "title": "Active",
+      "description": "A step can be highlighted as active."
+    },
+    "completed": {
+      "id": "completed",
+      "title": "Completed",
+      "description": "A step can show that a user has completed it."
+    }
+  },
+  "modal": {
+    "heading": "Modal",
+    "subheading": "A modal displays content that temporarily blocks interactions with the main view of a site.",
+    "type": "modules",
+    "modal": {
+      "id": "modal",
+      "title": "Modal",
+      "description": "A standard modal."
+    },
+    "topAligned": {
+      "id": "topAligned",
+      "title": "Top Aligned",
+      "description": "A modal can be top aligned."
+    },
+    "usage": {
+      "id": "usage",
+      "title": "Usage",
+      "description": ""
+    }
+  },
+  "card": {
+    "heading": "Card",
+    "subheading": "A card displays site content in a manner similar to a playing card.",
+    "type": "views",
+    "card": {
+      "id": "card",
+      "title": "Card",
+      "description": "A card."
+    },
+    "group": {
+      "id": "group",
+      "title": "Group",
+      "description": "A group of cards."
+    },
+    "horizontal": {
+      "id": "horizontal",
+      "title": "Horizontal",
+      "description": "A card can be formatted to have contents appear horizontally."
+    }
+  },
+  "comment": {
+    "heading": "Comment",
+    "subheading": "A comment displays user feedback to site content.",
+    "type": "views",
+    "comment": {
+      "id": "comment",
+      "title": "Comment",
+      "description": "A basic list of comments."
+    },
+    "threaded": {
+      "id": "threaded",
+      "title": "Threaded",
+      "description": "A comment list can be threaded to showing the relationship between conversations."
+    },
+    "collapsed": {
+      "id": "collapsed",
+      "title": "Collapsed",
+      "description": "Comments can be collapsed, or hidden from view."
+    }
+  },
+  "text-area": {
+    "heading": "TextArea",
+    "subheading": "A TextArea can be used to allow for extended user input.",
+    "type": "elements",
+    "text-area": {
+      "id": "textArea",
+      "title": "TextArea",
+      "description": "A default TextArea."
+    },
+    "label": {
+      "id": "label",
+      "title": "Label",
+      "description": "The label of the text area used for layout."
+    },
+    "disabled": {
+      "id": "disabled",
+      "title": "Disabled",
+      "description": "A text area field can show that it is disabled."
+    },
+    "error": {
+      "id": "error",
+      "title": "Error",
+      "description": "A text area field can show the data contains errors."
+    },
+    "fluid": {
+      "id": "fluid",
+      "title": "Fluid",
+      "description": "A text area can take the width of its container."
+    },
+    "minHeight": {
+      "id": "minHeight",
+      "title": "Min Height",
+      "description": "A text area can have a minimum height."
+    },
+    "rows": {
+      "id": "rows",
+      "title": "Rows",
+      "description": "A text area can have a minimum number of rows."
+    }
+  },
+  "form": {
+    "heading": "Form",
+    "subheading": "A set of fields can appear grouped together.",
+    "type": "collections",
+    "form": {
+      "id": "form",
+      "title": "Form",
+      "description": "A standard form."
+    },
+    "group": {
+      "id": "group",
+      "title": "Group",
+      "description": "A set of fields can appear grouped together."
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "A form can vary in size."
+    }
+  },
+  "icon-button": {
+    "heading": "IconButton",
+    "subheading": "Hover and click the icon button :)",
+    "type": "addons",
+    "icon-button": {
+      "id": "icon-button",
+      "title": "IconButton",
+      "description": "An IconButton."
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "An icon button can vary in size."
+    },
+    "color": {
+      "id": "color",
+      "title": "Color",
+      "description": "An icon button can vary in color."
+    }
+  },
+  "badge": {
+    "heading": "Badge",
+    "subheading": "Badge generates a small badge to the top-right of its child.",
+    "type": "elements",
+    "badge": {
+      "id": "badge",
+      "title": "Badge",
+      "description": "A badge."
+    },
+    "color": {
+      "id": "color",
+      "title": "Color",
+      "description": "A badge can vary in color."
+    },
+    "inline": {
+      "id": "inline",
+      "title": "Inline",
+      "description": "A badge can be formatted to appear inline in other content."
+    },
+    "dot": {
+      "id": "dot",
+      "title": "Dot",
+      "description": "A badge with empty content."
+    },
+    "direction": {
+      "id": "direction",
+      "title": "Direction",
+      "description": "A badge can appear to all corners."
+    },
+    "max": {
+      "id": "max",
+      "title": "Max",
+      "description": "Max count to show."
+    },
+    "relaxed": {
+      "id": "relaxed",
+      "title": "Relaxed",
+      "description": "A badge may preserve its vertical and horizontal gutters."
+    }
+  },
+  "accordion": {
+    "heading": "Accordion",
+    "subheading": "An accordion allows users to toggle the display of sections of content.",
+    "type": "modules",
+    "accordion": {
+      "id": "accordion",
+      "title": "Accordion",
+      "description": "An accordion."
+    },
+    "standardShorthand": {
+      "id": "standardShorthand",
+      "title": "",
+      "description": "Accordion can be rendered via shorthand prop. It will automatically manage the component state."
+    },
+    "styled": {
+      "id": "styled",
+      "title": "Styled",
+      "description": "A styled accordion adds basic formatting."
+    },
+    "fluid": {
+      "id": "fluid",
+      "title": "Fluid",
+      "description": "An accordion can take up the width of its container."
+    },
+    "iconPosition": {
+      "id": "iconPosition",
+      "title": "Icon Position",
+      "description": "Icon can be positioned either left or right."
+    },
+    "exclusive": {
+      "id": "exclusive",
+      "title": "Exclusive",
+      "description": "An accordion can have multiple panels open at the same time."
+    },
+    "iconShorthand": {
+      "id": "iconShorthand",
+      "title": "Icon Shorthand",
+      "description": "An accordion title can have a customizable icon."
+    },
+    "defaultActiveIndex": {
+      "id": "defaultActiveIndex",
+      "title": "Default Active Index",
+      "description": "Initial activeIndex value."
+    },
+    "customization": {
+      "id": "customization",
+      "title": "Customization",
+      "description": ""
+    }
+  },
+  "collapse": {
+    "heading": "Collapse",
+    "subheading": "A Collapse expands and collapses its children.",
+    "type": "modules",
+    "collapse": {
+      "id": "collapse",
+      "title": "Collapse",
+      "description": "A standard collapse."
+    }
+  },
+  "margin": {
+    "heading": "Margin",
+    "subheading": "",
+    "type": "elements",
+    "margin": {
+      "id": "margin",
+      "title": "Margin",
+      "description": "A margin."
+    }
+  },
+  "padding": {
+    "heading": "Padding",
+    "subheading": "",
+    "type": "elements",
+    "padding": {
+      "id": "padding",
+      "title": "Padding",
+      "description": "A padding."
+    }
+  }
+}

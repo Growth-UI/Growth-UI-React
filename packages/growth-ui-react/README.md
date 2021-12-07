@@ -25,10 +25,15 @@ See the [**Documentation**][1] for an introduction, usage information, and examp
 
 #### Built styled-components version, inspired by [Semantic-UI-React][2].
 
+## Looking for UI library for react native?
+
+Check out our native ui library [Growth-UI-Native][3].
+
 ## Credit
 
 Created by [@kyuhakyuk][3].
 
 [1]: https://react.growth-ui.com/
 [2]: https://github.com/Semantic-Org/Semantic-UI-React
-[3]: https://github.com/kyuhakyuk
+[3]: https://github.com/Growth-UI/Growth-UI-Native
+[4]: https://github.com/kyuhakyuk

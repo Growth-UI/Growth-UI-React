@@ -165,7 +165,7 @@ ${commits.join('\n')}`,
 
   //  Update package version
   if (lastTag !== nextVersion) {
-    await $`yarn run build`;
+    await $`yarn run build:gui`;
     await $`npm config set @growth-ui:registry https://registry.npmjs.org`;
     await $`npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}`;
     console.log(

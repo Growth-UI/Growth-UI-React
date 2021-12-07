@@ -42,6 +42,8 @@
     "commit": "cz",
     "start": "lerna run start",
     "build": "lerna run build --parallel",
+    "build:gui": "lerna run build --scope @growth-ui/react",
+    "build:docs": "lerna run build --scope docs",
     "test": "lerna run test --parallel",
     "clean": "lerna clean --yes",
     "bootstrap": "lerna bootstrap --use-workspaces",

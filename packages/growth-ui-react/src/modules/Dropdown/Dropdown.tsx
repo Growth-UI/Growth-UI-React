@@ -173,7 +173,7 @@ const Dropdown: FC<DropdownProps> & DropdownComponents = (props) => {
         {space && <Spacer size={16} />}
         {renderMenu()}
 
-        {open && <EventListener type="click" listener={closeOnDocumentClick} />}
+        {open && <EventListener name="click" listener={closeOnDocumentClick} />}
       </StyledDropdown>
     </Ref>
   );

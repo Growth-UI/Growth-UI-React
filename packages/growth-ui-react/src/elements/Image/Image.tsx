@@ -173,6 +173,9 @@ export interface StrictImageProps {
   /** An image may appear at different sizes. */
   size?: SIZES;
 
+  /** An image source. */
+  src: string;
+
   /** Additional styles */
   style?: CSSProperties;
 }

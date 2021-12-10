@@ -1,7 +1,7 @@
-import Chip, { ChipProps } from '@growth-ui/react/elements/Chip';
-import EventListener from '@growth-ui/react/addons/EventListener';
-import Icon from '@growth-ui/react/elements/Icon';
-import Paragraph from '@growth-ui/react/elements/Paragraph';
+import Chip, { ChipProps } from '../../elements/Chip';
+import EventListener from '../../addons/EventListener';
+import Icon from '../../elements/Icon';
+import Paragraph from '../../elements/Paragraph';
 import SelectItem, { SelectItemProps } from './SelectItem';
 import SelectMenu, { SelectMenuProps } from './SelectMenu';
 import stringSimilarity from 'string-similarity';

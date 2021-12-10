@@ -1,6 +1,7 @@
 import React, { CSSProperties, FC } from 'react';
 import styled from 'styled-components';
 import { COLORS, FONTSIZES, LINEHEIGHTS, TEXTALIGNMENTS } from '../../types';
+import { createShorthandFactory } from '../../lib';
 
 export const StyledParagraph = styled.p<ParagraphProps>`
   ${({ color }) => color && `color: var(--color-${color});`}
@@ -9,11 +10,17 @@ export const StyledParagraph = styled.p<ParagraphProps>`
   line-height: ${({ lineHeight }) => (lineHeight ? `var(--${lineHeight})` : 'var(--leading-normal)')};
 `;
 
-const Paragraph: FC<ParagraphProps> = (props) => {
+const Paragraph: FC<ParagraphProps> & ParagraphComponents = (props) => {
   const { children, ...rest } = props;
 
   return <StyledParagraph {...rest}>{children}</StyledParagraph>;
 };
+
+Paragraph.create = createShorthandFactory(Paragraph);
+
+interface ParagraphComponents {
+  create: ReturnType<typeof createShorthandFactory>;
+}
 
 // ======================================================
 export interface ParagraphProps extends StrictParagraphProps {

@@ -23,6 +23,7 @@ export const components = [
   // elements
   'badge',
   'button',
+  'chip',
   'container',
   'divider',
   'heading',
@@ -52,8 +53,10 @@ export const components = [
   'collapse',
   'dropdown',
   'modal',
+  'select',
   'sidebar',
   // addons,
+  'event-listener',
   'icon-button',
   'progressive-image',
   'ref',
@@ -73,6 +76,7 @@ export const componentByType: Record<string, string[]> = {
   elements: [
     'badge',
     'button',
+    'chip',
     'container',
     'divider',
     'heading',
@@ -97,9 +101,10 @@ export const componentByType: Record<string, string[]> = {
     'collapse',
     'dropdown',
     'modal',
+    'select',
     'sidebar',
   ],
-  addons: ['icon-button', 'progressive-image', 'ref'],
+  addons: ['event-listener', 'icon-button', 'progressive-image', 'ref'],
 };
 export const componentInfo: Record<
   string,
@@ -113,6 +118,9 @@ export const componentInfo: Record<
   },
   button: {
     names: ['Button', 'Button.Group'],
+  },
+  chip: {
+    names: ['Chip', 'Chip.Detail'],
   },
   container: {
     names: ['Container'],
@@ -254,10 +262,16 @@ export const componentInfo: Record<
   modal: {
     names: ['Modal', 'Modal.Header'],
   },
+  select: {
+    names: ['Select', 'Select.Menu', 'Select.Item'],
+  },
   sidebar: {
     names: ['Sidebar', 'Sidebar.Pusher', 'Sidebar.Pushable'],
   },
   // addons
+  eventlistener: {
+    names: ['EventListener'],
+  },
   iconbutton: {
     names: ['IconButton'],
   },
@@ -2755,6 +2769,359 @@ export const componentProps: Record<
       description: 'Custom styles.',
       name: 'style',
       type: 'CSSProperties',
+    },
+  ],
+  Chip: [
+    {
+      description: "Called after user's press.",
+      name: 'onClick',
+      type: 'func',
+      func: {
+        title: '(event: MouseEvent, data: ChipProps)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original MouseEvent.",
+          },
+          {
+            name: 'data',
+            description: 'All props.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Outline the chip.',
+      name: 'outlined',
+      type: 'boolean',
+    },
+    {
+      description: 'A chip can be circular shape.',
+      name: 'circular',
+      type: 'boolean',
+    },
+    {
+      description: 'A chip can have different colors',
+      name: 'color',
+      type: 'enum',
+      enums: COLORS,
+    },
+    {
+      description: 'Shorthand for an icon.',
+      name: 'icon',
+      type: 'IconProps',
+    },
+    {
+      description: 'Icon position',
+      name: 'iconPosition',
+      type: 'enums',
+      enums: ['left', 'right'],
+      defaultValue: 'left',
+    },
+    {
+      description: 'Shorthand for an image.',
+      name: 'image',
+      type: 'ImageProps',
+    },
+    {
+      description: 'A chip can be small or large',
+      name: 'size',
+      type: 'enums',
+      enums: SIZES,
+    },
+    {
+      description: 'The content of the component',
+      name: 'text',
+      type: 'string',
+    },
+  ],
+  'Chip.Detail': [
+    {
+      description: 'The content of the component',
+      name: 'text',
+      type: 'string',
+    },
+  ],
+  Select: [
+    {
+      description: 'Additional classes.',
+      name: 'className',
+      type: 'string',
+    },
+    {
+      description: 'A shape component can be circular shape..',
+      name: 'circular',
+      type: 'boolean',
+    },
+    {
+      description:
+        'Using the clearable setting will let users remove their selection.',
+      name: 'clearable',
+      type: 'boolean',
+    },
+    {
+      description: 'Initial value or value array if multiple.',
+      name: 'defaultValue',
+      type: '{number|string|arrayOf}',
+    },
+    {
+      description:
+        'A disabled select menu or item does not allow user interaction.',
+      name: 'disabled',
+      type: 'boolean',
+    },
+    {
+      description: 'A select can take the full width of its parent.',
+      name: 'fluid',
+      type: 'boolean',
+    },
+    {
+      description: 'The label of the select used for layout.',
+      name: 'label',
+      type: 'string',
+    },
+    {
+      description:
+        'The minimum characters for a search to begin showing results.',
+      name: 'minCharacters',
+      type: 'number',
+    },
+    {
+      description: 'A select can allow multiple selections.',
+      name: 'multiple',
+      type: 'boolean',
+    },
+    {
+      description: 'Controls whether or not the select menu is displayed.',
+      name: 'open',
+      type: 'boolean',
+    },
+    {
+      description: 'Called on blur.',
+      name: 'onBlur',
+      type: 'func',
+      func: {
+        title: '(event: SyntheticEvent, data: SelectProps)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original MouseEvent.",
+          },
+          {
+            name: 'data',
+            description: 'All props.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called when the user attempts to change the value.',
+      name: 'onChange',
+      type: 'func',
+      func: {
+        title: '(event: SyntheticEvent, data: SelectProps)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original MouseEvent.",
+          },
+          {
+            name: 'data',
+            description: 'All props.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called when a click event happens.',
+      name: 'onClick',
+      type: 'func',
+      func: {
+        title: '(event: SyntheticEvent, data: SelectProps)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original MouseEvent.",
+          },
+          {
+            name: 'data',
+            description: 'All props.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called when a close event happens.',
+      name: 'onClose',
+      type: 'func',
+      func: {
+        title: '(event: SyntheticEvent, data: SelectProps)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original MouseEvent.",
+          },
+          {
+            name: 'data',
+            description: 'All props.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called on focus.',
+      name: 'onFocus',
+      type: 'func',
+      func: {
+        title: '(event: FocusEvent, data: SelectProps)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original MouseEvent.",
+          },
+          {
+            name: 'data',
+            description: 'All props.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called when a key down event happens.',
+      name: 'onKeyDown',
+      type: 'func',
+      func: {
+        title: '(event: KeyboardEvent, data: SelectProps)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original MouseEvent.",
+          },
+          {
+            name: 'data',
+            description: 'All props.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called when a open event happens.',
+      name: 'onOpen',
+      type: 'func',
+      func: {
+        title: '(event: SyntheticEvent, data: SelectProps)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original MouseEvent.",
+          },
+          {
+            name: 'data',
+            description: 'All props.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Array of Select.Item props e.g. { text: "", value: "" }.',
+      name: 'options',
+      type: 'SelectItemProps[]',
+    },
+    {
+      description: 'Placeholder text.',
+      name: 'placeholder',
+      type: 'string',
+    },
+    {
+      description: 'A select can have its menu scroll.',
+      name: 'scrolling',
+      type: 'boolean',
+    },
+    {
+      description:
+        'A selection dropdown can allow a user to search through a large list of choices. Pass a function here to replace the default search.',
+      name: 'search',
+      type: 'boolean | (searchQuery: string, item: SelectItemProps) => boolean',
+    },
+  ],
+  'Select.Item': [
+    {
+      description: 'Style as the currently chosen item.',
+      name: 'active',
+      type: 'boolean',
+    },
+    {
+      description: 'A select item can be disabled.',
+      name: 'disabled',
+      type: 'boolean',
+    },
+    {
+      description: 'Shorthand for Icon.',
+      name: 'icon',
+      type: 'IconProps',
+    },
+    {
+      description: 'Shorthand for Image.',
+      name: 'image',
+      type: 'ImageProps',
+    },
+    {
+      description: 'The item currently selected by keyboard shortcut.',
+      name: 'selected',
+      type: 'boolean',
+    },
+    {
+      description: 'Stored text.',
+      name: 'text',
+      type: 'boolean | number | string',
+    },
+    {
+      description: 'Unique indentity for the item.',
+      name: 'value',
+      type: 'number | string',
+    },
+  ],
+  'Select.Menu': [
+    {
+      description: 'A select menu can scroll.',
+      name: 'scrolling',
+      type: 'boolean',
+    },
+  ],
+  EventListener: [
+    {
+      description: 'An event name on which we will subscribe.',
+      name: 'name',
+      required: true,
+      type: 'string',
+    },
+    {
+      description: 'An event handler or array of event handlers.',
+      name: 'func',
+      type: 'boolean',
+      required: true,
+      func: {
+        title: '(event: EventListenrEvent)',
+        params: [
+          {
+            name: 'event',
+            description: 'Corresponding event.',
+          },
+        ],
+      },
+    },
+    {
+      description: 'A name of pool.',
+      name: 'pool',
+      type: 'string',
+      defaultValue: 'default',
+    },
+    {
+      description:
+        'A DOM element on which we will subscribe. e.g) document, window, ...',
+      name: 'tarkget',
+      type: 'string',
+      defaultValue: 'document',
     },
   ],
 };

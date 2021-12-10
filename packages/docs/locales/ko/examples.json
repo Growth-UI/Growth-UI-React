@@ -196,7 +196,7 @@
     "list": {
       "id": "list",
       "title": "List",
-      "description": "A list can mark items with a bullet."
+      "description": "A standard list."
     },
     "hoverColor": {
       "id": "hoverColor",
@@ -211,7 +211,7 @@
     "bulleted": {
       "id": "bulleted",
       "title": "Bulleted",
-      "description": ""
+      "description": "A list can mark items with a bullet."
     },
     "active": {
       "id": "active",
@@ -991,7 +991,7 @@
   },
   "badge": {
     "heading": "Badge",
-    "subheading": "Badge generates a small badge to the top-right of its child.",
+    "subheading": "Badge generates a small badge to the corner of its child.",
     "type": "elements",
     "badge": {
       "id": "badge",
@@ -1107,6 +1107,101 @@
       "id": "padding",
       "title": "Padding",
       "description": "A padding."
+    }
+  },
+  "select": {
+    "heading": "Select",
+    "subheading": "A select allows a user to select between choices in a form.",
+    "type": "modules",
+    "select": {
+      "id": "select",
+      "title": "Select",
+      "description": "A standard select."
+    },
+    "multiple": {
+      "id": "multiple",
+      "title": "Multiple",
+      "description": "A select component can allow multiple search selections."
+    },
+    "clearable": {
+      "id": "clearable",
+      "title": "Clearable",
+      "description": "Using the clearable setting will let users remove their selection."
+    },
+    "search": {
+      "id": "search",
+      "title": "Search",
+      "description": "A select component can allow a user to search through a large list of choices."
+    },
+    "defaultValue": {
+      "id": "defaultValue",
+      "title": "Default Value",
+      "description": "Initial value or value array if multiple."
+    },
+    "examples": {
+      "id": "examples",
+      "title": "",
+      "description": "And more..."
+    },
+    "scrolling": {
+      "id": "scrolling",
+      "title": "Scrolling",
+      "description": "A select can have its menu scroll."
+    }
+  },
+  "chip": {
+    "heading": "Chip",
+    "subheading": "A chip displays content classification.",
+    "type": "elements",
+    "chip": {
+      "id": "chip",
+      "title": "Chip",
+      "description": "A Chip."
+    },
+    "icon": {
+      "id": "icon",
+      "title": "Icon",
+      "description": "A chip can include an icon"
+    },
+    "image": {
+      "id": "image",
+      "title": "Image",
+      "description": "A chip can include an image"
+    },
+    "circular": {
+      "id": "circular",
+      "title": "Circular",
+      "description": "A chip can be circular"
+    },
+    "outlined": {
+      "id": "outlined",
+      "title": "Outlined",
+      "description": "A chip can reduce its complexity"
+    },
+    "color": {
+      "id": "color",
+      "title": "Color",
+      "description": "A chip can have different colors"
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "A label can be small or large"
+    }
+  },
+  "event-listener": {
+    "heading": "EventListener",
+    "subheading": "A EventListener component allows subscribing a DOM node to events.",
+    "type": "addons",
+    "resize": {
+      "id": "resize",
+      "title": "Resize",
+      "description": "A EventListener that subscribes resize event."
+    },
+    "keydown": {
+      "id": "keydown",
+      "title": "Keydown",
+      "description": "A EventListener that subscribes keydown event."
     }
   }
 }

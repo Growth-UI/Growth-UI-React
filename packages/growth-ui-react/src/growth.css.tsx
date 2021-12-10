@@ -17,9 +17,11 @@ const light = `
   --shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
   --emphasis-secondary: #f5f5f5;
   --icon-button-bg: rgba(0, 0, 0, 0.04);
+  --chip-bg: rgba(0,0,0,0.08);
 `;
 
 const dark = `
+  --chip-bg: rgba(255,255,255,0.06);
   --text: rgb(230, 230, 230);
   --inverted-text: rgba(0,0,0,0.8);
   --light-text: rgba(255,255,255,0.6);
@@ -225,6 +227,7 @@ const GlobalStyle = createGlobalStyle<GrowthStyleProps>`
 
 const GrowthStyle = (props: GrowthStyleProps): ReactElement => {
   const { autoDarkMode = false, children, darkMode, theme: _theme = {}, ...rest } = props;
+
   const scheme = useColorSchemePreference();
 
   return (

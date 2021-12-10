@@ -49,6 +49,8 @@ export { default as Segment, StyledSegment, StyledSegmentGroup } from './element
 export type { SegmentProps, SegmentGroupProps } from './elements/Segment';
 export { default as Spacer, StyledSpacer } from './elements/Spacer';
 export type { SpacerProps } from './elements/Spacer';
+export { default as Chip, StyledChip, StyledChipDetail } from './elements/Chip';
+export type { ChipProps, ChipDetailProps } from './elements/Chip';
 export {
   default as Stepper,
   StyledStepper,
@@ -129,6 +131,9 @@ export type {
 } from './modules/Modal';
 export { default as Sidebar, StyledSidebar, StyledSidebarPushable, StyledSidebarPusher } from './modules/Sidebar';
 export type { SidebarProps, SidebarPushableProps, SidebarPusherProps } from './modules/Sidebar';
+
+export { default as Select, StyledSelect, StyledSelectItem } from './modules/Select';
+export type { SelectProps, SelectItemProps } from './modules/Select';
 
 export {
   default as Card,

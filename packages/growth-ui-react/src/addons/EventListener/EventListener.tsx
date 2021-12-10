@@ -1,30 +1,52 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { InputEventListener, InputTargetElement } from './types';
+import { instance } from './lib';
+/* eslint-disable class-methods-use-this */
 
-const EventListener = (props: EventListenerProps) => {
-  const { listener, type } = props;
-
-  useEffect(() => {
-    document.addEventListener(type, listener);
-
-    return () => {
-      document.removeEventListener(type, listener);
-    };
-  }, []);
-
-  return <></>;
-};
-
-// ======================================================
 export interface EventListenerProps {
-  /** Called on event occurrence. */
-  listener: (
-    this: Document,
-    event: DocumentEventMap[keyof DocumentEventMap],
-    options?: boolean | AddEventListenerOptions,
-  ) => void;
+  /** An event name on which we will subscribe. */
+  name: string;
 
-  /** Event type. */
-  type: keyof DocumentEventMap;
+  /** An event handler or array of event handlers. */
+  listener: InputEventListener;
+
+  /** A name of pool. */
+  pool?: string;
+
+  /** A DOM element on which we will subscribe. */
+  target?: InputTargetElement;
 }
 
-export default EventListener;
+/**
+ * This component exposes the EventListener API as public and provides a declarative way to manage it.
+ */
+export default class EventListener extends React.PureComponent<EventListenerProps> {
+  componentDidMount() {
+    this.subscribe(this.props);
+  }
+
+  componentDidUpdate(prevProps: EventListenerProps) {
+    this.unsubscribe(prevProps);
+    this.subscribe(this.props);
+  }
+
+  componentWillUnmount() {
+    this.unsubscribe(this.props);
+  }
+
+  subscribe(props: Readonly<EventListenerProps>) {
+    const { name, listener, pool = 'default', target = 'document' } = props;
+
+    instance.sub(name, listener, { pool, target });
+  }
+
+  unsubscribe(props: Readonly<EventListenerProps>) {
+    const { name, listener, pool = 'default', target = 'document' } = props;
+
+    instance.unsub(name, listener, { pool, target });
+  }
+
+  render() {
+    return null;
+  }
+}

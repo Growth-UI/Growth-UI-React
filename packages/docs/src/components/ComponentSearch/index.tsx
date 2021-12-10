@@ -76,7 +76,7 @@ const ComponentSearch = ({ trigger }: Props) => {
         </Modal.Content>
         <Modal.Actions>Ad</Modal.Actions>
       </Modal>
-      <EventListener type="keydown" listener={handleKeydown} />
+      <EventListener name="keydown" listener={handleKeydown} />
     </>
   );
 };

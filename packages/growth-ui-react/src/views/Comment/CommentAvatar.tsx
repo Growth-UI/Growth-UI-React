@@ -34,7 +34,7 @@ export interface StrictCommentAvatarProps {
   className?: string;
 
   /** Specifies the URL of the image. */
-  src?: string;
+  src: string;
 }
 
 export default CommentAvatar;

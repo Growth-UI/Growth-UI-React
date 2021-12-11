@@ -5,6 +5,7 @@ export const StyledSidebarPushable = styled.div<SidebarPushableProps>`
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   overflow: hidden;
 `;
 

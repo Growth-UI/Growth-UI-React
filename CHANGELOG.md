@@ -1,3 +1,8 @@
+## [1.3.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.2.0...v1.3.0) (2021-12-11)
+
+### 🚀  Features
+* style: sidebarPushable takes the height of its container ([e004591](https://github.com/Growth-UI/Growth-UI-React/commit/e004591d031eb7cbfa9501b6a409c1b291031763))
+
 ## [1.2.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.1.1...v1.2.0) (2021-12-10)
 
 ### 🐛  Fixes

@@ -8,9 +8,15 @@ import { StyledAccordionContent } from '../../modules/Accordion';
 
 const DURATION = 200;
 
-export const Adornment = styled.span`
+export const Adornment = styled.span<{ error?: boolean }>`
   opacity: 0.6;
   padding-right: 5px;
+  ${({ error }) =>
+    error &&
+    `
+    color: var(--color-error);
+    opacity: 1;
+  `}
 `;
 
 export const Feedback = styled.span`
@@ -138,6 +144,7 @@ export const StyledInput = styled.div<InputProps>`
     border-bottom: 1px solid var(--border);
     border-radius: 0px;
     padding-left: 0;
+
     & ${Label} {
       width: 100%;
       left: 0;
@@ -176,7 +183,18 @@ export const Wrapper = styled.div<{ fluid?: boolean }>`
 `;
 
 const Input: FC<InputProps> = (props) => {
-  const { label, disabled, feedback, fluid, iconPosition = 'left', required, type, style, ...unhandled } = props;
+  const {
+    children,
+    label,
+    disabled,
+    feedback,
+    fluid,
+    iconPosition = 'left',
+    required,
+    type,
+    style,
+    ...unhandled
+  } = props;
 
   const inputProps = () => {
     const [htmlInputProps, rest] = partitionHTMLProps(unhandled);
@@ -198,11 +216,11 @@ const Input: FC<InputProps> = (props) => {
 
   // =========== Renderer =============
   const renderAdornment = () => {
-    const { adornment } = props;
+    const { adornment, error } = props;
 
     if (!adornment) return null;
 
-    return <Adornment>{adornment}</Adornment>;
+    return <Adornment error={error}>{adornment}</Adornment>;
   };
 
   const renderLabel = () => {
@@ -245,7 +263,7 @@ const Input: FC<InputProps> = (props) => {
         <div>
           {iconPosition === 'left' && renderIcon()}
           {renderAdornment()}
-          <input {...htmlInputProps} required formNoValidate />
+          {children || <input {...htmlInputProps} required formNoValidate />}
           {iconPosition === 'right' && renderIcon()}
           {renderLabel()}
         </div>

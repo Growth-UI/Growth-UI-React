@@ -11,8 +11,8 @@
 </h1>
 
 <div style='margin: 15px auto; width: fit-content;'>
-  <a href="https://www.npmjs.com/package/growth-ui-react"><img src="https://badgen.net/npm/dm/growth-ui-react" alt="npm" /></a>
-  <a href="https://www.npmjs.com/package/growth-ui-react"><img src="https://badgen.net/npm/v/growth-ui-react" alt="npm" /></a>
+  <a href="https://www.npmjs.com/package/@growth-ui/react"><img src="https://badgen.net/npm/dm/@growth-ui/react" alt="npm" /></a>
+  <a href="https://www.npmjs.com/package/@growth-ui/react"><img src="https://badgen.net/npm/v/@growth-ui/react" alt="npm" /></a>
   <a href="https://www.styled-components.com/"><img src="https://badgen.net/badge/built%20with/styled%20components/db7093" alt="Built with Styled Components" /></a>
   <img src="https://badgen.net/badge/powered%20by/typescript/blue" alt="Powered by TypeScript" />
 </div>

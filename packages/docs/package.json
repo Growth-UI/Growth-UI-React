@@ -26,7 +26,8 @@
     "react-markdown": "^7.0.1",
     "recharts": "^2.1.6",
     "rehype-highlight": "^5.0.0",
-    "string-similarity": "^4.0.4"
+    "string-similarity": "^4.0.4",
+    "@types/styled-components": "^5.1.15"
   },
   "devDependencies": {
     "@types/faker": "^5.5.8",
@@ -36,7 +37,6 @@
     "@types/react": "17.0.19",
     "@types/react-syntax-highlighter": "^13.5.2",
     "@types/string-similarity": "^4.0.0",
-    "@types/styled-components": "^5.1.15",
     "dotenv": "^10.0.0",
     "dotenv-webpack": "^7.0.3",
     "eslint": "7.32.0",

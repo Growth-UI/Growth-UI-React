@@ -1,3 +1,15 @@
+## [1.4.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.3.0...v1.4.0) (2021-12-13)
+
+### 🐛  Fixes
+* fix: move @types/styled-components from devDependencies to dependencies ([468a5ec](https://github.com/Growth-UI/Growth-UI-React/commit/468a5ec3034bf71652b43844a5181c9021547e05))
+
+### 📝  Documentation
+* docs: update locale for currency-input doc ([073f7d6](https://github.com/Growth-UI/Growth-UI-React/commit/073f7d6b608cf1d9c66a0cd15ba1871cc846f989))
+* docs: provide examples of standalone CurrencyInput library ([7a12028](https://github.com/Growth-UI/Growth-UI-React/commit/7a12028572d2fee3d218cbfde605bab5d53b1218))
+
+### 🚀  Features
+* feat: allow custom input element integration ([e9aeefd](https://github.com/Growth-UI/Growth-UI-React/commit/e9aeefdcb0148ec750268354ab8a0a4062698d24))
+
 ## [1.3.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.2.0...v1.3.0) (2021-12-11)
 
 ### 🚀  Features

@@ -56,6 +56,7 @@ export const components = [
   'select',
   'sidebar',
   // addons,
+  'currency-input',
   'event-listener',
   'icon-button',
   'progressive-image',
@@ -104,7 +105,13 @@ export const componentByType: Record<string, string[]> = {
     'select',
     'sidebar',
   ],
-  addons: ['event-listener', 'icon-button', 'progressive-image', 'ref'],
+  addons: [
+    'currency-input',
+    'event-listener',
+    'icon-button',
+    'progressive-image',
+    'ref',
+  ],
 };
 export const componentInfo: Record<
   string,
@@ -269,6 +276,9 @@ export const componentInfo: Record<
     names: ['Sidebar', 'Sidebar.Pusher', 'Sidebar.Pushable'],
   },
   // addons
+  currencyinput: {
+    names: ['CurrencyInput'],
+  },
   eventlistener: {
     names: ['EventListener'],
   },
@@ -3097,11 +3107,11 @@ export const componentProps: Record<
     },
     {
       description: 'An event handler or array of event handlers.',
-      name: 'func',
-      type: 'boolean',
+      name: 'listener',
+      type: 'func',
       required: true,
       func: {
-        title: '(event: EventListenrEvent)',
+        title: 'listener',
         params: [
           {
             name: 'event',
@@ -3122,6 +3132,146 @@ export const componentProps: Record<
       name: 'tarkget',
       type: 'string',
       defaultValue: 'document',
+    },
+  ],
+  CurrencyInput: [
+    {
+      description: 'An input can be just pure html input look and feel.',
+      name: 'basic',
+      type: 'boolean',
+    },
+    {
+      description:
+        'An input can reduce its padding to fit into tighter spaces.',
+      name: 'compact',
+      type: 'boolean',
+    },
+    {
+      description: 'Custom container style.',
+      name: 'containerStyle',
+      type: 'CSSProperties',
+    },
+    {
+      description: 'Limit length of decimals allowed.',
+      name: 'decimalsLimit',
+      type: 'number',
+    },
+    {
+      description: 'Default Value',
+      name: 'defaultValue',
+      type: 'number',
+    },
+    {
+      description: 'An Input field can show the data contains errors.',
+      name: 'error',
+      type: 'boolean',
+    },
+    {
+      description: 'Value will always have the specified length of decimals.',
+      name: 'fixed',
+      type: 'boolean',
+    },
+    {
+      description: 'An input can take the width of its container.',
+      name: 'fluid',
+      type: 'boolean',
+    },
+    {
+      description:
+        'An input field can show a user is currently interacting with it.',
+      name: 'focus',
+      type: 'boolean',
+    },
+    {
+      description: 'Custom input style.',
+      name: 'inputStyle',
+      type: 'CSSProperties',
+    },
+    {
+      description: 'Called on blur.',
+      name: 'onBlur',
+      type: 'func',
+      func: {
+        title: 'onBlur',
+        params: [
+          {
+            name: 'event',
+            description: 'FocusEvent',
+          },
+          {
+            name: 'data',
+            description: 'CurrencyInputProps',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called on change.',
+      name: 'onChage',
+      type: 'func',
+      func: {
+        title: 'onChage',
+        params: [
+          {
+            name: 'value',
+            description: 'number',
+          },
+          {
+            name: 'data',
+            description: 'CurrencyInputProps',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called on focus.',
+      name: 'onFocus',
+      type: 'func',
+      func: {
+        title: 'onFocus',
+        params: [
+          {
+            name: 'e',
+            description: 'FocusEvent',
+          },
+          {
+            name: 'data',
+            description: 'CurrencyInputProps',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Placeholder if no value.',
+      name: 'placeholder',
+      type: 'string',
+    },
+    {
+      description: 'An input can be descriptive. e.g) $',
+      name: 'prefix',
+      type: 'string',
+    },
+    {
+      description: 'Custom prefix style.',
+      name: 'prefixStyle',
+      type: 'CSSProperties',
+    },
+    {
+      description:
+        'An input can format number with commas as thousands separators.',
+      name: 'separators',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
+      description: 'An input can have different sizes.',
+      name: 'size',
+      type: 'number',
+    },
+    {
+      description: 'An input value.',
+      name: 'value',
+      type: 'number',
     },
   ],
 };

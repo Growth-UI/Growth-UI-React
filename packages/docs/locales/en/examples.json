@@ -1203,5 +1203,60 @@
       "title": "Keydown",
       "description": "A EventListener that subscribes keydown event."
     }
+  },
+  "currency-input": {
+    "heading": "CurrencyInput",
+    "subheading": "A CurrencyInput allows an easy input of currency formatted numbers.",
+    "type": "addons",
+    "currency-input": {
+      "id": "currencyInput",
+      "title": "CurrencyInput",
+      "description": "A CurrencyInput"
+    },
+    "prefix": {
+      "id": "prefix",
+      "title": "Prefix",
+      "description": "An input can be descriptive. e.g) $"
+    },
+    "compact": {
+      "id": "compact",
+      "title": "Compact",
+      "description": "An input can reduce its padding to fit into tighter spaces."
+    },
+    "decimalsLimit": {
+      "id": "decimalsLimit",
+      "title": "Decimals Limit",
+      "description": "Limit length of decimals allowed."
+    },
+    "fixed": {
+      "id": "fixed",
+      "title": "Fixed",
+      "description": "Value will always have the specified length of decimals."
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "An input can have different sizes."
+    },
+    "separators": {
+      "id": "separators",
+      "title": "Separators",
+      "description": "An input can format number with commas as thousands separators."
+    },
+    "basic": {
+      "id": "basic",
+      "title": "Basic",
+      "description": "An input can be just pure html input look and feel."
+    },
+    "integration": {
+      "id": "integration",
+      "title": "Integration",
+      "description": "A CurrencyInput can be integrated with @growth-ui/react Input component."
+    },
+    "customization": {
+      "id": "customization",
+      "title": "Customization",
+      "description": "A CurrencyInput can be customized."
+    }
   }
 }

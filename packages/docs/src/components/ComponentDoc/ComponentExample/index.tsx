@@ -18,10 +18,11 @@ type Props = {
   examplePath: string;
   id: string;
   title?: string;
+  controls?: boolean;
 };
 
 const ComponentExample = (props: Props) => {
-  const { examplePath } = props;
+  const { controls = true, examplePath } = props;
   const [showCode, setShowCode] = useState(false);
   const sourceCode = getExampleSource(examplePath);
 
@@ -34,10 +35,12 @@ const ComponentExample = (props: Props) => {
         <Spacer size={50} />
         <ComponentDemo examplePath={examplePath} />
         <Spacer size={20} />
-        <ComponentControls
-          onShowCode={handleShowCodeClick}
-          showCode={showCode}
-        />
+        {controls && (
+          <ComponentControls
+            onShowCode={handleShowCodeClick}
+            showCode={showCode}
+          />
+        )}
         <Spacer size={20} />
         {showCode && <ExampleEditor />}
       </ComponentDocContext.Provider>

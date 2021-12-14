@@ -161,6 +161,8 @@ export type ONLY = 'minimobile' | 'mobile' | 'tablet' | 'laptop' | 'computer' | 
 export type GrowthICONS =
   | 'add'
   | 'airplane'
+  | 'angle double left'
+  | 'angle double right'
   | 'apple'
   | 'arrow dropdown'
   | 'arrow right circle fill'

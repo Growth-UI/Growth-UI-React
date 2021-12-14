@@ -1258,5 +1258,40 @@
       "title": "Customization",
       "description": "A CurrencyInput can be customized."
     }
+  },
+  "pagination": {
+    "heading": "Pagination",
+    "subheading": "A component to render a pagination.",
+    "type": "modules",
+    "pagination": {
+      "id": "pagination",
+      "title": "Pagination",
+      "description": "A component to render a pagination."
+    },
+    "circular": {
+      "id": "circular",
+      "title": "Circular",
+      "description": "A page item can be circular."
+    },
+    "secondary": {
+      "id": "secondary",
+      "title": "Secondary",
+      "description": "A pagination can be formatted to show different levels of emphasis."
+    },
+    "color": {
+      "id": "color",
+      "title": "Color",
+      "description": "The active color."
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "The size of the pagination."
+    },
+    "options": {
+      "id": "options",
+      "title": "Options",
+      "description": "A pagination has configurable options."
+    }
   }
 }

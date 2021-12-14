@@ -17,6 +17,8 @@ export const SIZES = ['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge',
 export const ICONS: GrowthICONS[] = [
   'add',
   'airplane',
+  'angle double left',
+  'angle double right',
   'apple',
   'arrow dropdown',
   'arrow right circle fill',

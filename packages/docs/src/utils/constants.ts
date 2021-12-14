@@ -53,6 +53,7 @@ export const components = [
   'collapse',
   'dropdown',
   'modal',
+  'pagination',
   'select',
   'sidebar',
   // addons,
@@ -102,6 +103,7 @@ export const componentByType: Record<string, string[]> = {
     'collapse',
     'dropdown',
     'modal',
+    'pagination',
     'select',
     'sidebar',
   ],
@@ -268,6 +270,9 @@ export const componentInfo: Record<
   },
   modal: {
     names: ['Modal', 'Modal.Header'],
+  },
+  pagination: {
+    names: ['Pagination', 'Pagination.Item'],
   },
   select: {
     names: ['Select', 'Select.Menu', 'Select.Item'],
@@ -3272,6 +3277,136 @@ export const componentProps: Record<
       description: 'An input value.',
       name: 'value',
       type: 'number',
+    },
+  ],
+  Pagination: [
+    {
+      description: 'Active page.',
+      name: 'activePage',
+      type: '{number|string}',
+      defaultValue: '1',
+    },
+    {
+      description:
+        'A pagination can be formatted to show different levels of emphasis.',
+      name: 'secondary',
+      type: 'boolean',
+    },
+    {
+      description: 'Number of always visible pages at the beginning and end.',
+      name: 'boundaryRange',
+      type: '{number|string}',
+      defaultValue: '1',
+    },
+    {
+      description: 'Pagination items can be circular shape.',
+      name: 'circular',
+      type: 'boolean',
+    },
+    {
+      description: 'Additional classes.',
+      name: 'className',
+      type: 'string',
+    },
+    {
+      description: 'The active color.',
+      name: 'color',
+      type: 'enums',
+      enums: COLORS,
+    },
+    {
+      description: 'A pagination can be disabled.',
+      name: 'disabled',
+      type: 'boolean',
+    },
+    {
+      description: 'Ellipsis can be hidden around the active page.',
+      name: 'hideEllipsis',
+      type: 'boolean',
+    },
+    {
+      description: 'Called on change of an active page.',
+      name: 'onPageChange',
+      type: 'func',
+      func: {
+        title: 'onPageChange',
+        params: [
+          {
+            name: 'event',
+            description: 'MouseEvent',
+          },
+          {
+            name: 'data',
+            description: 'PaginationProps',
+          },
+        ],
+      },
+    },
+    {
+      description: 'If true, show the first-page button.',
+      name: 'showFirstButton',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
+      description: 'If true, show the last-page button.',
+      name: 'showLastButton',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
+      description:
+        'Number of always visible pages before and after the current one.',
+      name: 'siblingRange',
+      type: '{number|string}',
+      defaultValue: '1',
+    },
+    {
+      description: 'The size of the pagination.',
+      name: 'size',
+      type: 'number',
+      defaultValue: '16',
+    },
+    {
+      description: 'Total number of pages.',
+      name: 'totalPages',
+      type: '{number|string}',
+      required: true,
+    },
+  ],
+  'Pagination.Item': [
+    {
+      description: 'A pagination item can be active.',
+      name: 'active',
+      type: 'boolean',
+    },
+    {
+      description: 'A pagination item can be disabled.',
+      name: 'disabled',
+      type: 'boolean',
+    },
+    {
+      description: 'Additional classes.',
+      name: 'className',
+      type: 'string',
+    },
+    {
+      description: 'Called on click.',
+      name: 'onClick',
+      type: 'func',
+      func: {
+        title: 'onClick',
+        params: [
+          {
+            name: 'event',
+            description: 'MouseEvent',
+          },
+          {
+            name: 'data',
+            description: 'PaginationItemProps',
+          },
+        ],
+      },
     },
   ],
 };

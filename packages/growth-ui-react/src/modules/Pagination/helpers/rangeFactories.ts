@@ -1,3 +1,5 @@
+import max from 'lodash/max';
+import min from 'lodash/min';
 import range from 'lodash/range';
 import { createInnerPrefix, createInnerSuffix } from './suffixFactories';
 
@@ -15,10 +17,10 @@ export function createComplexRange(options: any, pageItemFactory: (pageNumber: n
   const lastGroupStart = totalPages + 1 - boundaryRange;
   const lastGroup = createSimpleRange(lastGroupStart, totalPages, pageItemFactory);
 
-  const innerGroupStart = Math.min(
-    Math.max(activePage - siblingRange, firstGroupEnd + ellipsisSize + 1),
+  const innerGroupStart = min([
+    max([activePage - siblingRange, firstGroupEnd + ellipsisSize + 1]),
     lastGroupStart - ellipsisSize - 2 * siblingRange - 1,
-  );
+  ]);
   const innerGroupEnd = innerGroupStart + 2 * siblingRange;
   const innerGroup = createSimpleRange(innerGroupStart, innerGroupEnd, pageItemFactory);
 

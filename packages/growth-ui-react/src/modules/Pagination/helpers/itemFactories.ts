@@ -1,61 +1,63 @@
 import Icon from '../../../elements/Icon';
+import max from 'lodash/max';
+import min from 'lodash/min';
 
-export function createEllipsisItem(pageNumber: number) {
+export const createEllipsisItem = (pageNumber: number) => {
   return {
     active: false,
     type: 'ellipsisItem',
     value: pageNumber,
     content: '…',
   };
-}
+};
 
-export function createPrevItem(activePage: number) {
+export const createPrevItem = (activePage: number) => {
   return {
     active: false,
     type: 'prevItem',
     content: Icon.create('chevron left'),
-    value: Math.max(1, activePage - 1),
+    value: max([activePage - 1, 1]),
   };
-}
+};
 
-export function createNextItem(activePage: number, totalPages: number) {
+export const createNextItem = (activePage: number, totalPages: number) => {
   return {
     active: false,
     type: 'nextItem',
     content: Icon.create('chevron right'),
-    value: Math.min(activePage + 1, totalPages),
+    value: min([activePage + 1, totalPages]),
   };
-}
+};
 
-export function createFirstPage() {
+export const createFirstPage = () => {
   return {
     active: false,
     type: 'firstItem',
     value: 1,
     content: Icon.create('angle double left'),
   };
-}
+};
 
-export function createLastPage(totalPages: number) {
+export const createLastPage = (totalPages: number) => {
   return {
     active: false,
     type: 'lastItem',
     value: totalPages,
     content: Icon.create('angle double right'),
   };
-}
+};
 
-export function createEllipsis() {
+export const createEllipsis = () => {
   return {
     active: false,
     type: 'ellipsis',
   };
-}
+};
 
-export function createPageItemFactory(activePage: number) {
+export const createPageItemFactory = (activePage: number) => {
   return (pageNumber: number) => ({
     active: activePage === pageNumber,
     type: 'pageItem',
     value: pageNumber,
   });
-}
+};

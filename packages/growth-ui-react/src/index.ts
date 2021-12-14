@@ -135,6 +135,9 @@ export type { SidebarProps, SidebarPushableProps, SidebarPusherProps } from './m
 export { default as Select, StyledSelect, StyledSelectItem } from './modules/Select';
 export type { SelectProps, SelectItemProps } from './modules/Select';
 
+export { default as Pagination, StyledPagination, StyledPaginationItem } from './modules/Pagination';
+export type { PaginationProps, PaginationItemProps } from './modules/Pagination';
+
 export {
   default as Card,
   StyledCard,

@@ -88,6 +88,9 @@ import Warning from './Warning';
 import Yarn from './Yarn';
 import { COLORS, GrowthICONS } from '../../types';
 import { createShorthandFactory } from '../../lib';
+import Donate from './Donate';
+import AngleDoubleRight from './AngleDoubleRight';
+import AngleDoubleLeft from './AngleDoubleLeft';
 
 const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) => {
   const { flipped, name, rotated, ...rest } = props;
@@ -115,6 +118,10 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Add {...rest} style={style} />;
     case 'airplane':
       return <Airplane {...rest} style={style} />;
+    case 'angle double left':
+      return <AngleDoubleLeft {...rest} style={style} />;
+    case 'angle double right':
+      return <AngleDoubleRight {...rest} style={style} />;
     case 'apple':
       return <Apple {...rest} style={style} />;
     case 'arrow dropdown':
@@ -159,6 +166,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Dashboard {...rest} style={style} />;
     case 'democrat':
       return <Democrat {...rest} style={style} />;
+    case 'donate':
+      return <Donate {...rest} style={style} />;
     case 'dots horizontal rounded':
       return <DotsHorizontalRounded {...rest} style={style} />;
     case 'download':

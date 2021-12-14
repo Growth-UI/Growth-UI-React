@@ -1,4 +1,4 @@
-import Button, { StyledButton } from '@growth-ui/react/elements/Button';
+import Button, { StyledButton } from '../../elements/Button';
 import invoke from 'lodash/invoke';
 import React, { FC, MouseEvent } from 'react';
 import styled from 'styled-components';

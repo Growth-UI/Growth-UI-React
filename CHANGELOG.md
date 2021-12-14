@@ -1,3 +1,15 @@
+## [1.5.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.4.0...v1.5.0) (2021-12-14)
+
+### 🐛  Fixes
+* fix: temporarily fix babel build issue when using built-in Math function ([eb9b574](https://github.com/Growth-UI/Growth-UI-React/commit/eb9b5742c9f332e00917a702dd2115f1f6747ea9))
+
+### 📝  Documentation
+* docs: docs for Pagination component ([648126b](https://github.com/Growth-UI/Growth-UI-React/commit/648126bbdad335f221968e71a93bfcd843f18eac))
+
+### 🚀  Features
+* feat: add new component (Pagination) ([eb666b5](https://github.com/Growth-UI/Growth-UI-React/commit/eb666b525b8044fd24e02e9fbee0bdc84c68abc4))
+* feat: add new icons ([f60e967](https://github.com/Growth-UI/Growth-UI-React/commit/f60e967e5fa2e4c20949cbbd55b3aec5a13b6182))
+
 ## [1.4.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.3.0...v1.4.0) (2021-12-13)
 
 ### 🐛  Fixes

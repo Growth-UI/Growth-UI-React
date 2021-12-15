@@ -10,6 +10,9 @@ export const StyledPagination = styled.div<PaginationProps>`
   background: var(--bg) !important;
   width: fit-content;
   align-items: flex-start;
+  border-radius: 6px;
+
+  ${({ secondary }) => secondary && 'box-shadow: var(--shadow);'}
 `;
 
 const Pagination: FC<PaginationProps> & PaginationComponents = (props) => {
@@ -28,7 +31,6 @@ const Pagination: FC<PaginationProps> & PaginationComponents = (props) => {
     siblingRange = 1,
     size = 16,
     totalPages,
-    ...rest
   } = props;
   const [page, setPage] = useState(activePage);
 
@@ -63,7 +65,7 @@ const Pagination: FC<PaginationProps> & PaginationComponents = (props) => {
   });
 
   return (
-    <StyledPagination {...rest}>
+    <StyledPagination {...props}>
       {items.map((item, index) =>
         PaginationItem.create(
           {

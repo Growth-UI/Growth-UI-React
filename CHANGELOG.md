@@ -1,3 +1,8 @@
+## [1.6.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.5.0...v1.6.0) (2021-12-15)
+
+### 🚀  Features
+* feat: apply rounded border and shadow effect ([3baef50](https://github.com/Growth-UI/Growth-UI-React/commit/3baef50e4c2bfd15ff119be1414a8266dddd020c))
+
 ## [1.5.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.4.0...v1.5.0) (2021-12-14)
 
 ### 🐛  Fixes

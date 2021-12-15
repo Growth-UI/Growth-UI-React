@@ -62,6 +62,16 @@ export const StyledPaginationItem = styled.div<PaginationItemProps>`
     &:not(:first-child) > ${StyledButton} {
       border-left: none !important;
     }
+
+    &:first-child > ${StyledButton}{
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+
+    &:last-child > ${StyledButton}{
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
   `}
 `;
 

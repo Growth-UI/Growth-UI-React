@@ -1,3 +1,18 @@
+## [1.7.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.6.0...v1.7.0) (2021-12-20)
+
+### 🚀  Features
+* style: allow react/jsx-wrap-multilines ([495ad80](https://github.com/Growth-UI/Growth-UI-React/commit/495ad807b7bfb4c791a4369ae251123c07fc35d5))
+* feat: new types and css variables ([103161a](https://github.com/Growth-UI/Growth-UI-React/commit/103161a8afc4590f39d43575588a7632c5d618c9))
+* feat: add onClick prop ([f01cdb7](https://github.com/Growth-UI/Growth-UI-React/commit/f01cdb72a9fb1c933a6d446d5af4bc07beffd782))
+* feat: add new component (Calendar) ([0c85e1d](https://github.com/Growth-UI/Growth-UI-React/commit/0c85e1d012f6d0ea64dac9baf9296727ee0fdddf))
+* feat: add new component (DateInput) ([0b23108](https://github.com/Growth-UI/Growth-UI-React/commit/0b2310892a5086f09a8612bb16685adf7a306781))
+* feat: add new component ([8052dcd](https://github.com/Growth-UI/Growth-UI-React/commit/8052dcd8add3ebfa0603335ee266a4fdd9ddd79d))
+
+### 📝  Documentation
+* docs: add docs for DateInput ([b0a4a91](https://github.com/Growth-UI/Growth-UI-React/commit/b0a4a9191dc028178290c92bbaf9ab0ea9380964))
+* docs: add docs for Calendar ([825eebe](https://github.com/Growth-UI/Growth-UI-React/commit/825eebeca8b4876fb24ae53c9ea650d791b8ed03))
+* docs: update package path ([84f1865](https://github.com/Growth-UI/Growth-UI-React/commit/84f1865528bd00bbc5bd99afaeb433ad85f2d2f2))
+
 ## [1.6.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.5.0...v1.6.0) (2021-12-15)
 
 ### 🚀  Features

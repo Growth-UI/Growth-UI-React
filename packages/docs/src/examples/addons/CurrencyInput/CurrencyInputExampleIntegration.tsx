@@ -1,4 +1,4 @@
-import CurrencyInput from '@growth-ui/currency-input';
+import CurrencyInput from '@growth-ui/react/addons/CurrencyInput';
 import Input from '@growth-ui/react/elements/Input';
 import React, { useState } from 'react';
 
@@ -17,9 +17,20 @@ const CurrencyInputExampleIntegration = () => {
   };
 
   return (
-    <Input adornment="$" label="Amount" error={!!error} feedback={error}>
-      <CurrencyInput basic fixed={2} value={value} onChange={handleChange} />
-    </Input>
+    <CurrencyInput
+      fixed={2}
+      value={value}
+      onChange={handleChange}
+      renderInput={(params) => (
+        <Input
+          {...params}
+          adornment="$"
+          label="Amount"
+          error={!!error}
+          feedback={error}
+        />
+      )}
+    />
   );
 };
 

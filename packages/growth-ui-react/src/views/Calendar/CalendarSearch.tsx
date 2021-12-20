@@ -26,6 +26,8 @@ export const StyledCalendarSearch = styled.div<CalendarSearchProps>`
     outline: none;
     font-size: 54px;
     width: 220px;
+    background: transparent;
+    color: var(--text);
   }
 `;
 

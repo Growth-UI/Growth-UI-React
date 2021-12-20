@@ -9,6 +9,8 @@ const Container = styled.div<CurrencyInputProps>`
   width: fit-content;
   padding: 10px;
   border: none;
+  background: var(--bg);
+  color: var(--text);
 
   &:focus-within {
     border: 1px solid #2d2d2d;
@@ -18,6 +20,10 @@ const Container = styled.div<CurrencyInputProps>`
   input {
     outline: none;
     border: none;
+    background: transparent;
+    color: var(--text);
+    ${({ error }) => error && 'color: #C72830;'}
+    ${({ size = 16 }) => `font-size: ${size}px;`}
   }
 
   ${({ fluid }) => fluid && 'width: 100%;'}
@@ -32,11 +38,6 @@ const Container = styled.div<CurrencyInputProps>`
     font-weight: 500;
     ${({ error }) => error && 'color: #C72830;'}
     ${({ size = 16 }) => `font-size: ${size * 0.7}px;`}
-  }
-
-  input {
-    ${({ error }) => error && 'color: #C72830;'}
-    ${({ size = 16 }) => `font-size: ${size}px;`}
   }
 `;
 

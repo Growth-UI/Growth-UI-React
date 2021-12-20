@@ -1,4 +1,4 @@
-import CurrencyInput from '@growth-ui/currency-input';
+import CurrencyInput from '@growth-ui/react/addons/CurrencyInput';
 import Heading from '@growth-ui/react/elements/Heading';
 import React, { CSSProperties } from 'react';
 import Spacer from '@growth-ui/react/elements/Spacer';

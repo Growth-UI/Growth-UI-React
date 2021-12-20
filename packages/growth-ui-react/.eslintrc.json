@@ -9,6 +9,12 @@
     "jsx-a11y/click-events-have-key-events": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "jsx-a11y/label-has-associated-control": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "no-plusplus": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "prefer-destructuring": "off",
+    "no-param-reassign": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "quote-props": "off"
   }
 }

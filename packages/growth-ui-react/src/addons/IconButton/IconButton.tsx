@@ -1,4 +1,5 @@
 import Icon, { IconProps } from '../../elements/Icon';
+import invoke from 'lodash/invoke';
 import React, { CSSProperties, FC, MouseEvent } from 'react';
 import styled from 'styled-components';
 import { ripple } from '../../lib';
@@ -32,6 +33,7 @@ const IconButton: FC<IconButtonProps> = (props) => {
 
   const handleClick = (e: MouseEvent<HTMLElement>) => {
     ripple(e);
+    invoke(props, 'onClick', e, props);
   };
 
   const width = `${size || 25}px`;

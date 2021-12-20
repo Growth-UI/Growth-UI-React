@@ -1,6 +1,6 @@
 import Icon from '../Icon';
 import invoke from 'lodash/invoke';
-import React, { ChangeEvent, CSSProperties, FC } from 'react';
+import React, { ChangeEvent, CSSProperties, FC, forwardRef } from 'react';
 import styled from 'styled-components';
 import { FONTSIZES, GrowthICONS } from '../../types';
 import { partitionHTMLProps } from '../../lib';
@@ -182,7 +182,7 @@ export const Wrapper = styled.div<{ fluid?: boolean }>`
   }
 `;
 
-const Input: FC<InputProps> = (props) => {
+const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => {
   const {
     children,
     label,
@@ -263,7 +263,7 @@ const Input: FC<InputProps> = (props) => {
         <div>
           {iconPosition === 'left' && renderIcon()}
           {renderAdornment()}
-          {children || <input {...htmlInputProps} required formNoValidate />}
+          {children || <input {...htmlInputProps} ref={forwardedRef} required formNoValidate />}
           {iconPosition === 'right' && renderIcon()}
           {renderLabel()}
         </div>
@@ -271,7 +271,7 @@ const Input: FC<InputProps> = (props) => {
       {renderFeedback()}
     </Wrapper>
   );
-};
+}) as FC<InputProps>;
 
 // ======================================================
 export interface InputProps extends StrictInputProps {

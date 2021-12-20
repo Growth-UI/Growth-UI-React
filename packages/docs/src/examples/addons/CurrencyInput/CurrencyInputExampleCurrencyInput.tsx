@@ -1,4 +1,4 @@
-import CurrencyInput from '@growth-ui/currency-input';
+import CurrencyInput from '@growth-ui/react/addons/CurrencyInput';
 import React from 'react';
 
 const CurrencyInputExampleCurrencyInput = () => {

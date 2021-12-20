@@ -79,7 +79,8 @@ const GlobalStyle = createGlobalStyle<GrowthStyleProps>`
     position: absolute;
     border-radius: 50%;
     transform: scale(0);
-    animation: ripple 300ms linear;
+    animation: ripple 400ms linear;
+    background: rgba(255, 255, 255, 0.6);
   }
   @keyframes ripple {
     to {

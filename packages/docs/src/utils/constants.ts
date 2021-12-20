@@ -9,6 +9,7 @@ import {
   TEXTALIGNMENTS,
   VERTICALALIGNMENTS,
   WIDTHS,
+  DATE_MASK,
 } from '@growth-ui/react/lib/GUI';
 
 export const templates = ['Dashboard', 'Signin', 'Signup'];
@@ -45,8 +46,10 @@ export const components = [
   'menu',
   'table',
   // views
+  'calendar',
   'card',
   'comment',
+
   // modules
   'accordion',
   'checkbox',
@@ -58,6 +61,7 @@ export const components = [
   'sidebar',
   // addons,
   'currency-input',
+  'dateinput',
   'event-listener',
   'icon-button',
   'progressive-image',
@@ -96,7 +100,7 @@ export const componentByType: Record<string, string[]> = {
     'text-area',
   ],
   collections: ['form', 'grid', 'menu', 'table'],
-  views: ['card', 'comment'],
+  views: ['calendar', 'card', 'comment'],
   modules: [
     'accordion',
     'checkbox',
@@ -109,6 +113,7 @@ export const componentByType: Record<string, string[]> = {
   ],
   addons: [
     'currency-input',
+    'dateinput',
     'event-listener',
     'icon-button',
     'progressive-image',
@@ -219,6 +224,9 @@ export const componentInfo: Record<
     ],
   },
   // views
+  calendar: {
+    names: ['Calendar'],
+  },
   card: {
     names: [
       'Card',
@@ -283,6 +291,9 @@ export const componentInfo: Record<
   // addons
   currencyinput: {
     names: ['CurrencyInput'],
+  },
+  dateinput: {
+    names: ['DateInput'],
   },
   eventlistener: {
     names: ['EventListener'],
@@ -3197,7 +3208,7 @@ export const componentProps: Record<
       name: 'onBlur',
       type: 'func',
       func: {
-        title: 'onBlur',
+        title: 'onBlur(event: FocusEvent, data: CurrencyInputProps) => void',
         params: [
           {
             name: 'event',
@@ -3212,10 +3223,10 @@ export const componentProps: Record<
     },
     {
       description: 'Called on change.',
-      name: 'onChage',
+      name: 'onChange',
       type: 'func',
       func: {
-        title: 'onChage',
+        title: 'onChange(value: number, data: CurrencyInputProps) => void',
         params: [
           {
             name: 'value',
@@ -3233,7 +3244,7 @@ export const componentProps: Record<
       name: 'onFocus',
       type: 'func',
       func: {
-        title: 'onFocus',
+        title: 'onFocus(event: FocusEvent, data: CurrencyInputProps) => void',
         params: [
           {
             name: 'e',
@@ -3260,6 +3271,20 @@ export const componentProps: Record<
       description: 'Custom prefix style.',
       name: 'prefixStyle',
       type: 'CSSProperties',
+    },
+    {
+      description: 'Allows you to customize the rendered input.',
+      name: 'renderInput',
+      type: 'func',
+      func: {
+        title: 'renderInput(params: HTMLInputProps) => ReactElement',
+        params: [
+          {
+            name: 'params',
+            description: 'HTMLInputProps',
+          },
+        ],
+      },
     },
     {
       description:
@@ -3329,7 +3354,7 @@ export const componentProps: Record<
       name: 'onPageChange',
       type: 'func',
       func: {
-        title: 'onPageChange',
+        title: 'onPageChange(event: MouseEvent, data: PaginationProps) => void',
         params: [
           {
             name: 'event',
@@ -3395,7 +3420,7 @@ export const componentProps: Record<
       name: 'onClick',
       type: 'func',
       func: {
-        title: 'onClick',
+        title: 'onClick(event: MouseEvent, data: PaginationItemProps) => void',
         params: [
           {
             name: 'event',
@@ -3407,6 +3432,94 @@ export const componentProps: Record<
           },
         ],
       },
+    },
+  ],
+  DateInput: [
+    {
+      description: 'Mask (e.g. mm/yyyy or mm/dd/yyyy).',
+      name: 'mask',
+      type: 'enums',
+      enums: DATE_MASK,
+    },
+    {
+      description: 'Called on change.',
+      name: 'onChange',
+      type: 'func',
+      func: {
+        title:
+          'onChange(event: ChangeEvent<HTMLInputElement>, date: string) => void',
+        params: [
+          {
+            name: 'event',
+            description: 'ChangeEvent<HTMLInputElement>',
+          },
+          {
+            name: 'date',
+            description: 'Formatted date string',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Allows you to customize the rendered input.',
+      name: 'renderInput',
+      type: 'func',
+      required: true,
+      func: {
+        title: 'renderInput(params: HTMLInputProps) => ReactElement',
+        params: [
+          {
+            name: 'params',
+            description: 'HTMLInputProps',
+          },
+        ],
+      },
+    },
+  ],
+  Calendar: [
+    {
+      description: 'Additional classes.',
+      name: 'className',
+      type: 'string',
+    },
+    {
+      description: 'Emphasize the weekends (Saturday and Sunday).',
+      name: 'indicateWeekend',
+      type: '{boolean | COLORS}',
+      defaultValue: 'true',
+      enums: COLORS,
+    },
+    {
+      description:
+        'Callback fired when the value (month, year, and date) changes.',
+      name: 'onChange',
+      type: 'func',
+      func: {
+        title: 'onChange(newDate: Date)',
+        params: [
+          {
+            name: 'date',
+            description: 'Date',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Show the navigation.',
+      name: 'showNavigation',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
+      description: 'If true, today will be highlighted.',
+      name: 'showToday',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
+      description: 'The value of the calendar.',
+      name: 'value',
+      type: '{string|number|Date}',
     },
   ],
 };

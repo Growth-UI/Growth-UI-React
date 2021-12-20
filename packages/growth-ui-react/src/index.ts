@@ -6,6 +6,10 @@ export type { EventListenerProps } from './addons/EventListener';
 export type { IconButtonProps } from './addons/IconButton';
 export type { ProgressiveImageProps } from './addons/ProgressiveImage';
 export type { RefProps } from './addons/Ref';
+export { default as DateInput } from './addons/DateInput';
+export type { DateInputProps } from './addons/DateInput';
+export { default as CurrencyInput } from './addons/CurrencyInput';
+export type { CurrencyInputProps } from './addons/CurrencyInput';
 
 export { default as Grid, StyledGrid, StyledGridCol, StyledGridRow } from './collections/Grid';
 export {
@@ -138,6 +142,8 @@ export type { SelectProps, SelectItemProps } from './modules/Select';
 export { default as Pagination, StyledPagination, StyledPaginationItem } from './modules/Pagination';
 export type { PaginationProps, PaginationItemProps } from './modules/Pagination';
 
+export { default as Calendar, StyledCalendar } from './views/Calendar';
+export type { CalendarProps } from './views/Calendar';
 export {
   default as Card,
   StyledCard,

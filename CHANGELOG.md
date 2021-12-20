@@ -1,3 +1,8 @@
+## [1.7.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.7.0...v1.7.1) (2021-12-20)
+
+### 🐛  Fixes
+* fix: fix darkmode style ([3df4125](https://github.com/Growth-UI/Growth-UI-React/commit/3df41252ce3d167e1b19bf7da9cf8c715fb8ac09))
+
 ## [1.7.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.6.0...v1.7.0) (2021-12-20)
 
 ### 🚀  Features

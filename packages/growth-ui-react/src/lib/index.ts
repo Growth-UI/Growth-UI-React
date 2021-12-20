@@ -11,3 +11,7 @@ export { cx, useKeyOnly, useKeyOrValueAndKey, useValueAndKey } from './className
 export { default as ripple } from './ripple';
 
 export { default as getSpacing } from './getSpacing';
+
+export { default as moment } from './moment';
+
+export { default as typifyOptions } from './typifyOptions';

@@ -1,16 +1,20 @@
-import { MouseEvent } from 'react';
+import max from 'lodash/max';
 import { COLORS } from '../types';
+import { MouseEvent } from 'react';
 
 const ripple = (e: MouseEvent<any>, color?: COLORS) => {
   if (typeof window !== 'undefined') {
     const { currentTarget } = e;
 
     const rippleElement = document.createElement('ripple');
-    const diameter = Math.max(currentTarget.clientWidth, currentTarget.clientHeight);
+    const diameter = max([currentTarget.clientWidth, currentTarget.clientHeight]);
 
     rippleElement.style.width = `${diameter}px`;
     rippleElement.style.height = `${diameter}px`;
-    rippleElement.style.background = color ? `var(--color-${color})` : 'rgba(255, 255, 255, 0.6)';
+
+    if (color) {
+      rippleElement.style.background = color;
+    }
 
     const prevRippleElement = currentTarget.getElementsByTagName('ripple')[0];
 

@@ -1251,7 +1251,7 @@
     "integration": {
       "id": "integration",
       "title": "Integration",
-      "description": "A CurrencyInput can be integrated with @growth-ui/react Input component."
+      "description": "A CurrencyInput can be integrated with Input component."
     },
     "customization": {
       "id": "customization",
@@ -1292,6 +1292,46 @@
       "id": "options",
       "title": "Options",
       "description": "A pagination has configurable options."
+    }
+  },
+  "calendar": {
+    "heading": "Calendar",
+    "subheading": "A component that lets the user view a date.",
+    "type": "views",
+    "calendar": {
+      "id": "calendar",
+      "title": "Calendar",
+      "description": "A basic calendar."
+    },
+    "showToday": {
+      "id": "showToday",
+      "title": "Today",
+      "description": "A calendar can emphasize the today's date."
+    },
+    "showNavigation": {
+      "id": "showNavigation",
+      "title": "Navigation",
+      "description": "A calendar navigation can be hidden."
+    },
+    "weekend": {
+      "id": "weekend",
+      "title": "Weekend",
+      "description": "Emphasize the weekends (Saturday and Sunday)."
+    },
+    "capture": {
+      "id": "capture",
+      "title": "Capture Values",
+      "description": "You can capture date on change."
+    }
+  },
+  "dateinput": {
+    "heading": "DateInput",
+    "subheading": "Date Input lets the user input a date",
+    "type": "addons",
+    "dateinput": {
+      "id": "dateinput",
+      "title": "DateInput",
+      "description": "A basic date input."
     }
   }
 }

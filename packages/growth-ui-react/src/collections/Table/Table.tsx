@@ -15,6 +15,7 @@ export const StyledTable = styled.table<TableProps>`
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
+  color: var(--text);
 
   tr:first-child td {
     border-top: none;

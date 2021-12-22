@@ -7,10 +7,7 @@ export const StyledTableHeadCell = styled.th<TableHeadCellProps>`
   background: var(--emphasis-secondary);
   border-bottom: 1px solid var(--border);
   text-align: ${({ textAlign }) => textAlign || 'left'};
-
-  @media (prefers-color-scheme: dark) {
-    background: rgba(0, 0, 0, 0.6);
-  }
+  background: var(--active-bg);
 
   ${StyledTableFooter} & {
     border-top: 1px solid var(--border) !important;

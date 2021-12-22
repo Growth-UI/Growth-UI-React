@@ -1,3 +1,11 @@
+## [1.8.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.7.1...v1.8.0) (2021-12-22)
+
+### 🚀  Features
+* feat: add LogoutOutline icon ([72f1202](https://github.com/Growth-UI/Growth-UI-React/commit/72f1202af6f10f90136d1d6c110001d99cfe6796))
+
+### 🐛  Fixes
+* fix: change fixed background-color to variable ([00a3f1a](https://github.com/Growth-UI/Growth-UI-React/commit/00a3f1a9f3c06d97942cb3c550b3fa5b1cd8e82a))
+
 ## [1.7.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.7.0...v1.7.1) (2021-12-20)
 
 ### 🐛  Fixes

@@ -64,6 +64,7 @@ export const ICONS: GrowthICONS[] = [
   'list ol',
   'list ul',
   'location',
+  'logout outline',
   'menu',
   'message',
   'newspaper',

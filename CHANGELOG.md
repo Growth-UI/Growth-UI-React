@@ -1,3 +1,8 @@
+## [1.9.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.9.0...v1.9.1) (2022-01-17)
+
+### 🐛  Fixes
+* fix: add SplitInput types and components in index ([19232fe](https://github.com/Growth-UI/Growth-UI-React/commit/19232fef61e4791367e0f21b43598e25248fbacc))
+
 ## [1.9.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.8.0...v1.9.0) (2022-01-17)
 
 ### 📝  Documentation

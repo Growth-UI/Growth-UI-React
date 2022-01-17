@@ -1,4 +1,4 @@
-import { GrowthICONS } from '../types';
+import { GrowthICONS, POSITIONS as POSITION } from '../types';
 
 export const VERTICALALIGNMENTS = ['baseline', 'top', 'middle', 'bottom', 'stretch'];
 export const HORIZONTALALIGNMENTS = [
@@ -14,6 +14,16 @@ export const ONLY = ['monimobile', 'mobile', 'tablet', 'laptop', 'computer', 'wi
 export const WIDTHS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 export const VISIBILITY = ['mobile', 'tablet', 'laptop', 'computer', 'widescreen'];
 export const SIZES = ['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive'];
+export const POSITIONS: POSITION[] = [
+  'bottom center',
+  'bottom left',
+  'bottom right',
+  'left center',
+  'right center',
+  'top center',
+  'top left',
+  'top right',
+];
 export const ICONS: GrowthICONS[] = [
   'add',
   'airplane',

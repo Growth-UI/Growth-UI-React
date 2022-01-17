@@ -186,6 +186,8 @@ export type {
   CommentProps,
   CommentTextProps,
 } from './views/Comment';
+export { default as Snackbar, StyledSnackbar } from './views/Snackbar';
+export type { SnackbarProps } from './views/Snackbar';
 
 export { default as GrowthStyle } from './growth.css';
 export type { GrowthStyleProps } from './growth.css';

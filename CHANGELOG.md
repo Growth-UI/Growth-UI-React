@@ -1,3 +1,12 @@
+## [1.9.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.8.0...v1.9.0) (2022-01-17)
+
+### 📝  Documentation
+* docs: add SplitInput examples ([6e0c00e](https://github.com/Growth-UI/Growth-UI-React/commit/6e0c00eceb99d5e23462d1cda4a798dc25504987))
+* docs: add a sponsor gpoint ([31cbff3](https://github.com/Growth-UI/Growth-UI-React/commit/31cbff3fc97e879610dd7bb6f853737f4534f6a8))
+
+### 🚀  Features
+* feat: add new component (SplitInput) ([8cc0676](https://github.com/Growth-UI/Growth-UI-React/commit/8cc0676df8bb8c387008357bcd6c2c1658b210a1))
+
 ## [1.8.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.7.1...v1.8.0) (2021-12-22)
 
 ### 🚀  Features

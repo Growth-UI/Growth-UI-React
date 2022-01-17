@@ -10,6 +10,8 @@ export { default as DateInput } from './addons/DateInput';
 export type { DateInputProps } from './addons/DateInput';
 export { default as CurrencyInput } from './addons/CurrencyInput';
 export type { CurrencyInputProps } from './addons/CurrencyInput';
+export { default as SplitInput } from './addons/SplitInput';
+export type { SplitInputProps } from './addons/SplitInput';
 
 export { default as Grid, StyledGrid, StyledGridCol, StyledGridRow } from './collections/Grid';
 export {

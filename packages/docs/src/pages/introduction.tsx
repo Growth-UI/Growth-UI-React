@@ -5,6 +5,7 @@ import Divider from '@growth-ui/react/elements/Divider';
 import Grid from '@growth-ui/react/collections/Grid';
 import Heading from '@growth-ui/react/elements/Heading';
 import Icon from '@growth-ui/react/elements/Icon';
+import Image from '@growth-ui/react/elements/Image';
 import Layout from '../layouts/Layout';
 import Link from 'next/link';
 import MinHeight from '@growth-ui/react/elements/MinHeight';
@@ -13,6 +14,7 @@ import Paragraph from '@growth-ui/react/elements/Paragraph';
 import React from 'react';
 import Segment from '@growth-ui/react/elements/Segment';
 import Spacer from '@growth-ui/react/elements/Spacer';
+import sponsors from '../sponsors';
 import Theme from 'docs/md/Theme';
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
@@ -39,6 +41,14 @@ const Introduction = () => {
             <Spacer size={100} />
 
             <Paragraph fontSize="xs">{t('introduction:sponsors')}</Paragraph>
+            <Spacer size={15} />
+            {sponsors.map((sponsor) => (
+              <Grid.Row key={sponsor.name} horizontalAlign="center" wrap="wrap">
+                <a href={sponsor.link} target="_blank" rel="noreferrer">
+                  <Image src={sponsor.img} size="tiny" />
+                </a>
+              </Grid.Row>
+            ))}
 
             <Spacer size={50} />
 

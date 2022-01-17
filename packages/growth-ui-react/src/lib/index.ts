@@ -1,6 +1,6 @@
 export { partitionHTMLProps, htmlInputProps, htmlImageProps } from './htmlProps';
 
-export { useClickOutside, useColorSchemePreference } from './hooks';
+export { useClickOutside, useColorSchemePreference, useTimeout } from './hooks';
 
 export { default as numberToWord } from './numberToWord';
 

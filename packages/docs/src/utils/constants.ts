@@ -8,6 +8,7 @@ import {
   SIZES,
   TEXTALIGNMENTS,
   VERTICALALIGNMENTS,
+  POSITIONS,
   WIDTHS,
   DATE_MASK,
 } from '@growth-ui/react/lib/GUI';
@@ -49,7 +50,7 @@ export const components = [
   'calendar',
   'card',
   'comment',
-
+  'snackbar',
   // modules
   'accordion',
   'checkbox',
@@ -101,7 +102,7 @@ export const componentByType: Record<string, string[]> = {
     'text-area',
   ],
   collections: ['form', 'grid', 'menu', 'table'],
-  views: ['calendar', 'card', 'comment'],
+  views: ['calendar', 'card', 'comment', 'snackbar'],
   modules: [
     'accordion',
     'checkbox',
@@ -253,6 +254,9 @@ export const componentInfo: Record<
       'Comment.Metadata',
       'Comment.Text',
     ],
+  },
+  snackbar: {
+    names: ['Snackbar'],
   },
   // modules
   accordion: {
@@ -3596,6 +3600,97 @@ export const componentProps: Record<
       name: 'size',
       type: 'enum',
       enums: SIZES,
+    },
+  ],
+  Snackbar: [
+    {
+      description:
+        'The number of milliseconds to wait before automatically calling the onClose function.',
+      name: 'autoHideDuration',
+      type: 'number',
+    },
+    {
+      description: 'A snackbar is less pronounced.',
+      name: 'basic',
+      type: 'boolean',
+    },
+    {
+      description: 'Additional classes.',
+      name: 'className',
+      type: 'string',
+    },
+    {
+      description: 'The color of the link.',
+      name: 'color',
+      type: 'enum',
+      enums: COLORS,
+    },
+    {
+      description: 'A snackbar can take the full width of its parent.',
+      name: 'fluid',
+      type: 'boolean',
+    },
+    {
+      description: 'Message',
+      name: 'message',
+      type: 'string',
+    },
+    {
+      description: 'Header',
+      name: 'header',
+      type: 'string',
+    },
+    {
+      description: 'Called on close.',
+      name: 'onClose',
+      type: '{func}',
+      func: {
+        title: 'onClose(data: SnackbarProps)',
+        params: [
+          {
+            name: 'data',
+            description: 'SnackbarProps',
+          },
+        ],
+      },
+    },
+    {
+      description: 'If true, the component is shown.',
+      name: 'open',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
+      description: 'Shorthand for Icon.',
+      name: 'icon',
+      type: 'IconProps',
+    },
+    {
+      description: 'A snackbar may be formatted to display information.',
+      name: 'info',
+      type: 'boolean',
+    },
+    {
+      description: 'The position of the snackbar.',
+      name: 'position',
+      type: 'enum',
+      enums: POSITIONS,
+    },
+    {
+      description:
+        'A snackbar can be formatted to show different levels of emphasis',
+      name: 'secondary',
+      type: 'boolean',
+    },
+    {
+      description: 'A snackbar may be formatted to display a positive message.',
+      name: 'success',
+      type: 'boolean',
+    },
+    {
+      description: 'A snackbar may be formatted to display warning messages.',
+      name: 'warning',
+      type: 'boolean',
     },
   ],
 };

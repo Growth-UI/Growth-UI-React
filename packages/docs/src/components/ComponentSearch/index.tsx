@@ -53,7 +53,7 @@ const ComponentSearch = ({ trigger }: Props) => {
             fluid
             adornment
             icon="search"
-            placeholder={t('search')}
+            placeholder={`${t('search')} ex) Spacer`}
             size="xl"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -74,7 +74,7 @@ const ComponentSearch = ({ trigger }: Props) => {
               .map((component) => renderComponentItem(component))}
           </List>
         </Modal.Content>
-        <Modal.Actions>Ad</Modal.Actions>
+        {/* <Modal.Actions>Ad</Modal.Actions> */}
       </Modal>
       <EventListener name="keydown" listener={handleKeydown} />
     </>

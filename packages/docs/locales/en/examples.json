@@ -1333,5 +1333,25 @@
       "title": "DateInput",
       "description": "A basic date input."
     }
+  },
+  "splitinput": {
+    "heading": "SplitInput",
+    "subheading": "A split input for confirmation code.",
+    "type": "addons",
+    "splitinput": {
+      "id": "splitinput",
+      "title": "SplitInput",
+      "description": "A split input."
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "An Input can vary in size."
+    },
+    "onEnd": {
+      "id": "onEnd",
+      "title": "Controller",
+      "description": "Called once all input fields filled."
+    }
   }
 }

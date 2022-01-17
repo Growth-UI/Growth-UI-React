@@ -1,3 +1,11 @@
+## [1.10.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.9.1...v1.10.0) (2022-01-17)
+
+### 📝  Documentation
+* docs: add examples for Snackbar component ([87fb949](https://github.com/Growth-UI/Growth-UI-React/commit/87fb949af8d0c22d1887905c56d002d164d3126b))
+
+### 🚀  Features
+* feat: add new component (Snackbar) ([1af0af4](https://github.com/Growth-UI/Growth-UI-React/commit/1af0af4c4307c71fc1a0c40971682ead3f9ab4bd))
+
 ## [1.9.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.9.0...v1.9.1) (2022-01-17)
 
 ### 🐛  Fixes

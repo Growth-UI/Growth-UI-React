@@ -1353,5 +1353,40 @@
       "title": "Controller",
       "description": "Called once all input fields filled."
     }
+  },
+  "snackbar": {
+    "heading": "Snackbar",
+    "subheading": "A snackbar displays information.",
+    "type": "views",
+    "snackbar": {
+      "id": "snackbar",
+      "title": "Snackbar",
+      "description": "A snackbar."
+    },
+    "emphasis": {
+      "id": "emphasis",
+      "title": "Emphasis",
+      "description": "A snackbar may be formatted to emphasize a message."
+    },
+    "fluid": {
+      "id": "fluid",
+      "title": "Fluid",
+      "description": "A snackbar can take the full width of its parent."
+    },
+    "basic": {
+      "id": "basic",
+      "title": "Basic",
+      "description": "A snackbar is less pronounced."
+    },
+    "secondary": {
+      "id": "secondary",
+      "title": "Secondary",
+      "description": "A snackbar can be formatted to show different levels of emphasis."
+    },
+    "autoHideDuration": {
+      "id": "autoHideDuration",
+      "title": "AutoHideDuration",
+      "description": "The number of milliseconds to wait before automatically calling the onClose function."
+    }
   }
 }

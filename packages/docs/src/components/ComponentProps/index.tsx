@@ -34,6 +34,7 @@ const ComponentProps = ({ component }: Props) => {
 
   useEffect(() => {
     setActiveName('');
+    setChecked(false);
   }, [component]);
 
   return (

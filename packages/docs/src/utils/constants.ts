@@ -66,6 +66,7 @@ export const components = [
   'icon-button',
   'progressive-image',
   'ref',
+  'splitinput',
 ];
 export const growthUIRepoURL = 'https://github.com/kyuhakyuk/Growth-UI-React';
 export const availableLanguages = [
@@ -118,6 +119,7 @@ export const componentByType: Record<string, string[]> = {
     'icon-button',
     'progressive-image',
     'ref',
+    'splitinput',
   ],
 };
 export const componentInfo: Record<
@@ -306,6 +308,9 @@ export const componentInfo: Record<
   },
   ref: {
     names: ['Ref'],
+  },
+  splitinput: {
+    names: ['SplitInput'],
   },
 };
 
@@ -3520,6 +3525,77 @@ export const componentProps: Record<
       description: 'The value of the calendar.',
       name: 'value',
       type: '{string|number|Date}',
+    },
+  ],
+  SplitInput: [
+    {
+      description: 'An input can be centered.',
+      name: 'center',
+      type: 'boolean',
+    },
+    {
+      description: 'Additional classes.',
+      name: 'className',
+      type: 'string',
+    },
+    {
+      description: 'Custom container style.',
+      name: 'containerStyle',
+      type: 'CSSProperties',
+    },
+    {
+      description: 'Custom input style.',
+      name: 'inputStyle',
+      type: 'CSSProperties',
+    },
+    {
+      description: 'Number of input item.',
+      name: 'num',
+      type: 'number',
+      required: true,
+    },
+    {
+      description: 'Called on change.',
+      name: 'onChange',
+      type: '{func}',
+      func: {
+        title:
+          'onChange(e: ChangeEvent<HTMLInputElement>, data: SplitInputProps)',
+        params: [
+          {
+            name: 'event',
+            description: 'ChangeEvent<HTMLInputElement>',
+          },
+          {
+            name: 'data',
+            description: 'SplitInputProps',
+          },
+        ],
+      },
+    },
+    {
+      description: 'Called once all input fields filled.',
+      name: 'onEnd',
+      type: '{func}',
+      func: {
+        title: 'onEnd(e: ChangeEvent<HTMLInputElement>, data: SplitInputProps)',
+        params: [
+          {
+            name: 'event',
+            description: 'ChangeEvent<HTMLInputElement>',
+          },
+          {
+            name: 'data',
+            description: 'SplitInputProps',
+          },
+        ],
+      },
+    },
+    {
+      description: 'An Input can vary in size.',
+      name: 'size',
+      type: 'enum',
+      enums: SIZES,
     },
   ],
 };

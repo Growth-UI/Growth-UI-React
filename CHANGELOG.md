@@ -1,3 +1,11 @@
+## [1.12.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.11.0...v1.12.0) (2022-01-29)
+
+### 📝  Documentation
+* docs: add examples locale ([744495d](https://github.com/Growth-UI/Growth-UI-React/commit/744495dcab3924c5321b1f9247e9eaf979efcf0c))
+
+### 🚀  Features
+* feat: 🎉 loader component ([5c4f681](https://github.com/Growth-UI/Growth-UI-React/commit/5c4f681b99449d641fe34a4198978519b8e155cb))
+
 ## [1.11.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.10.0...v1.11.0) (2022-01-29)
 
 ### 🐛  Fixes

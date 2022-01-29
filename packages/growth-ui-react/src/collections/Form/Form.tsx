@@ -2,6 +2,7 @@ import FormButton from './FormButton';
 import FormCheckbox from './FormCheckbox';
 import FormGroup from './FormGroup';
 import FormInput from './FormInput';
+import FormSelect from './FormSelect';
 import FormTextArea from './FormTextArea';
 import React, { Children, cloneElement, CSSProperties, FC, isValidElement } from 'react';
 import styled from 'styled-components';
@@ -31,6 +32,7 @@ Form.Button = FormButton;
 Form.Checkbox = FormCheckbox;
 Form.Group = FormGroup;
 Form.Input = FormInput;
+Form.Select = FormSelect;
 Form.TextArea = FormTextArea;
 
 interface FormComponents {
@@ -38,6 +40,7 @@ interface FormComponents {
   Checkbox: typeof FormCheckbox;
   Group: typeof FormGroup;
   Input: typeof FormInput;
+  Select: typeof FormSelect;
   TextArea: typeof FormTextArea;
 }
 

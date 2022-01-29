@@ -33,6 +33,7 @@ export const components = [
   'input',
   'image',
   'list',
+  'loader',
   'margin',
   'min-height',
   'padding',
@@ -92,6 +93,7 @@ export const componentByType: Record<string, string[]> = {
     'image',
     'input',
     'list',
+    'loader',
     'margin',
     'min-height',
     'padding',
@@ -167,6 +169,9 @@ export const componentInfo: Record<
       'List.Item',
       'List.List',
     ],
+  },
+  loader: {
+    names: ['Loader'],
   },
   margin: {
     names: ['Margin'],
@@ -3691,6 +3696,41 @@ export const componentProps: Record<
       description: 'A snackbar may be formatted to display warning messages.',
       name: 'warning',
       type: 'boolean',
+    },
+  ],
+  Loader: [
+    {
+      description: 'Additional classes',
+      name: 'className',
+      type: 'string',
+    },
+    {
+      description: 'The color of the component.',
+      name: 'color',
+      type: 'enum',
+      enums: COLORS,
+    },
+    {
+      description:
+        "A loader can show it's unsure of how long a task will take.",
+      name: 'indeterminate',
+      type: 'boolean',
+    },
+    {
+      description: 'Loaders can appear inline with content.',
+      name: 'inline',
+      type: 'boolean | centered',
+    },
+    {
+      description: 'Custom styles.',
+      name: 'style',
+      type: 'CSSProperties',
+    },
+    {
+      description: 'A Loader can vary in size.',
+      name: 'size',
+      type: 'enum',
+      enums: SIZES,
     },
   ],
 };

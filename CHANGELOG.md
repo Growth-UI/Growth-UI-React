@@ -1,3 +1,8 @@
+## [1.12.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.12.0...v1.12.1) (2022-01-29)
+
+### 🐛  Fixes
+* fix: add Select to Form component (Form.Select) ([a0ef40a](https://github.com/Growth-UI/Growth-UI-React/commit/a0ef40a8e4c6218834b4bdb454d0114aadd636e4))
+
 ## [1.12.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.11.0...v1.12.0) (2022-01-29)
 
 ### 📝  Documentation

@@ -31,6 +31,7 @@ const Pagination: FC<PaginationProps> & PaginationComponents = (props) => {
     siblingRange = 1,
     size = 16,
     totalPages,
+    ...rest
   } = props;
   const [page, setPage] = useState(activePage);
 
@@ -65,7 +66,7 @@ const Pagination: FC<PaginationProps> & PaginationComponents = (props) => {
   });
 
   return (
-    <StyledPagination {...props}>
+    <StyledPagination {...rest}>
       {items.map((item, index) =>
         PaginationItem.create(
           {

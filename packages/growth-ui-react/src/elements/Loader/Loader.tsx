@@ -196,7 +196,7 @@ export interface StrictLoaderProps {
   /** Custom styles. */
   style?: CSSProperties;
 
-  /** An Loader can vary in size. */
+  /** A Loader can vary in size. */
   size?: SIZES;
 }
 

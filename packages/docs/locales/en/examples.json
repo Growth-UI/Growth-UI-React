@@ -1388,5 +1388,45 @@
       "title": "AutoHideDuration",
       "description": "The number of milliseconds to wait before automatically calling the onClose function."
     }
+  },
+  "loader": {
+    "heading": "Loader",
+    "subheading": "A oader alerts a user to wait for an activity to complete.",
+    "type": "elements",
+    "loader": {
+      "id": "loader",
+      "title": "loader",
+      "description": "A standard loader."
+    },
+    "text": {
+      "id": "text",
+      "title": "Text",
+      "description": "A loader can contain text."
+    },
+    "indeterminate": {
+      "id": "indeterminate",
+      "title": "Indeterminate",
+      "description": "A loader can show it's unsure of how long a task will take."
+    },
+    "color": {
+      "id": "color",
+      "title": "Color",
+      "description": "The color of the component."
+    },
+    "inline": {
+      "id": "inline",
+      "title": "Inline",
+      "description": "Loaders can appear inline with content."
+    },
+    "center": {
+      "id": "center",
+      "title": "Inline Center",
+      "description": "Loaders can appear inline centered with content."
+    },
+    "size": {
+      "id": "size",
+      "title": "Size",
+      "description": "Loaders can have different sizes."
+    }
   }
 }

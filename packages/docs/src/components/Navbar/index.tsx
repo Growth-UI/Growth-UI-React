@@ -80,7 +80,7 @@ const Navbar = ({ children }: Props) => {
                   <Icon name="language" width={20} />
                   <Spacer size={5} />
                   <Dropdown
-                    icon
+                    icon={null}
                     simple
                     space
                     defaultValue={availableLanguages[0].language}

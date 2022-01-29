@@ -3,7 +3,7 @@ import DropdownItem, { DropdownItemProps, StyledDropdownItem } from './DropdownI
 import DropdownMenu, { StyledDropdownMenu } from './DropdownMenu';
 import DropdownText, { StyledDropdownText } from './DropdownText';
 import EventListener from '../../addons/EventListener';
-import Icon from '../../elements/Icon';
+import Icon, { IconProps } from '../../elements/Icon';
 import Image, { StyledImage } from '../../elements/Image';
 import invoke from 'lodash/invoke';
 import React, { Children, cloneElement, createRef, FC, MouseEvent, ReactNode, useState } from 'react';
@@ -68,7 +68,7 @@ export const StyledDropdown = styled.div<DropdownProps>`
 const Dropdown: FC<DropdownProps> & DropdownComponents = (props) => {
   const ref = createRef<HTMLDivElement>();
 
-  const { children, defaultValue, options, scrolling, space, text, trigger, onAddItem, ...rest } = props;
+  const { children, defaultValue, icon, options, scrolling, space, text, trigger, onAddItem, ...rest } = props;
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(defaultValue);
 
@@ -168,7 +168,8 @@ const Dropdown: FC<DropdownProps> & DropdownComponents = (props) => {
       <StyledDropdown {...rest} onClick={handleClick}>
         {space && <Spacer size={16} />}
         {trigger || renderText()}
-        <Icon name="triangle down" />
+        {/* eslint-disable-next-line no-nested-ternary */}
+        {icon ? <Icon {...icon} /> : icon === undefined ? <Icon name="triangle down" /> : null}
 
         {space && <Spacer size={16} />}
         {renderMenu()}
@@ -209,6 +210,9 @@ export interface StrictDropdownProps {
 
   /** A dropdown can take the full width of its parent */
   fluid?: boolean;
+
+  /** Shorthand for Icon. */
+  icon?: IconProps | null;
 
   /**
    * Called when a user adds a new item. Use this to update the options list.

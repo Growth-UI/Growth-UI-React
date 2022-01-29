@@ -127,6 +127,15 @@ const SplitInput: FC<SplitInputProps> = (props) => {
 
     invoke(props, 'onChange', e, { ...props, value: newValue });
     setValue(newValue);
+
+    /** If all input is not provided, onEnd will not be called. */
+    if (newValue.some((v) => v === '')) {
+      return;
+    }
+
+    if (onEnd) {
+      onEnd(e as any, { ...props, value: newValue, setValue });
+    }
   };
 
   return (

@@ -1,3 +1,17 @@
+## [1.11.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.10.0...v1.11.0) (2022-01-29)
+
+### 🐛  Fixes
+* fix: fix passing invalid prop type ([7ab0366](https://github.com/Growth-UI/Growth-UI-React/commit/7ab036698df02cfc3b74704be0b8b846b32c81e3))
+* fix: pass only necessary props to styled-component ([c64649d](https://github.com/Growth-UI/Growth-UI-React/commit/c64649d790f6594dd1f7d300646607c28867dc21))
+* fix: call onEnd when all fields are filled upon paste ([05deb55](https://github.com/Growth-UI/Growth-UI-React/commit/05deb55aa4f37001023f37a490379ab6d3145662))
+* fix: add ko locale for snackbar examples ([86428ad](https://github.com/Growth-UI/Growth-UI-React/commit/86428ad6b666cfc11c7b8f5a59dc79e4a240732d))
+
+### 📝  Documentation
+* docs: add forgotten example code ([2c55cda](https://github.com/Growth-UI/Growth-UI-React/commit/2c55cda1cd42d840d781a9c58e0ea63686a9f7dd))
+
+### 🚀  Features
+* feat: add icon prop ([92e02e4](https://github.com/Growth-UI/Growth-UI-React/commit/92e02e4bc63465002c200717399b6b06f0d02001))
+
 ## [1.10.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.9.1...v1.10.0) (2022-01-17)
 
 ### 📝  Documentation

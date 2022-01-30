@@ -59,6 +59,12 @@ export const StyledSelect = styled.div<SelectProps>`
     border-color: #96c8da;
   `}
 
+  ${({ error }) =>
+    error &&
+    `
+    border-color: var(--color-error) !important;
+  `}
+
   ${({ circular, open }) =>
     circular &&
     open &&
@@ -89,6 +95,12 @@ export const StyledSelect = styled.div<SelectProps>`
     bottom: 50%;
     transform: translate(0, 50%);
 
+    ${({ error }) =>
+      error &&
+      `
+      color: var(--color-error) !important;
+    `}
+
     ${({ open, searchQuery }) =>
       (open || searchQuery) &&
       `
@@ -110,6 +122,12 @@ export const StyledSelect = styled.div<SelectProps>`
   }
 `;
 
+export const Feedback = styled.span`
+  padding-left: 5px;
+  color: var(--color-error);
+  font-size: var(--text-sm);
+`;
+
 type State = {
   open: boolean;
   searchQuery: string;
@@ -124,6 +142,7 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
     clearable,
     defaultValue,
     disabled,
+    feedback,
     label,
     minCharacters = 1,
     multiple,
@@ -405,8 +424,9 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
   };
 
   const getMenuProps = () => {
-    const { circular, scrolling } = props;
+    const { circular, error, scrolling } = props;
     const menuProps: Record<string, any> = {
+      error,
       open: state.open,
       circular,
     };
@@ -580,26 +600,29 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
   };
 
   return (
-    <StyledSelect
-      {...rest}
-      {...state}
-      tabIndex="0"
-      onClick={handleClick}
-      onKeyDown={handleKeyDown}
-      onBlur={handleBlur}
-      onFocus={handleFocus}
-      ref={ref}
-    >
-      {label && <label ref={labelRef}>{label}</label>}
-      {renderChips()}
-      {renderActiveItem()}
-      {search && (
-        <input ref={searchRef} value={state.searchQuery} onChange={handleSearchChange} placeholder={placeholder} />
-      )}
-      {renderIcon()}
-      {renderMenu()}
-      {state.focus && <EventListener name="keydown" listener={removeItemOnBackspace} />}
-    </StyledSelect>
+    <>
+      <StyledSelect
+        {...rest}
+        {...state}
+        tabIndex="0"
+        onClick={handleClick}
+        onKeyDown={handleKeyDown}
+        onBlur={handleBlur}
+        onFocus={handleFocus}
+        ref={ref}
+      >
+        {label && <label ref={labelRef}>{label}</label>}
+        {renderChips()}
+        {renderActiveItem()}
+        {search && (
+          <input ref={searchRef} value={state.searchQuery} onChange={handleSearchChange} placeholder={placeholder} />
+        )}
+        {renderIcon()}
+        {renderMenu()}
+        {state.focus && <EventListener name="keydown" listener={removeItemOnBackspace} />}
+      </StyledSelect>
+      {feedback && <Feedback>{feedback}</Feedback>}
+    </>
   );
 };
 
@@ -634,6 +657,12 @@ export interface StrictSelectProps {
 
   /** A disabled select menu or item does not allow user interaction. */
   disabled?: boolean;
+
+  /** A select field can show th  e data contains errors. */
+  error?: boolean;
+
+  /** Feedback to the user about the error. */
+  feedback?: string;
 
   /** A select can take the full width of its parent */
   fluid?: boolean;

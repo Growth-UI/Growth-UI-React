@@ -14,6 +14,12 @@ export const StyledSelectMenu = styled.div<SelectMenuProps>`
   border-top: none;
   z-index: 1993;
 
+  ${({ error }) =>
+    error &&
+    `
+    border-color: var(--color-error) !important;
+  `}
+
   ${({ open }) => !open && 'display: none;'}
 
   ${({ circular, open }) =>

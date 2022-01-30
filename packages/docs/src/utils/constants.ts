@@ -2911,6 +2911,16 @@ export const componentProps: Record<
       type: 'boolean',
     },
     {
+      description: 'A select field can show th  e data contains errors.',
+      name: 'error',
+      type: 'boolean',
+    },
+    {
+      description: 'Feedback to the user about the error.',
+      name: 'feedback',
+      type: 'string',
+    },
+    {
       description: 'A select can take the full width of its parent.',
       name: 'fluid',
       type: 'boolean',

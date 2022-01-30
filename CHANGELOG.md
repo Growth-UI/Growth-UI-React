@@ -1,3 +1,8 @@
+## [1.13.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.12.1...v1.13.0) (2022-01-30)
+
+### 🚀  Features
+* feat: add eror and feedback prop ([cb8543b](https://github.com/Growth-UI/Growth-UI-React/commit/cb8543b4a1714e549bdbc348637b05a388dcf094))
+
 ## [1.12.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.12.0...v1.12.1) (2022-01-29)
 
 ### 🐛  Fixes

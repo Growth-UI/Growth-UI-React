@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@growth-ui/react": "^1.13.0",
+    "@growth-ui/react": "^1.13.1",
     "@types/styled-components": "^5.1.15",
     "brace": "^0.11.1",
     "copy-to-clipboard": "^3.3.1",

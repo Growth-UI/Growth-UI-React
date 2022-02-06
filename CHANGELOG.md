@@ -1,3 +1,8 @@
+## [1.13.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.13.0...v1.13.1) (2022-02-06)
+
+### 🐛  Fixes
+* fix: set wrapper div background to transparent ([c702833](https://github.com/Growth-UI/Growth-UI-React/commit/c7028336fdb7f77666df920008a735d0e243a136))
+
 ## [1.13.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.12.1...v1.13.0) (2022-01-30)
 
 ### 🚀  Features

@@ -161,9 +161,11 @@ export type ONLY = 'minimobile' | 'mobile' | 'tablet' | 'laptop' | 'computer' | 
 export type GrowthICONS =
   | 'add'
   | 'airplane'
+  | 'amex-c'
   | 'angle double left'
   | 'angle double right'
   | 'apple'
+  | 'applepay-c'
   | 'arrow dropdown'
   | 'arrow right circle fill'
   | 'aws'
@@ -185,6 +187,7 @@ export type GrowthICONS =
   | 'confirmation number'
   | 'dashboard'
   | 'democrat'
+  | 'discover-c'
   | 'donate'
   | 'dots horizontal rounded'
   | 'download'
@@ -210,6 +213,7 @@ export type GrowthICONS =
   | 'list ul'
   | 'location'
   | 'logout outline'
+  | 'mastercard-c'
   | 'menu'
   | 'message'
   | 'newspaper'
@@ -218,6 +222,7 @@ export type GrowthICONS =
   | 'package'
   | 'paperclip'
   | 'partly sunny'
+  | 'paypal-c'
   | 'people'
   | 'pie chart'
   | 'play'
@@ -248,6 +253,7 @@ export type GrowthICONS =
   | 'triangle down'
   | 'triangle up'
   | 'underline'
+  | 'visa-c'
   | 'warning'
   | 'yarn';
 export type DATE_MASK =

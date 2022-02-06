@@ -1,6 +1,10 @@
 import Add from './Add';
 import Airplane from './Airplane';
+import AmexColor from './AmexColor';
+import AngleDoubleLeft from './AngleDoubleLeft';
+import AngleDoubleRight from './AngleDoubleRight';
 import Apple from './Apple';
+import ApplePayColor from './ApplePayColor';
 import ArrowDropdown from './ArrowDropdown';
 import ArrowRightCircleFill from './ArrowRightCircleFill';
 import Aws from './Aws';
@@ -22,6 +26,8 @@ import Comment from './Comment';
 import ConfirmationNumber from './ConfirmationNumber';
 import Dashboard from './Dashboard';
 import Democrat from './Democrat';
+import DiscoverColor from './DiscoverColor';
+import Donate from './Donate';
 import DotsHorizontalRounded from './DotsHorizontalRounded';
 import Download from './Download';
 import Drafts from './Drafts';
@@ -45,6 +51,8 @@ import Link from './Link';
 import ListOl from './ListOl';
 import ListUl from './ListUl';
 import Location from './Location';
+import LogoutOutline from './LogoutOutline';
+import MastercardColor from './MastercardColor';
 import Menu from './Menu';
 import Message from './Message';
 import Newspaper from './Newspaper';
@@ -53,6 +61,7 @@ import Npm from './Npm';
 import Package from './Package';
 import Paperclip from './Paperclip';
 import PartlySunny from './PartlySunny';
+import PaypalColor from './PaypalColor';
 import People from './People';
 import PieChart from './PieChart';
 import Play from './Play';
@@ -84,13 +93,11 @@ import Trash from './Trash';
 import TriangleDown from './TriangleDown';
 import TriangleUp from './TriangleUp';
 import Underline from './Underline';
+import VisaColor from './VisaColor';
 import Warning from './Warning';
 import Yarn from './Yarn';
 import { COLORS, GrowthICONS } from '../../types';
 import { createShorthandFactory } from '../../lib';
-import Donate from './Donate';
-import AngleDoubleRight from './AngleDoubleRight';
-import AngleDoubleLeft from './AngleDoubleLeft';
 
 const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) => {
   const { flipped, name, rotated, ...rest } = props;
@@ -118,12 +125,16 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Add {...rest} style={style} />;
     case 'airplane':
       return <Airplane {...rest} style={style} />;
+    case 'amex-c':
+      return <AmexColor {...rest} style={style} />;
     case 'angle double left':
       return <AngleDoubleLeft {...rest} style={style} />;
     case 'angle double right':
       return <AngleDoubleRight {...rest} style={style} />;
     case 'apple':
       return <Apple {...rest} style={style} />;
+    case 'applepay-c':
+      return <ApplePayColor {...rest} style={style} />;
     case 'arrow dropdown':
       return <ArrowDropdown {...rest} style={style} />;
     case 'arrow right circle fill':
@@ -166,6 +177,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Dashboard {...rest} style={style} />;
     case 'democrat':
       return <Democrat {...rest} style={style} />;
+    case 'discover-c':
+      return <DiscoverColor {...rest} style={style} />;
     case 'donate':
       return <Donate {...rest} style={style} />;
     case 'dots horizontal rounded':
@@ -214,6 +227,10 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <ListUl {...rest} style={style} />;
     case 'location':
       return <Location {...rest} style={style} />;
+    case 'logout outline':
+      return <LogoutOutline {...rest} style={style} />;
+    case 'mastercard-c':
+      return <MastercardColor {...rest} style={style} />;
     case 'menu':
       return <Menu {...rest} style={style} />;
     case 'message':
@@ -230,6 +247,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Paperclip {...rest} style={style} />;
     case 'partly sunny':
       return <PartlySunny {...rest} style={style} />;
+    case 'paypal-c':
+      return <PaypalColor {...rest} style={style} />;
     case 'people':
       return <People {...rest} style={style} />;
     case 'pie chart':
@@ -290,6 +309,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <TriangleUp {...rest} style={style} />;
     case 'underline':
       return <Underline {...rest} style={style} />;
+    case 'visa-c':
+      return <VisaColor {...rest} style={style} />;
     case 'warning':
       return <Warning {...rest} style={style} />;
     case 'yarn':

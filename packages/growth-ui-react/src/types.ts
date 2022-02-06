@@ -195,6 +195,7 @@ export type GrowthICONS =
   | 'edit'
   | 'email'
   | 'email outline'
+  | 'facebook'
   | 'file copy'
   | 'file copy outline'
   | 'file outline'
@@ -204,6 +205,7 @@ export type GrowthICONS =
   | 'home'
   | 'image'
   | 'inbox'
+  | 'instagram'
   | 'install'
   | 'italic'
   | 'label important'
@@ -252,10 +254,12 @@ export type GrowthICONS =
   | 'trash'
   | 'triangle down'
   | 'triangle up'
+  | 'twitter'
   | 'underline'
   | 'visa-c'
   | 'warning'
-  | 'yarn';
+  | 'yarn'
+  | 'youtube';
 export type DATE_MASK =
   | 'mm/dd/yyyy'
   | 'mm-dd-yyyy'

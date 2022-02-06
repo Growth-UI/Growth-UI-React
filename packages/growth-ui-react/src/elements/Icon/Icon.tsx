@@ -34,6 +34,7 @@ import Drafts from './Drafts';
 import Edit from './Edit';
 import Email from './Email';
 import EmailOutline from './EmailOutline';
+import FacebookSquare from './Facebook';
 import FileCopy from './FileCopy';
 import FileCopyOutline from './FileCopyOutline';
 import FileOutline from './FileOutline';
@@ -43,6 +44,7 @@ import Heart from './Heart';
 import Home from './Home';
 import Image from './Image';
 import Inbox from './Inbox';
+import Instagram from './Instagram';
 import Install from './Install';
 import Italic from './Italic';
 import LabelImportant from './LabelImportant';
@@ -92,10 +94,12 @@ import ToolOutline from './ToolOutline';
 import Trash from './Trash';
 import TriangleDown from './TriangleDown';
 import TriangleUp from './TriangleUp';
+import Twitter from './Twitter';
 import Underline from './Underline';
 import VisaColor from './VisaColor';
 import Warning from './Warning';
 import Yarn from './Yarn';
+import Youtube from './Youtube';
 import { COLORS, GrowthICONS } from '../../types';
 import { createShorthandFactory } from '../../lib';
 
@@ -193,6 +197,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Email {...rest} style={style} />;
     case 'email outline':
       return <EmailOutline {...rest} style={style} />;
+    case 'facebook':
+      return <FacebookSquare {...rest} style={style} />;
     case 'file copy':
       return <FileCopy {...rest} style={style} />;
     case 'file copy outline':
@@ -211,6 +217,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Image {...rest} style={style} />;
     case 'inbox':
       return <Inbox {...rest} style={style} />;
+    case 'instagram':
+      return <Instagram {...rest} style={style} />;
     case 'install':
       return <Install {...rest} style={style} />;
     case 'italic':
@@ -307,6 +315,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <TriangleDown {...rest} style={style} />;
     case 'triangle up':
       return <TriangleUp {...rest} style={style} />;
+    case 'twitter':
+      return <Twitter {...rest} style={style} />;
     case 'underline':
       return <Underline {...rest} style={style} />;
     case 'visa-c':
@@ -315,6 +325,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Warning {...rest} style={style} />;
     case 'yarn':
       return <Yarn {...rest} style={style} />;
+    case 'youtube':
+      return <Youtube {...rest} style={style} />;
     default:
       return null;
   }

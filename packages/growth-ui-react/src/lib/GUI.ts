@@ -61,6 +61,7 @@ export const ICONS: GrowthICONS[] = [
   'edit',
   'email',
   'email outline',
+  'facebook',
   'file copy',
   'file copy outline',
   'file outline',
@@ -70,6 +71,7 @@ export const ICONS: GrowthICONS[] = [
   'home',
   'image',
   'inbox',
+  'instagram',
   'install',
   'italic',
   'language',
@@ -117,10 +119,12 @@ export const ICONS: GrowthICONS[] = [
   'trash',
   'triangle down',
   'triangle up',
+  'twitter',
   'underline',
   'visa-c',
   'warning',
   'yarn',
+  'youtube',
 ];
 export const FONTSIZES = [
   '2xs',

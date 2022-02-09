@@ -56,7 +56,7 @@ export const StyledInput = styled.div<InputProps>`
   & > div {
     display: flex;
     align-items: center;
-    background: transparent;
+    background: ${({ filled }) => (filled ? 'transparent' : 'var(--bg)')};
   }
 
   &:focus-within {

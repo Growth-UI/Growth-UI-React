@@ -1,3 +1,11 @@
+## [1.16.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.15.0...v1.16.0) (2022-02-09)
+
+### 🐛  Fixes
+* fix: back wrapper div background from transparent to var(--bg) ([4eee03b](https://github.com/Growth-UI/Growth-UI-React/commit/4eee03b08c48b30b3214784e2fb9593cb938f237))
+
+### 🚀  Features
+* feat: add new icons ([0dc84bb](https://github.com/Growth-UI/Growth-UI-React/commit/0dc84bb3bc63b0cfefedcbec88d87364fa5908bd))
+
 ## [1.15.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.14.1...v1.15.0) (2022-02-09)
 
 ### 🚀  Features

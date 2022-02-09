@@ -245,6 +245,7 @@ export type GrowthICONS =
   | 'ship'
   | 'shipping'
   | 'shopping bag'
+  | 'speaker phone'
   | 'star'
   | 'star fill'
   | 'star half'

@@ -1,6 +1,7 @@
 import Add from './Add';
 import Airplane from './Airplane';
 import AmexColor from './AmexColor';
+import Analytics from './Analytics';
 import AngleDoubleLeft from './AngleDoubleLeft';
 import AngleDoubleRight from './AngleDoubleRight';
 import Apple from './Apple';
@@ -14,6 +15,7 @@ import Bold from './Bold';
 import Bookmark from './Bookmark';
 import Camera from './Camera';
 import Cart from './Cart';
+import Category from './Category';
 import Check from './Check';
 import ChevronDown from './ChevronDown';
 import ChevronLeft from './ChevronLeft';
@@ -83,6 +85,7 @@ import Share from './Share';
 import Ship from './Ship';
 import Shipping from './Shipping';
 import ShoppingBag from './ShoppingBag';
+import SpeakerPhone from './SpeakerPhone';
 import Star from './Star';
 import StarFill from './StarFill';
 import StarHalf from './StarHalf';
@@ -96,6 +99,7 @@ import TriangleDown from './TriangleDown';
 import TriangleUp from './TriangleUp';
 import Twitter from './Twitter';
 import Underline from './Underline';
+import User from './User';
 import VisaColor from './VisaColor';
 import Warning from './Warning';
 import Yarn from './Yarn';
@@ -131,6 +135,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Airplane {...rest} style={style} />;
     case 'amex-c':
       return <AmexColor {...rest} style={style} />;
+    case 'analytics':
+      return <Analytics {...rest} style={style} />;
     case 'angle double left':
       return <AngleDoubleLeft {...rest} style={style} />;
     case 'angle double right':
@@ -157,6 +163,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Camera {...rest} style={style} />;
     case 'cart':
       return <Cart {...rest} style={style} />;
+    case 'category':
+      return <Category {...rest} style={style} />;
     case 'check':
       return <Check {...rest} style={style} />;
     case 'chevron down':
@@ -293,6 +301,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Shipping {...rest} style={style} />;
     case 'shopping bag':
       return <ShoppingBag {...rest} style={style} />;
+    case 'speaker phone':
+      return <SpeakerPhone {...rest} style={style} />;
     case 'star':
       return <Star {...rest} style={style} />;
     case 'star fill':
@@ -319,6 +329,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Twitter {...rest} style={style} />;
     case 'underline':
       return <Underline {...rest} style={style} />;
+    case 'user':
+      return <User {...rest} style={style} />;
     case 'visa-c':
       return <VisaColor {...rest} style={style} />;
     case 'warning':

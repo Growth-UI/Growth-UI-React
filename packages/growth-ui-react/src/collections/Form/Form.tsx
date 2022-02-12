@@ -25,7 +25,11 @@ const Form: FC<FormProps> & FormComponents = (props) => {
     return child;
   });
 
-  return <StyledForm {...rest}>{newChildren}</StyledForm>;
+  return (
+    <StyledForm {...rest} noValidate>
+      {newChildren}
+    </StyledForm>
+  );
 };
 
 Form.Button = FormButton;

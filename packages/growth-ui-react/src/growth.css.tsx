@@ -19,6 +19,7 @@ const light = `
   --icon-button-bg: rgba(0, 0, 0, 0.04);
   --chip-bg: rgba(0,0,0,0.08);
   --active-bg: rgba(0, 0, 0, 0.08);
+  --filled: rgba(0, 0, 0, 0.09);
 `;
 
 const dark = `
@@ -37,6 +38,7 @@ const dark = `
   --shadow: 0 1px 2px 0 rgb(255 255 255 / 15%);
   --emphasis-secondary: #000;
   --icon-button-bg: rgba(255, 255, 255, 0.08);
+  --filled: rgba(255, 255, 255, 0.09);
 `;
 
 const colorScheme = {

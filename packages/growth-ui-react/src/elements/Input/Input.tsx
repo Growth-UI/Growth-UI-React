@@ -39,12 +39,6 @@ export const Label = styled.span`
 `;
 
 export const StyledInput = styled.div<InputProps>`
-  --filled: rgba(0, 0, 0, 0.09);
-
-  @media (prefers-color-scheme: dark) {
-    --filled: rgba(255, 255, 255, 0.09);
-  }
-
   position: relative;
   padding: 0.75em 0.5em;
   width: 100%;
@@ -263,7 +257,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => 
         <div>
           {iconPosition === 'left' && renderIcon()}
           {renderAdornment()}
-          {children || <input {...htmlInputProps} ref={forwardedRef} required formNoValidate />}
+          {children || <input {...htmlInputProps} ref={forwardedRef} required />}
           {iconPosition === 'right' && renderIcon()}
           {renderLabel()}
         </div>

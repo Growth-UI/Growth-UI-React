@@ -1,3 +1,11 @@
+## [1.16.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.16.0...v1.16.1) (2022-02-12)
+
+### 🏠  Internal
+* refactor: refactor css var --fiiled ([1e2d510](https://github.com/Growth-UI/Growth-UI-React/commit/1e2d510e5602dd863351e0114ca370b9fc49e6e9))
+
+### 🐛  Fixes
+* fix: no validation on submit ([554fcb5](https://github.com/Growth-UI/Growth-UI-React/commit/554fcb555a1d9613ab9b2ab2aaa72503e1693ed0))
+
 ## [1.16.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.15.0...v1.16.0) (2022-02-09)
 
 ### 🐛  Fixes

@@ -1,6 +1,6 @@
 import Icon from '../Icon';
 import invoke from 'lodash/invoke';
-import React, { ChangeEvent, CSSProperties, FC, forwardRef, useEffect, useRef } from 'react';
+import React, { ChangeEvent, CSSProperties, FC, forwardRef } from 'react';
 import styled from 'styled-components';
 import { FONTSIZES, GrowthICONS } from '../../types';
 import { partitionHTMLProps } from '../../lib';

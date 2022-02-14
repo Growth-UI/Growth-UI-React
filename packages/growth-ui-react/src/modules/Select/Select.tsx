@@ -29,6 +29,7 @@ import React, {
   FocusEvent,
   MouseEvent,
   SyntheticEvent,
+  useEffect,
   useRef,
   useState,
 } from 'react';
@@ -150,13 +151,14 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
     options,
     placeholder,
     search,
+    value,
     ...rest
   } = props;
   const [state, setState] = useState<State>({
     open,
     searchQuery: '',
     selectedIndex: -1,
-    activeValues: multiple ? [...((defaultValue as any) || [])] : defaultValue,
+    activeValues: value || multiple ? [...((defaultValue as any) || [])] : defaultValue,
     focus: false,
   });
 
@@ -165,6 +167,13 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
   const labelRef = useRef<HTMLLabelElement>(null);
 
   useClickOutside(ref, () => setState({ ...state, open: false }), [state]);
+
+  useEffect(() => {
+    setState({
+      ...state,
+      activeValues: value,
+    });
+  }, [value]);
 
   // ----------------------------------------
   // Document Event Handlers
@@ -709,6 +718,9 @@ export interface StrictSelectProps {
 
   /** Custom styles. */
   style?: CSSProperties;
+
+  /** Current value or value array if multiple. Creates a controlled component. */
+  value?: string | number | string[] | number[] | undefined;
 }
 
 export default Select;

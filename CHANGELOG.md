@@ -1,3 +1,8 @@
+## [1.17.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.16.1...v1.17.0) (2022-02-14)
+
+### 🚀  Features
+* feat: add value prop to select component for more flexibility ([dee07eb](https://github.com/Growth-UI/Growth-UI-React/commit/dee07eb59f60f7749bb6209b8a80ca782c7c8f62))
+
 ## [1.16.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.16.0...v1.16.1) (2022-02-12)
 
 ### 🏠  Internal

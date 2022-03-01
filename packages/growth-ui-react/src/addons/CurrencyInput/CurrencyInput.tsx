@@ -65,6 +65,7 @@ const CurrencyInput: FC<CurrencyInputProps> = (props) => {
   useEffect(() => {
     const { placeholder } = props;
 
+    currentValue.current = `${value || defaultValue || ''}`;
     const formattedValue = formatValue(currentValue.current, {
       decimalsLimit,
       separators,
@@ -79,7 +80,7 @@ const CurrencyInput: FC<CurrencyInputProps> = (props) => {
     }
 
     resizeInputField(currentValue.current || placeholder);
-  }, []);
+  }, [defaultValue, value]);
 
   const resizeInputField = (value = '') => {
     if (!compact) return;

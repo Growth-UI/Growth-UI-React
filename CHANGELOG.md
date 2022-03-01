@@ -1,3 +1,8 @@
+## [1.17.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.17.0...v1.17.1) (2022-03-01)
+
+### 🐛  Fixes
+* fix: fix updating issue when default or value props change ([e66efb9](https://github.com/Growth-UI/Growth-UI-React/commit/e66efb99b16f77218c50f51d3a26254e194f769b))
+
 ## [1.17.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.16.1...v1.17.0) (2022-02-14)
 
 ### 🚀  Features

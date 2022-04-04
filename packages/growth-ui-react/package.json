@@ -23,19 +23,16 @@
     "coverage": "jest --coverage --color"
   },
   "peerDependencies": {
-    "@fluentui/react-component-ref": "^0.59.0",
-    "lodash": "^4.17.21",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.2",
-    "styled-components": ">=4.1.0 <6"
+    "@types/react": "^16.8.6 || ^17.0.0 || ^18.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "@fluentui/react-component-ref": "^0.59.0",
     "exenv": "^1.2.2",
     "lodash": "^4.17.21",
-    "react": "~17.0.0",
-    "react-dom": "^17.0.2",
-    "string-similarity": "^4.0.4"
+    "string-similarity": "^4.0.4",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

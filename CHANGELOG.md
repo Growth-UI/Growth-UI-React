@@ -1,3 +1,8 @@
+## [1.17.2](https://github.com/Growth-UI/Growth-UI-React/compare/v1.17.1...v1.17.2) (2022-04-04)
+
+### 🐛  Fixes
+* fix: fix peerDependencies ([b29e734](https://github.com/Growth-UI/Growth-UI-React/commit/b29e734a00aba21575b2581d1d152725d6d01745))
+
 ## [1.17.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.17.0...v1.17.1) (2022-03-01)
 
 ### 🐛  Fixes

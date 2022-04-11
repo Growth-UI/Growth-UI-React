@@ -109,6 +109,7 @@ export const ICONS: GrowthICONS[] = [
   'share',
   'ship',
   'shipping',
+  'shop',
   'shopping bag',
   'speaker phone',
   'star',

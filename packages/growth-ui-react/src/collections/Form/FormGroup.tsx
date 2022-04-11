@@ -1,4 +1,4 @@
-import React, { Children, cloneElement, CSSProperties, FC, isValidElement } from 'react';
+import React, { Children, cloneElement, CSSProperties, FC, isValidElement, ReactNode } from 'react';
 import styled from 'styled-components';
 
 export const StyledFormGroup = styled.div<FormGroupProps>`
@@ -38,6 +38,9 @@ export interface FormGroupProps extends StrictFormGroupProps {
 
 // ======================================================
 export interface StrictFormGroupProps {
+  /** Primary content. */
+  children?: ReactNode;
+
   /** Additional classes. */
   className?: string;
 

@@ -4,7 +4,7 @@ import FormGroup from './FormGroup';
 import FormInput from './FormInput';
 import FormSelect from './FormSelect';
 import FormTextArea from './FormTextArea';
-import React, { Children, cloneElement, CSSProperties, FC, isValidElement } from 'react';
+import React, { Children, cloneElement, CSSProperties, FC, isValidElement, ReactNode } from 'react';
 import styled from 'styled-components';
 import { FONTSIZES } from '../../types';
 
@@ -55,6 +55,9 @@ export interface FormProps extends StrictFormProps {
 
 // ======================================================
 export interface StrictFormProps {
+  /** Primary content. */
+  children?: ReactNode;
+
   /** Additional classes. */
   className?: string;
 

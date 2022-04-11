@@ -1,7 +1,7 @@
 import AccordionContent from './AccordionContent';
 import AccordionPanel, { AccordionPanelProps } from './AccordionPanel';
 import AccordionTitle from './AccordionTitle';
-import React, { Children, cloneElement, FC, isValidElement, MouseEvent, useEffect, useState } from 'react';
+import React, { Children, cloneElement, FC, isValidElement, MouseEvent, ReactNode, useEffect, useState } from 'react';
 import styled, { CSSProperties } from 'styled-components';
 import { includes, invoke, without } from 'lodash';
 
@@ -111,6 +111,9 @@ export interface AccordionProps extends StrictAccordionProps {
 
 // ======================================================
 export interface StrictAccordionProps {
+  /** Primary content. */
+  children?: ReactNode;
+
   /** Additional classes. */
   className?: string;
 

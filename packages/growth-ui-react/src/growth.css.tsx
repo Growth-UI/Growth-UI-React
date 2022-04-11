@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode } from 'react';
+import React, { FC, ReactElement, ReactNode } from 'react';
 import theme from './theme';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { useColorSchemePreference } from './lib';
@@ -230,7 +230,7 @@ const GlobalStyle = createGlobalStyle<GrowthStyleProps>`
   ${({ globalStyle }) => globalStyle}
 `;
 
-const GrowthStyle = (props: GrowthStyleProps): ReactElement => {
+const GrowthStyle: FC<GrowthStyleProps> = (props): ReactElement => {
   const { autoDarkMode = false, children, darkMode, theme: _theme = {}, ...rest } = props;
 
   const scheme = useColorSchemePreference();

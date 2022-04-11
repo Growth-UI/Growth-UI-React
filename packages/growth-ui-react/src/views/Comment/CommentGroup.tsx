@@ -1,4 +1,4 @@
-import React, { Children, cloneElement, FC, isValidElement } from 'react';
+import React, { Children, cloneElement, FC, isValidElement, ReactNode } from 'react';
 import styled from 'styled-components';
 
 export const StyledCommentGroup = styled.div<CommentGroupProps>`
@@ -30,6 +30,9 @@ export interface CommentGroupProps extends StrictCommentGroupProps {
 
 // ======================================================
 export interface StrictCommentGroupProps {
+  /** Primary content. */
+  children?: ReactNode;
+
   /** Additional classes. */
   className?: string;
 

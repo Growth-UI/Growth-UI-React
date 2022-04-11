@@ -13,7 +13,7 @@ import { cx } from './classNameBuilders';
  * @param {ReactChildren} children A React children
  * @param {object} options Props to pass
  */
-export const createChildren = (children: ReactChildren | ReactNode | JSX.Element, options: Record<string, any> = {}) =>
+export const createChildren = (children: ReactNode | readonly ReactNode[], options: Record<string, any> = {}) =>
   Children.map(children, (child) => {
     if (isValidElement(child)) {
       const { overrideProps = {}, ...defaultProps } = options;

@@ -10,6 +10,7 @@ export const StyledListItem = styled.li<ListItemProps>`
   transition: all 200ms ease-out;
   transition-property: background, padding-left, padding-top;
   padding: 0.5em 0;
+  list-style: none;
 
   ${({ active }) =>
     active &&

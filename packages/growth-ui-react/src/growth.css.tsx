@@ -58,10 +58,6 @@ const GlobalStyle = createGlobalStyle<GrowthStyleProps>`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
-  ul,
-  li {
-    list-style: none;
-  }
   body {
     background: var(--bg);
     color: var(--text);

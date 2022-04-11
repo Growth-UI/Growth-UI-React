@@ -1,3 +1,12 @@
+## [1.19.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.18.1...v1.19.0) (2022-04-11)
+
+### 🐛  Fixes
+* fix: back to react 17 from 18 ([46103d9](https://github.com/Growth-UI/Growth-UI-React/commit/46103d98766e80405077b0688ab39b9b770a7603))
+* fix: revert react version back to 17 from 18 ([62b0ff2](https://github.com/Growth-UI/Growth-UI-React/commit/62b0ff2c1ca51443db91c02352097521d76260da))
+
+### 🚀  Features
+* feat: merge ([5838e97](https://github.com/Growth-UI/Growth-UI-React/commit/5838e974ad5b31476be2aabeb9d680a583a69e90))
+
 ## [1.18.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.18.0...v1.18.1) (2022-04-11)
 
 ### 🐛  Fixes

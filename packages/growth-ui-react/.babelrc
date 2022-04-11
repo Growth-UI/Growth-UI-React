@@ -30,7 +30,7 @@
       }
     ],
     "lodash",
-    "@babel/plugin-transform-runtime",
-    "babel-plugin-styled-components"
+    "styled-components",
+    "@babel/plugin-transform-runtime"
   ]
 }

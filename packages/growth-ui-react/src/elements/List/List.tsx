@@ -9,6 +9,8 @@ import { COLORS } from '../../types';
 import { createChildren } from '../../lib';
 
 export const StyledList = styled.ul<ListProps>`
+  list-style: none;
+
   /* Bulleted */
   ${({ bulleted }) =>
     bulleted &&

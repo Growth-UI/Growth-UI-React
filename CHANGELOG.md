@@ -1,3 +1,8 @@
+## [1.18.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.18.0...v1.18.1) (2022-04-11)
+
+### 🐛  Fixes
+* fix: fix styled-components and react dependencies issues ([7bc5610](https://github.com/Growth-UI/Growth-UI-React/commit/7bc561056104305175eb284c4ac93b4d3d526aed))
+
 ## [1.18.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.17.2...v1.18.0) (2022-04-11)
 
 ### 🚀  Features

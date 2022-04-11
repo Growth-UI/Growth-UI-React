@@ -84,6 +84,7 @@ import Settings from './Settings';
 import Share from './Share';
 import Ship from './Ship';
 import Shipping from './Shipping';
+import Shop from './Shop';
 import ShoppingBag from './ShoppingBag';
 import SpeakerPhone from './SpeakerPhone';
 import Star from './Star';
@@ -299,6 +300,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Ship {...rest} style={style} />;
     case 'shipping':
       return <Shipping {...rest} style={style} />;
+    case 'shop':
+      return <Shop {...rest} style={style} />;
     case 'shopping bag':
       return <ShoppingBag {...rest} style={style} />;
     case 'speaker phone':

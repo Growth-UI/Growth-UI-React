@@ -1,3 +1,9 @@
+## [1.19.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.19.0...v1.19.1) (2022-04-11)
+
+### 🐛  Fixes
+* fix: merge ([4f49811](https://github.com/Growth-UI/Growth-UI-React/commit/4f4981101a262ab661c88e231c7edaca79c8531d))
+* fix: fix styled-components version issue temporarily ([6fad7ac](https://github.com/Growth-UI/Growth-UI-React/commit/6fad7ac63534da9642bb409076a9bfa2f065bab6))
+
 ## [1.19.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.18.1...v1.19.0) (2022-04-11)
 
 ### 🐛  Fixes

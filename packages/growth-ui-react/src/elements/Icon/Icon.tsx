@@ -62,6 +62,7 @@ import MastercardColor from './MastercardColor';
 import Menu from './Menu';
 import Message from './Message';
 import Newspaper from './Newspaper';
+import Nodejs from './Nodejs';
 import Notifications from './Notifications';
 import Npm from './Npm';
 import Package from './Package';
@@ -69,12 +70,14 @@ import Paperclip from './Paperclip';
 import PartlySunny from './PartlySunny';
 import PaypalColor from './PaypalColor';
 import People from './People';
+import Php from './Php';
 import PieChart from './PieChart';
 import Play from './Play';
 import PlaySkipBack from './PlaySkipBack';
 import PlaySkipForward from './PlaySkipForward';
 import PriceTag from './PriceTag';
 import PurchaseTag from './PurchaseTag';
+import Python from './Python';
 import React, { CSSProperties, FC, SVGProps, useEffect, useState } from 'react';
 import ReactLogo from './ReactLogo';
 import RefreshOutline from './RefreshOutline';
@@ -262,6 +265,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Message {...rest} style={style} />;
     case 'newspaper':
       return <Newspaper {...rest} style={style} />;
+    case 'nodejs':
+      return <Nodejs {...rest} style={style} />;
     case 'notifications':
       return <Notifications {...rest} style={style} />;
     case 'npm':
@@ -276,6 +281,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <PaypalColor {...rest} style={style} />;
     case 'people':
       return <People {...rest} style={style} />;
+    case 'php':
+      return <Php {...rest} style={style} />;
     case 'pie chart':
       return <PieChart {...rest} style={style} />;
     case 'play':
@@ -288,6 +295,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <PriceTag {...rest} style={style} />;
     case 'purchase tag':
       return <PurchaseTag {...rest} style={style} />;
+    case 'python':
+      return <Python {...rest} style={style} />;
     case 'react logo':
       return <ReactLogo {...rest} style={style} />;
     case 'refresh outline':

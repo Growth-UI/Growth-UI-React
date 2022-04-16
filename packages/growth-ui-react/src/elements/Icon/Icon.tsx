@@ -16,6 +16,7 @@ import Bookmark from './Bookmark';
 import Camera from './Camera';
 import Cart from './Cart';
 import Category from './Category';
+import ChatHelp from './ChatHelp';
 import Check from './Check';
 import ChevronDown from './ChevronDown';
 import ChevronLeft from './ChevronLeft';
@@ -29,6 +30,7 @@ import ConfirmationNumber from './ConfirmationNumber';
 import Dashboard from './Dashboard';
 import Democrat from './Democrat';
 import DiscoverColor from './DiscoverColor';
+import Documents from './Documents';
 import Donate from './Donate';
 import DotsHorizontalRounded from './DotsHorizontalRounded';
 import Download from './Download';
@@ -77,6 +79,7 @@ import React, { CSSProperties, FC, SVGProps, useEffect, useState } from 'react';
 import ReactLogo from './ReactLogo';
 import RefreshOutline from './RefreshOutline';
 import Republican from './Republican';
+import Rocket from './Rocket';
 import School from './School';
 import Search from './Search';
 import Send from './Send';
@@ -92,6 +95,7 @@ import StarFill from './StarFill';
 import StarHalf from './StarHalf';
 import Sun from './Sun';
 import SupportAgent from './SupportAgent';
+import Terminal from './Terminal';
 import ThumbsDown from './ThumbsDown';
 import ThumbsUp from './ThumbsUp';
 import ToolOutline from './ToolOutline';
@@ -166,6 +170,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Cart {...rest} style={style} />;
     case 'category':
       return <Category {...rest} style={style} />;
+    case 'chat help':
+      return <ChatHelp {...rest} style={style} />;
     case 'check':
       return <Check {...rest} style={style} />;
     case 'chevron down':
@@ -192,6 +198,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Democrat {...rest} style={style} />;
     case 'discover-c':
       return <DiscoverColor {...rest} style={style} />;
+    case 'documents':
+      return <Documents {...rest} style={style} />;
     case 'donate':
       return <Donate {...rest} style={style} />;
     case 'dots horizontal rounded':
@@ -286,6 +294,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <RefreshOutline {...rest} style={style} />;
     case 'republican':
       return <Republican {...rest} style={style} />;
+    case 'rocket':
+      return <Rocket {...rest} style={style} />;
     case 'school':
       return <School {...rest} style={style} />;
     case 'search':
@@ -316,6 +326,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Sun {...rest} style={style} />;
     case 'support agent':
       return <SupportAgent {...rest} style={style} />;
+    case 'terminal':
+      return <Terminal {...rest} style={style} />;
     case 'thumbs down':
       return <ThumbsDown {...rest} style={style} />;
     case 'thumbs up':

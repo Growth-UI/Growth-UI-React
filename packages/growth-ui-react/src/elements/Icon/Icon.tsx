@@ -1,3 +1,4 @@
+import Activity from './Activity';
 import Add from './Add';
 import Airplane from './Airplane';
 import AmexColor from './AmexColor';
@@ -10,6 +11,7 @@ import ArrowDropdown from './ArrowDropdown';
 import ArrowRightCircleFill from './ArrowRightCircleFill';
 import Aws from './Aws';
 import Bank from './Bank';
+import BarChart from './BarChart';
 import Bill from './Bill';
 import Bold from './Bold';
 import Bookmark from './Bookmark';
@@ -44,6 +46,7 @@ import FileCopyOutline from './FileCopyOutline';
 import FileOutline from './FileOutline';
 import FolderOutline from './FolderOutline';
 import Github from './Github';
+import Global from './Global';
 import Heart from './Heart';
 import Home from './Home';
 import Image from './Image';
@@ -51,12 +54,15 @@ import Inbox from './Inbox';
 import Instagram from './Instagram';
 import Install from './Install';
 import Italic from './Italic';
+import Key from './Key';
 import LabelImportant from './LabelImportant';
 import Language from './Language';
 import Link from './Link';
 import ListOl from './ListOl';
 import ListUl from './ListUl';
 import Location from './Location';
+import Lock from './Lock';
+import Log from './Log';
 import LogoutOutline from './LogoutOutline';
 import MastercardColor from './MastercardColor';
 import Menu from './Menu';
@@ -137,6 +143,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
   };
 
   switch (name) {
+    case 'activity':
+      return <Activity {...rest} style={style} />;
     case 'add':
       return <Add {...rest} style={style} />;
     case 'airplane':
@@ -161,6 +169,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Aws {...rest} style={style} />;
     case 'bank':
       return <Bank {...rest} style={style} />;
+    case 'barchart':
+      return <BarChart {...rest} style={style} />;
     case 'bill':
       return <Bill {...rest} style={style} />;
     case 'bold':
@@ -229,6 +239,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <FolderOutline {...rest} style={style} />;
     case 'github':
       return <Github {...rest} style={style} />;
+    case 'global':
+      return <Global {...rest} style={style} />;
     case 'heart':
       return <Heart {...rest} style={style} />;
     case 'home':
@@ -243,6 +255,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Install {...rest} style={style} />;
     case 'italic':
       return <Italic {...rest} style={style} />;
+    case 'key':
+      return <Key {...rest} style={style} />;
     case 'label important':
       return <LabelImportant {...rest} style={style} />;
     case 'language':
@@ -255,6 +269,10 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <ListUl {...rest} style={style} />;
     case 'location':
       return <Location {...rest} style={style} />;
+    case 'lock':
+      return <Lock {...rest} style={style} />;
+    case 'log':
+      return <Log {...rest} style={style} />;
     case 'logout outline':
       return <LogoutOutline {...rest} style={style} />;
     case 'mastercard-c':

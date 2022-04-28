@@ -39,6 +39,7 @@ export const components = [
   'padding',
   'paragraph',
   'segment',
+  'skeleton',
   'spacer',
   'stepper',
   'text-area',
@@ -99,6 +100,7 @@ export const componentByType: Record<string, string[]> = {
     'padding',
     'paragraph',
     'segment',
+    'skeleton',
     'spacer',
     'stepper',
     'text-area',
@@ -187,6 +189,9 @@ export const componentInfo: Record<
   },
   segment: {
     names: ['Segment', 'Segment.Group'],
+  },
+  skeleton: {
+    names: ['Skeleton'],
   },
   spacer: {
     names: ['Spacer'],
@@ -3741,6 +3746,34 @@ export const componentProps: Record<
       name: 'size',
       type: 'enum',
       enums: SIZES,
+    },
+  ],
+  Skeleton: [
+    {
+      description: 'Height of the skeleton',
+      name: 'height',
+      type: '{string | number}',
+    },
+    {
+      description:
+        'A skeleton that represents lines of text. It will automatically add space between each line.',
+      name: 'line',
+      type: '{boolean}',
+    },
+    {
+      description: 'Skeleton can be rounded shape',
+      name: 'rounded',
+      type: '{boolean}',
+    },
+    {
+      description: 'Width of the skeleton',
+      name: 'width',
+      type: '{string | number}',
+    },
+    {
+      description: 'Custom styles.',
+      name: 'style',
+      type: '{CSSProperties}',
     },
   ],
 };

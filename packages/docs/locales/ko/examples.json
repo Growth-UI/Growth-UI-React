@@ -1428,5 +1428,15 @@
       "title": "Size",
       "description": "Loaders can have different sizes."
     }
+  },
+  "skeleton": {
+    "heading": "Skeleton",
+    "subheading": "A skeleton is used to reserve space for content that soon will appear in a layout.",
+    "type": "elements",
+    "skeleton": {
+      "id": "skeleton",
+      "title": "Skeleton",
+      "description": "A skeleton is used to reserve space for content that soon will appear in a layout.."
+    }
   }
 }

@@ -94,6 +94,9 @@ export type { ImageProps } from './elements/Image';
 export { default as Icon } from './elements/Icon';
 export type { IconProps } from './elements/Icon';
 
+export { default as Skeleton } from './elements/Skeleton';
+export type { SkeletonProps } from './elements/Skeleton';
+
 export { default as Margin, StyledMargin } from './elements/Margin';
 export type { MarginProps } from './elements/Margin';
 

@@ -1,3 +1,8 @@
+## [1.23.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.22.0...v1.23.0) (2022-04-28)
+
+### 🚀  Features
+* feat: add new component (Skeleton) ([f87e172](https://github.com/Growth-UI/Growth-UI-React/commit/f87e1728dcc8a8dfc37279d87426a91f7ed6350a))
+
 ## [1.22.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.21.0...v1.22.0) (2022-04-17)
 
 ### 🚀  Features

@@ -527,6 +527,20 @@ export const componentProps: Record<
       },
     },
     {
+      description: 'Called on click icon.',
+      name: 'onClickIcon',
+      type: 'func',
+      func: {
+        title: '(event: MouseEvent)',
+        params: [
+          {
+            name: 'event',
+            description: "React's original SyntheticEvent.",
+          },
+        ],
+      },
+    },
+    {
       description: 'The HTML input placeholder.',
       name: 'placeholder',
       type: 'string',

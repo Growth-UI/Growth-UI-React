@@ -1,6 +1,6 @@
 import Icon from '../Icon';
 import invoke from 'lodash/invoke';
-import React, { ChangeEvent, CSSProperties, FC, forwardRef } from 'react';
+import React, { ChangeEvent, CSSProperties, FC, forwardRef, MouseEvent } from 'react';
 import styled from 'styled-components';
 import { FONTSIZES, GrowthICONS } from '../../types';
 import { partitionHTMLProps } from '../../lib';
@@ -187,6 +187,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => 
     required,
     type,
     style,
+    onClickIcon,
     ...unhandled
   } = props;
 
@@ -246,7 +247,12 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => 
     if (iconPosition === 'left') iconStyle.paddingRight = '5px';
     else iconStyle.paddingLeft = '5px';
 
-    return <Icon name={icon} style={iconStyle} />;
+    if (onClickIcon) {
+      iconStyle.cursor = 'pointer';
+      iconStyle.pointerEvents = 'auto';
+    }
+
+    return <Icon name={icon} style={iconStyle} onClick={onClickIcon} />;
   };
 
   const [htmlInputProps, rest] = inputProps();
@@ -314,6 +320,13 @@ export interface StrictInputProps {
    * @param {object} data - All props and a proposed value.
    */
   onChange?: (event: ChangeEvent<HTMLInputElement>, data: InputProps) => void;
+
+  /**
+   * Called on click icon.
+   *
+   * @param {ChangeEvent} event - React's original SyntheticEvent.
+   */
+  onClickIcon?: (event: MouseEvent) => void;
 
   /** The HTML input placeholder. */
   placeholder?: string;

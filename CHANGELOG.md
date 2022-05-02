@@ -1,3 +1,8 @@
+## [1.24.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.23.0...v1.24.0) (2022-05-02)
+
+### 🚀  Features
+* feat: add onClickIcon prop to Input ([be067ca](https://github.com/Growth-UI/Growth-UI-React/commit/be067ca2dbfdcd8c5662dfdcfd2365e1cd90b16c))
+
 ## [1.23.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.22.0...v1.23.0) (2022-04-28)
 
 ### 🚀  Features

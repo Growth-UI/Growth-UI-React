@@ -11,8 +11,8 @@ export default function Analytics(props: SVGProps<SVGSVGElement>): JSX.Element {
       focusable="false"
       role="img"
       fill="currentColor"
-      color={color}
       {...props}
+      color={color}
     >
       <title>Analytics icon</title>
       <rect width="24" height="24" fill="none"></rect>

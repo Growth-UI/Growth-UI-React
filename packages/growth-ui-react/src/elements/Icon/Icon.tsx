@@ -15,6 +15,7 @@ import BarChart from './BarChart';
 import Bill from './Bill';
 import Bold from './Bold';
 import Bookmark from './Bookmark';
+import Browser from './Browser';
 import Camera from './Camera';
 import Cart from './Cart';
 import Category from './Category';
@@ -83,6 +84,7 @@ import PlaySkipBack from './PlaySkipBack';
 import PlaySkipForward from './PlaySkipForward';
 import PriceTag from './PriceTag';
 import PurchaseTag from './PurchaseTag';
+import Puzzle from './Puzzle';
 import Python from './Python';
 import React, { CSSProperties, FC, SVGProps, useEffect, useState } from 'react';
 import ReactLogo from './ReactLogo';
@@ -91,6 +93,7 @@ import Republican from './Republican';
 import Rocket from './Rocket';
 import School from './School';
 import Search from './Search';
+import Security from './Security';
 import Send from './Send';
 import Settings from './Settings';
 import Share from './Share';
@@ -104,6 +107,7 @@ import StarFill from './StarFill';
 import StarHalf from './StarHalf';
 import Sun from './Sun';
 import SupportAgent from './SupportAgent';
+import Telescope from './Telescope';
 import Terminal from './Terminal';
 import ThumbsDown from './ThumbsDown';
 import ThumbsUp from './ThumbsUp';
@@ -114,6 +118,7 @@ import TriangleUp from './TriangleUp';
 import Twitter from './Twitter';
 import Underline from './Underline';
 import User from './User';
+import VideoSecurity from './VideoSecurity';
 import VisaColor from './VisaColor';
 import Warning from './Warning';
 import Yarn from './Yarn';
@@ -177,6 +182,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Bold {...rest} style={style} />;
     case 'bookmark':
       return <Bookmark {...rest} style={style} />;
+    case 'browser':
+      return <Browser {...rest} style={style} />;
     case 'camera':
       return <Camera {...rest} style={style} />;
     case 'cart':
@@ -313,6 +320,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <PriceTag {...rest} style={style} />;
     case 'purchase tag':
       return <PurchaseTag {...rest} style={style} />;
+    case 'puzzle':
+      return <Puzzle {...rest} style={style} />;
     case 'python':
       return <Python {...rest} style={style} />;
     case 'react logo':
@@ -327,6 +336,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <School {...rest} style={style} />;
     case 'search':
       return <Search {...rest} style={style} />;
+    case 'security':
+      return <Security {...rest} style={style} />;
     case 'send':
       return <Send {...rest} style={style} />;
     case 'settings':
@@ -353,6 +364,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Sun {...rest} style={style} />;
     case 'support agent':
       return <SupportAgent {...rest} style={style} />;
+    case 'telescope':
+      return <Telescope {...rest} style={style} />;
     case 'terminal':
       return <Terminal {...rest} style={style} />;
     case 'thumbs down':
@@ -373,6 +386,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Underline {...rest} style={style} />;
     case 'user':
       return <User {...rest} style={style} />;
+    case 'video security':
+      return <VideoSecurity {...rest} style={style} />;
     case 'visa-c':
       return <VisaColor {...rest} style={style} />;
     case 'warning':

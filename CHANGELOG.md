@@ -1,3 +1,8 @@
+## [1.26.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.25.0...v1.26.0) (2022-05-16)
+
+### 🚀  Features
+* feat: add flag component ([e44ffc3](https://github.com/Growth-UI/Growth-UI-React/commit/e44ffc35be4b39666f9f5836cb345ce6b5625fbe))
+
 ## [1.25.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.24.0...v1.25.0) (2022-05-03)
 
 ### 🚀  Features

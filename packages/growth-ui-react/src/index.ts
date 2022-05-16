@@ -55,6 +55,8 @@ export { default as Segment, StyledSegment, StyledSegmentGroup } from './element
 export type { SegmentProps, SegmentGroupProps } from './elements/Segment';
 export { default as Spacer, StyledSpacer } from './elements/Spacer';
 export type { SpacerProps } from './elements/Spacer';
+export { default as Flag, StyledFlag, countryOptions, countryToFlag } from './elements/Flag';
+export type { FlagProps } from './elements/Flag';
 export { default as Chip, StyledChip, StyledChipDetail } from './elements/Chip';
 export { default as Loader, StyledLoader } from './elements/Loader';
 export type { ChipProps, ChipDetailProps } from './elements/Chip';

@@ -1438,5 +1438,15 @@
       "title": "Skeleton",
       "description": "A skeleton is used to reserve space for content that soon will appear in a layout.."
     }
+  },
+  "flag": {
+    "heading": "Flag",
+    "subheading": "A flag is is used to represent a political state.",
+    "type": "elements",
+    "flag": {
+      "id": "flag",
+      "title": "Flag",
+      "description": "A flag is is used to represent a political state."
+    }
   }
 }

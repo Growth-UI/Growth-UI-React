@@ -11,6 +11,7 @@ import {
   POSITIONS,
   WIDTHS,
   DATE_MASK,
+  COUNTRIES,
 } from '@growth-ui/react/lib/GUI';
 
 export const templates = ['Dashboard', 'Signin', 'Signup'];
@@ -28,6 +29,7 @@ export const components = [
   'chip',
   'container',
   'divider',
+  'flag',
   'heading',
   'icon',
   'input',
@@ -89,6 +91,7 @@ export const componentByType: Record<string, string[]> = {
     'chip',
     'container',
     'divider',
+    'flag',
     'heading',
     'icon',
     'image',
@@ -148,6 +151,9 @@ export const componentInfo: Record<
   },
   divider: {
     names: ['Divider'],
+  },
+  flag: {
+    names: ['Flag'],
   },
   heading: {
     names: ['Heading', 'Heading.Content'],
@@ -3788,6 +3794,19 @@ export const componentProps: Record<
       description: 'Custom styles.',
       name: 'style',
       type: '{CSSProperties}',
+    },
+  ],
+  Flag: [
+    {
+      description: 'Additional classes',
+      name: 'className',
+      type: '{string}',
+    },
+    {
+      description: 'Country name.',
+      name: 'country',
+      type: 'enum',
+      enums: COUNTRIES,
     },
   ],
 };

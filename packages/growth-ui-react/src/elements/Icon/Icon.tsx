@@ -7,6 +7,7 @@ import AngleDoubleLeft from './AngleDoubleLeft';
 import AngleDoubleRight from './AngleDoubleRight';
 import Apple from './Apple';
 import ApplePayColor from './ApplePayColor';
+import Archive from './Archive';
 import ArrowDropdown from './ArrowDropdown';
 import ArrowRightCircleFill from './ArrowRightCircleFill';
 import Aws from './Aws';
@@ -86,11 +87,13 @@ import PriceTag from './PriceTag';
 import PurchaseTag from './PurchaseTag';
 import Puzzle from './Puzzle';
 import Python from './Python';
+import Question from './Question';
 import React, { CSSProperties, FC, SVGProps, useEffect, useState } from 'react';
 import ReactLogo from './ReactLogo';
 import RefreshOutline from './RefreshOutline';
 import Republican from './Republican';
 import Rocket from './Rocket';
+import S3 from './S3';
 import School from './School';
 import Search from './Search';
 import Security from './Security';
@@ -101,6 +104,7 @@ import Ship from './Ship';
 import Shipping from './Shipping';
 import Shop from './Shop';
 import ShoppingBag from './ShoppingBag';
+import Slack from './Slack';
 import SpeakerPhone from './SpeakerPhone';
 import Star from './Star';
 import StarFill from './StarFill';
@@ -166,6 +170,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Apple {...rest} style={style} />;
     case 'applepay-c':
       return <ApplePayColor {...rest} style={style} />;
+    case 'archive':
+      return <Archive {...rest} style={style} />;
     case 'arrow dropdown':
       return <ArrowDropdown {...rest} style={style} />;
     case 'arrow right circle fill':
@@ -324,6 +330,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Puzzle {...rest} style={style} />;
     case 'python':
       return <Python {...rest} style={style} />;
+    case 'question':
+      return <Question {...rest} style={style} />;
     case 'react logo':
       return <ReactLogo {...rest} style={style} />;
     case 'refresh outline':
@@ -332,6 +340,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Republican {...rest} style={style} />;
     case 'rocket':
       return <Rocket {...rest} style={style} />;
+    case 's3':
+      return <S3 {...rest} style={style} />;
     case 'school':
       return <School {...rest} style={style} />;
     case 'search':
@@ -352,6 +362,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Shop {...rest} style={style} />;
     case 'shopping bag':
       return <ShoppingBag {...rest} style={style} />;
+    case 'slack':
+      return <Slack {...rest} style={style} />;
     case 'speaker phone':
       return <SpeakerPhone {...rest} style={style} />;
     case 'star':

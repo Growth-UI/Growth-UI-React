@@ -1,3 +1,8 @@
+## [1.27.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.26.0...v1.27.0) (2022-05-21)
+
+### 🚀  Features
+* feat: add new icons ([ed92948](https://github.com/Growth-UI/Growth-UI-React/commit/ed92948691238d1ae613ec67e2c75f2918fd7855))
+
 ## [1.26.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.25.0...v1.26.0) (2022-05-16)
 
 ### 🚀  Features

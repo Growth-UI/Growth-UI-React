@@ -49,12 +49,12 @@ const SelectTypesExamples = () => {
         examplePath="modules/Select/SelectExampleDefaultValue"
       />
 
-      <ComponentExample
+      {/* <ComponentExample
         id={t('examples:select.examples.id')}
         title={t('examples:select.examples.title')}
         description={t('examples:select.examples.description')}
         examplePath="modules/Select/SelectExampleExamples"
-      />
+      /> */}
     </>
   );
 };

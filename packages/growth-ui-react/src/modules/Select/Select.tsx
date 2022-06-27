@@ -141,7 +141,6 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
   const {
     children,
     clearable,
-    defaultValue,
     disabled,
     feedback,
     label,
@@ -158,7 +157,7 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
     open,
     searchQuery: '',
     selectedIndex: -1,
-    activeValues: value || multiple ? [...((defaultValue as any) || [])] : defaultValue,
+    activeValues: value,
     focus: false,
   });
 
@@ -662,7 +661,7 @@ export interface StrictSelectProps {
   clearable?: boolean;
 
   /** Initial value or value array if multiple. */
-  defaultValue?: SelectItemProps['value'] | SelectItemProps['value'][];
+  // defaultValue?: SelectItemProps['value'] | SelectItemProps['value'][];
 
   /** A disabled select menu or item does not allow user interaction. */
   disabled?: boolean;

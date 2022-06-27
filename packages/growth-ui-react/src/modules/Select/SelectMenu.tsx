@@ -31,7 +31,7 @@ export const StyledSelectMenu = styled.div<SelectMenuProps>`
   `}
 
   ${({ scrolling }) =>
-    scrolling &&
+    (scrolling as any) === 'true' &&
     `
     max-height: 15.42857143rem;
     overflow-x: hidden;
@@ -40,9 +40,13 @@ export const StyledSelectMenu = styled.div<SelectMenuProps>`
 `;
 
 const SelectMenu: FC<SelectMenuProps> & SelectMenuComponents = (props) => {
-  const { children, ...rest } = props;
+  const { children, scrolling, ...rest } = props;
 
-  return <StyledSelectMenu {...rest}>{children}</StyledSelectMenu>;
+  return (
+    <StyledSelectMenu scrolling={String(scrolling)} {...rest}>
+      {children}
+    </StyledSelectMenu>
+  );
 };
 
 SelectMenu.create = createShorthandFactory(SelectMenu);

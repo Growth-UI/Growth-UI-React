@@ -1,3 +1,11 @@
+## [1.28.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.27.0...v1.28.0) (2022-06-27)
+
+### 🐛  Fixes
+* fix: fix default value issue with Select ([4d25600](https://github.com/Growth-UI/Growth-UI-React/commit/4d2560003a7da898558b2874f64b6d1394da0d0f))
+
+### 🚀  Features
+* feat: add icons ([5b2726a](https://github.com/Growth-UI/Growth-UI-React/commit/5b2726a05711734d4ba23cd8cb3391e520a0bbe0))
+
 ## [1.27.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.26.0...v1.27.0) (2022-05-21)
 
 ### 🚀  Features

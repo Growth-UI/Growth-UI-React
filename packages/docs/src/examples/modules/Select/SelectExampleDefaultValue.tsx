@@ -12,9 +12,9 @@ const options = times(5).map((n) => ({
 
 const SelectExampleDefaultValue = () => (
   <>
-    <Select defaultValue={[0, 2]} multiple options={options} label="Friends" />
+    <Select value={[0, 2]} multiple options={options} label="Friends" />
     <Spacer size={30} />
-    <Select defaultValue={0} options={options} label="Friends" />
+    <Select value={0} options={options} label="Friends" />
   </>
 );
 

@@ -30,8 +30,10 @@ import Close from './Close';
 import Codepen from './Codepen';
 import CodeSlash from './CodeSlash';
 import Comment from './Comment';
+import Cookie from './Cookie';
 import ConfirmationNumber from './ConfirmationNumber';
 import Dashboard from './Dashboard';
+import Dashboard2 from './Dashboard2';
 import Democrat from './Democrat';
 import DiscoverColor from './DiscoverColor';
 import Documents from './Documents';
@@ -216,10 +218,14 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <CodeSlash {...rest} style={style} />;
     case 'comment':
       return <Comment {...rest} style={style} />;
+    case 'cookie':
+      return <Cookie {...rest} style={style} />;
     case 'confirmation number':
       return <ConfirmationNumber {...rest} style={style} />;
     case 'dashboard':
       return <Dashboard {...rest} style={style} />;
+    case 'dashboard2':
+      return <Dashboard2 {...rest} style={style} />;
     case 'democrat':
       return <Democrat {...rest} style={style} />;
     case 'discover-c':

@@ -98,6 +98,7 @@ import Rocket from './Rocket';
 import S3 from './S3';
 import School from './School';
 import Search from './Search';
+import SearchMenu from './SearchMenu';
 import Security from './Security';
 import Send from './Send';
 import Settings from './Settings';
@@ -352,6 +353,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <School {...rest} style={style} />;
     case 'search':
       return <Search {...rest} style={style} />;
+    case 'search menu':
+      return <SearchMenu {...rest} style={style} />;
     case 'security':
       return <Security {...rest} style={style} />;
     case 'send':

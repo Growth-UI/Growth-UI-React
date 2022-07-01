@@ -123,6 +123,7 @@ export const ICONS: GrowthICONS[] = [
   's3',
   'school',
   'search',
+  'search menu',
   'security',
   'send',
   'settings',

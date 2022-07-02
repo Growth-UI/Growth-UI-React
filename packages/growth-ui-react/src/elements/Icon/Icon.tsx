@@ -34,6 +34,7 @@ import Cookie from './Cookie';
 import ConfirmationNumber from './ConfirmationNumber';
 import Dashboard from './Dashboard';
 import Dashboard2 from './Dashboard2';
+import DatabaseSearch from './DatabaseSearch';
 import Democrat from './Democrat';
 import DiscoverColor from './DiscoverColor';
 import Documents from './Documents';
@@ -99,6 +100,7 @@ import S3 from './S3';
 import School from './School';
 import Search from './Search';
 import SearchMenu from './SearchMenu';
+import SearchOutline from './SearchOutline';
 import Security from './Security';
 import Send from './Send';
 import Settings from './Settings';
@@ -227,6 +229,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Dashboard {...rest} style={style} />;
     case 'dashboard2':
       return <Dashboard2 {...rest} style={style} />;
+    case 'database search':
+      return <DatabaseSearch {...rest} style={style} />;
     case 'democrat':
       return <Democrat {...rest} style={style} />;
     case 'discover-c':
@@ -355,6 +359,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Search {...rest} style={style} />;
     case 'search menu':
       return <SearchMenu {...rest} style={style} />;
+    case 'search outline':
+      return <SearchOutline {...rest} style={style} />;
     case 'security':
       return <Security {...rest} style={style} />;
     case 'send':

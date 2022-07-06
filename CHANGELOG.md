@@ -1,3 +1,8 @@
+## [1.30.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.30.0...v1.30.1) (2022-07-06)
+
+### 🐛  Fixes
+* fix: fix active item z-index ([f8de151](https://github.com/Growth-UI/Growth-UI-React/commit/f8de151ea56f7ea7c1ac3022a97656cd512abafd))
+
 ## [1.30.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.29.0...v1.30.0) (2022-07-02)
 
 ### 🚀  Features

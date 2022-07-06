@@ -557,6 +557,7 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
         <Paragraph
           style={{
             position: 'absolute',
+            zIndex: 10,
           }}
         >
           {activeItem?.text}

@@ -1,3 +1,11 @@
+## [1.31.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.30.2...v1.31.0) (2022-07-08)
+
+### 🐛  Fixes
+* fix: merge ([cdc8448](https://github.com/Growth-UI/Growth-UI-React/commit/cdc84485ca6abd0c85e11b232b014471b32bfc88))
+
+### 🚀  Features
+* feat: add custom style features for feed, label, and adorment element ([76bff5d](https://github.com/Growth-UI/Growth-UI-React/commit/76bff5d9e906b2b133ca909443531d69717f2835))
+
 ## [1.30.2](https://github.com/Growth-UI/Growth-UI-React/compare/v1.30.1...v1.30.2) (2022-07-08)
 
 ### 🐛  Fixes

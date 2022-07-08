@@ -1,3 +1,8 @@
+## [1.30.2](https://github.com/Growth-UI/Growth-UI-React/compare/v1.30.1...v1.30.2) (2022-07-08)
+
+### 🐛  Fixes
+* fix: fix transition effect ([56bedc4](https://github.com/Growth-UI/Growth-UI-React/commit/56bedc43e998cd884ac212bb77d535ab8f79c997))
+
 ## [1.30.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.30.0...v1.30.1) (2022-07-06)
 
 ### 🐛  Fixes

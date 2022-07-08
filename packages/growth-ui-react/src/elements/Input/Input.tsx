@@ -33,7 +33,7 @@ export const Label = styled.span`
   color: var(--light-text);
   padding: 0 5px;
   width: calc(100% - 1em);
-  transition: font-size ${DURATION}ms, bottom ${DURATION}ms, color ${DURATION}ms ease-out;
+  transition: all ${DURATION}ms linear;
   background: inherit;
   pointer-events: none;
 `;
@@ -44,7 +44,7 @@ export const StyledInput = styled.div<InputProps>`
   width: 100%;
   border-radius: 0.28571429rem;
   border: 1px solid var(--border);
-  transition: border-color ${DURATION}ms ease-out;
+  transition: border-color ${DURATION}ms linear;
   font-size: ${({ size }) => (size ? `var(--text-${size})` : 'var(--text-base)')};
 
   & > div {

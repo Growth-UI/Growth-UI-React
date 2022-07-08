@@ -79,7 +79,7 @@ export const StyledInput = styled.div<InputProps>`
   & input:focus ~ ${Label}, & input:placeholder-shown ~ ${Label}, & input:valid ~ ${Label} {
     width: fit-content;
     font-size: 85%;
-    bottom: calc(100% - 0.5em);
+    bottom: 100%;
     transform: translateY(0);
   }
 
@@ -124,7 +124,7 @@ export const StyledInput = styled.div<InputProps>`
     `
     & ${Label} {
       font-size: 77%;
-      bottom: calc(100% - 0.5em);
+      bottom: 100%;
       transform: translateY(0);
       width: fit-content;
     }
@@ -180,6 +180,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => 
   const {
     children,
     label,
+    labelStyle,
     disabled,
     feedback,
     fluid,
@@ -211,18 +212,22 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => 
 
   // =========== Renderer =============
   const renderAdornment = () => {
-    const { adornment, error } = props;
+    const { adornment, adornmentStyle, error } = props;
 
     if (!adornment) return null;
 
-    return <Adornment error={error}>{adornment}</Adornment>;
+    return (
+      <Adornment error={error} style={adornmentStyle}>
+        {adornment}
+      </Adornment>
+    );
   };
 
   const renderLabel = () => {
     if (!label) return null;
 
     return (
-      <Label>
+      <Label style={labelStyle}>
         {label}
         {required && <span style={{ paddingLeft: '0.1em' }}>*</span>}
       </Label>
@@ -232,7 +237,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => 
   const renderFeedback = () => {
     if (!feedback) return null;
 
-    return <Feedback>{feedback}</Feedback>;
+    const { feedbackStyle } = props;
+
+    return <Feedback style={feedbackStyle}>{feedback}</Feedback>;
   };
 
   const renderIcon = () => {
@@ -283,6 +290,9 @@ export interface StrictInputProps {
   /** This can be used to add a prefix, a suffix or an action to an element. */
   adornment?: any;
 
+  /** Custom adornment styles. */
+  adornmentStyle?: CSSProperties;
+
   /** Basic looking. */
   basic?: boolean;
 
@@ -298,6 +308,9 @@ export interface StrictInputProps {
   /** Feedback to the user about the error. */
   feedback?: string;
 
+  /** Custom feedback styles. */
+  feedbackStyle?: CSSProperties;
+
   /** An Input's background can be filled.  */
   filled?: boolean;
 
@@ -312,6 +325,9 @@ export interface StrictInputProps {
 
   /** The label of the input used for layout. */
   label?: any;
+
+  /** Custom label styles. */
+  labelStyle?: CSSProperties;
 
   /**
    * Called on change.

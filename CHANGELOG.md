@@ -1,3 +1,8 @@
+## [1.32.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.31.0...v1.32.0) (2022-07-09)
+
+### 🚀  Features
+* feat: add flexibility in prop types ([55a342c](https://github.com/Growth-UI/Growth-UI-React/commit/55a342c91fccb8eda2813b6f475931afd39c3ed3))
+
 ## [1.31.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.30.2...v1.31.0) (2022-07-08)
 
 ### 🐛  Fixes

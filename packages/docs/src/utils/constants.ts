@@ -979,15 +979,20 @@ export const componentProps: Record<
     {
       description: 'Color of the paragraph.',
       name: 'color',
-      type: 'enum',
+      type: 'enum | string',
       enums: COLORS,
     },
     {
       description: 'A paragraph may appear at different sizes.',
       name: 'fontSize',
-      type: 'enum',
+      type: 'enum | number',
       enums: FONTSIZES,
       defaultValue: 'base',
+    },
+    {
+      description: 'A paragraph may appear at different thickness.',
+      name: 'fontWeight',
+      type: 'number',
     },
     {
       description:

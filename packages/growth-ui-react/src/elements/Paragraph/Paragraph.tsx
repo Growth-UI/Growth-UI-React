@@ -1,11 +1,20 @@
 import React, { CSSProperties, FC } from 'react';
 import styled from 'styled-components';
-import { COLORS, FONTSIZES, LINEHEIGHTS, TEXTALIGNMENTS } from '../../types';
+import { COLORS } from '../../lib/GUI';
+import { COLORS as TCOLORS, FONTSIZES, LINEHEIGHTS, TEXTALIGNMENTS } from '../../types';
 import { createShorthandFactory } from '../../lib';
+import { includes } from 'lodash';
 
 export const StyledParagraph = styled.p<ParagraphProps>`
-  ${({ color }) => color && `color: var(--color-${color});`}
-  font-size: ${({ fontSize }) => `var(--text-${fontSize || 'base'})`};
+  color: ${({ color }) => {
+    if (includes(COLORS, color)) return `var(--color-${color})`;
+    return color;
+  }};
+  font-size: ${({ fontSize }) => {
+    if (typeof fontSize === 'number') return `${fontSize}px`;
+    return `var(--text-${fontSize || 'base'})`;
+  }};
+  font-weight: ${({ fontWeight = 400 }) => fontWeight};
   text-align: ${({ textAlign }) => textAlign || 'left'};
   line-height: ${({ lineHeight }) => (lineHeight ? `var(--${lineHeight})` : 'var(--leading-normal)')};
 `;
@@ -33,10 +42,13 @@ export interface StrictParagraphProps {
   className?: string;
 
   /** Color of the paragraph. */
-  color?: COLORS;
+  color?: TCOLORS | string;
 
   /** A paragraph may appear at different sizes. */
-  fontSize?: FONTSIZES;
+  fontSize?: FONTSIZES | number;
+
+  /** A paragraph may appear at different thickness. */
+  fontWeight?: number;
 
   /** A paragraph may control the leading (line height) of an element. */
   lineHeight?: LINEHEIGHTS;

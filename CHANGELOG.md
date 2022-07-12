@@ -1,3 +1,9 @@
+## [1.32.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.32.0...v1.32.1) (2022-07-12)
+
+### 🐛  Fixes
+* fix: merged before push ([5b632f7](https://github.com/Growth-UI/Growth-UI-React/commit/5b632f72117dcf0ac50598c23bbf18d2d422b88e))
+* fix: fix Input label position on focused ([cb2ee85](https://github.com/Growth-UI/Growth-UI-React/commit/cb2ee85c185a67dbdf8427e7b93ef5e8cff660e1))
+
 ## [1.32.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.31.0...v1.32.0) (2022-07-09)
 
 ### 🚀  Features

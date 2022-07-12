@@ -79,7 +79,7 @@ export const StyledInput = styled.div<InputProps>`
   & input:focus ~ ${Label}, & input:placeholder-shown ~ ${Label}, & input:valid ~ ${Label} {
     width: fit-content;
     font-size: 85%;
-    bottom: 100%;
+    bottom: calc(100% - 0.5em);
     transform: translateY(0);
   }
 
@@ -124,7 +124,7 @@ export const StyledInput = styled.div<InputProps>`
     `
     & ${Label} {
       font-size: 77%;
-      bottom: 100%;
+      bottom: calc(100% - 0.5em);
       transform: translateY(0);
       width: fit-content;
     }

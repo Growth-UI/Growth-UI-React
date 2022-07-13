@@ -95,7 +95,8 @@ export const StyledInput = styled.div<InputProps>`
     border: none !important;
     
     & input,
-    & svg {
+    & svg,
+    ${Adornment} {
       padding-top: 0.5em;
     }
     & input:focus ~ ${Label}, 
@@ -178,6 +179,7 @@ export const Wrapper = styled.div<{ fluid?: boolean }>`
 
 const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => {
   const {
+    adornmentPosition = 'left',
     children,
     label,
     labelStyle,
@@ -269,8 +271,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, forwardedRef) => 
       <StyledInput {...rest}>
         <div>
           {iconPosition === 'left' && renderIcon()}
-          {renderAdornment()}
+          {adornmentPosition === 'left' && renderAdornment()}
           {children || <input {...htmlInputProps} ref={forwardedRef} required />}
+          {adornmentPosition === 'right' && renderAdornment()}
           {iconPosition === 'right' && renderIcon()}
           {renderLabel()}
         </div>
@@ -289,6 +292,9 @@ export interface InputProps extends StrictInputProps {
 export interface StrictInputProps {
   /** This can be used to add a prefix, a suffix or an action to an element. */
   adornment?: any;
+
+  /** An adornment can appear inside an Input on the left or right. */
+  adornmentPosition?: 'left' | 'right';
 
   /** Custom adornment styles. */
   adornmentStyle?: CSSProperties;

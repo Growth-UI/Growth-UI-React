@@ -463,6 +463,13 @@ export const componentProps: Record<
       type: 'string',
     },
     {
+      description:
+        'An adornment can appear inside an Input on the left or right.',
+      name: 'adornmentPosition',
+      type: 'enum',
+      enums: ['left', 'right'],
+    },
+    {
       description: 'Basic looking.',
       name: 'basic',
       type: 'boolean',

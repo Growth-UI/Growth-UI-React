@@ -1,3 +1,8 @@
+## [1.34.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.34.0...v1.34.1) (2022-07-13)
+
+### 🐛  Fixes
+* fix: fix typeerror at renderactiveitem ('pl ([9ae8047](https://github.com/Growth-UI/Growth-UI-React/commit/9ae8047d41684b9cb10c054e047664cb478aa00d))
+
 ## [1.34.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.33.0...v1.34.0) (2022-07-13)
 
 ### 🚀  Features

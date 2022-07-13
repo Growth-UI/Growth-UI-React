@@ -552,8 +552,8 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
     const value = state.activeValues;
     const activeItem = getItemByValue(value as string | number);
 
-    if (search && activeItem && !searchQuery) {
-      searchRef.current!.placeholder = '';
+    if (search && activeItem && !searchQuery && searchRef.current) {
+      searchRef.current.placeholder = '';
 
       return (
         <Paragraph

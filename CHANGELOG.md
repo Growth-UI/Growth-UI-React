@@ -1,3 +1,8 @@
+## [1.34.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.33.0...v1.34.0) (2022-07-13)
+
+### 🚀  Features
+* feat: add closeOnChange prop for select ([533d07b](https://github.com/Growth-UI/Growth-UI-React/commit/533d07bb6af92ec6959dbb5d71e9b6082c279ea8))
+
 ## [1.33.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.32.1...v1.33.0) (2022-07-13)
 
 ### 🚀  Features

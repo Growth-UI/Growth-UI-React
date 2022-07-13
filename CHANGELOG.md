@@ -1,3 +1,8 @@
+## [1.33.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.32.1...v1.33.0) (2022-07-13)
+
+### 🚀  Features
+* feat: add adornmentPosition prop for Input ([ad934bc](https://github.com/Growth-UI/Growth-UI-React/commit/ad934bcc96c9a518d9665ce22d9e4d0bd5929e0e))
+
 ## [1.32.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.32.0...v1.32.1) (2022-07-12)
 
 ### 🐛  Fixes

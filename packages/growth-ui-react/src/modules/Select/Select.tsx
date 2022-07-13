@@ -140,7 +140,8 @@ type State = {
 const Select: FC<SelectProps> & SelectComponents = (props) => {
   const {
     children,
-    clearable,
+    clearable = false,
+    closeOnChange = true,
     disabled,
     feedback,
     label,
@@ -477,6 +478,7 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
         ...state,
         activeValues: newActiveValues,
         searchQuery: '',
+        open: closeOnChange ? !!multiple : false,
       });
 
       handleChange(e, newActiveValues);
@@ -601,7 +603,7 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
   };
 
   const renderIcon = () => {
-    if (clearable) {
+    if (clearable && (Array.isArray(state.activeValues) ? !isEmpty(state.activeValues) : !isNil(state.activeValues))) {
       return <Icon name="close" width={17} style={{ marginLeft: 'auto' }} onClick={handleIconClick} />;
     }
 
@@ -660,6 +662,9 @@ export interface StrictSelectProps {
 
   /** Using the clearable setting will let users remove their selection. */
   clearable?: boolean;
+
+  /** Close menu on change. */
+  closeOnChange?: boolean;
 
   /** Initial value or value array if multiple. */
   // defaultValue?: SelectItemProps['value'] | SelectItemProps['value'][];

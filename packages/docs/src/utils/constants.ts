@@ -2937,6 +2937,12 @@ export const componentProps: Record<
       type: 'boolean',
     },
     {
+      description: 'Close menu on change.',
+      name: 'closeOnChange',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
       description: 'Initial value or value array if multiple.',
       name: 'defaultValue',
       type: '{number|string|arrayOf}',

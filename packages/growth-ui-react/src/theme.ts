@@ -22,6 +22,7 @@ const theme = {
         laptop: '@media only screen and (min-width: 992px) and (max-width: 1199px)',
         computer: '@media only screen and (min-width: 1200px) and (max-width: 1919px)',
         widescreen: '@media only screen and (min-width: 1920px)',
+        custom: (min: number, max: number) => `@media only screen and (min-width: ${min}px) and (max-width: ${max}px)`,
       },
       minimobile: '@media only screen and (max-width: 543px)',
       mobile: '@media only screen and (max-width: 767px)',
@@ -29,6 +30,7 @@ const theme = {
       laptop: '@media only screen and (max-width: 1199px)',
       computer: '@media only screen and (max-width: 1919px)',
       widescreen: '@media only screen and (max-width: 1920px)',
+      custom: (w: number) => `@media only screen and (max-width: ${w}px)`,
     },
   },
 };

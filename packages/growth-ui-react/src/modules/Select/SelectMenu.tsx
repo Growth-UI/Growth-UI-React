@@ -11,7 +11,7 @@ export const StyledSelectMenu = styled.div<SelectMenuProps>`
   border: 1px solid #96c8da;
   border-bottom-left-radius: 0.28571429rem;
   border-bottom-right-radius: 0.28571429rem;
-  border-top: none;
+  ${({ basic }) => !basic && 'border-top: none;'}
   z-index: 1993;
 
   ${({ error }) =>

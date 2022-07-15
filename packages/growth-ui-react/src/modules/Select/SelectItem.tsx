@@ -2,7 +2,7 @@ import Paragraph from '../../elements/Paragraph';
 import React, { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 import { createShorthandFactory } from '../../lib';
-import { IconProps } from '../../elements/Icon';
+import Icon, { IconProps } from '../../elements/Icon';
 import { ImageProps } from '../../elements/Image';
 import { invoke } from 'lodash';
 
@@ -40,19 +40,26 @@ const SelectItem: FC<SelectItemProps> & SelectItemComponents = (props) => {
     invoke(props, 'onClick', e, props);
   };
 
+  const renderIcon = () => {
+    if (icon) {
+      return <Icon {...icon} />;
+    }
+  };
+
   if (children) {
     return (
       <StyledSelectItem {...rest} onClick={handleClick}>
+        {renderIcon()}
         {children}
       </StyledSelectItem>
     );
   }
 
-  const textElement = Paragraph.create(text);
+  const element = content || Paragraph.create(text);
 
   return (
     <StyledSelectItem {...rest} onClick={handleClick}>
-      {textElement}
+      {element}
     </StyledSelectItem>
   );
 };

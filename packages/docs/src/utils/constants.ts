@@ -2921,6 +2921,11 @@ export const componentProps: Record<
   ],
   Select: [
     {
+      description: 'Basic looking.',
+      name: 'basic',
+      type: 'boolean',
+    },
+    {
       description: 'Additional classes.',
       name: 'className',
       type: 'string',

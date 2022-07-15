@@ -22,6 +22,13 @@ const SelectTypesExamples = () => {
       />
 
       <ComponentExample
+        id={t('examples:select.basic.id')}
+        title={t('examples:select.basic.title')}
+        description={t('examples:select.basic.description')}
+        examplePath="modules/Select/SelectExampleBasic"
+      />
+
+      <ComponentExample
         id={t('examples:select.clearable.id')}
         title={t('examples:select.clearable.title')}
         description={t('examples:select.clearable.description')}

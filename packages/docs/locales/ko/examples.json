@@ -1123,6 +1123,11 @@
       "title": "Multiple",
       "description": "A select component can allow multiple search selections."
     },
+    "basic": {
+      "id": "basic",
+      "title": "Basic",
+      "description": "Basic looking select."
+    },
     "clearable": {
       "id": "clearable",
       "title": "Clearable",

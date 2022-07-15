@@ -48,6 +48,13 @@ export const StyledSelect = styled.div<SelectProps>`
   background: var(--bg);
   outline: none;
 
+  ${({ basic }) =>
+    basic &&
+    `
+    border: none;
+    border-bottom: 1px solid var(--border);
+  `}
+
   ${({ circular }) =>
     circular &&
     `
@@ -433,11 +440,12 @@ const Select: FC<SelectProps> & SelectComponents = (props) => {
   };
 
   const getMenuProps = () => {
-    const { circular, error, scrolling } = props;
+    const { basic, circular, error, scrolling } = props;
     const menuProps: Record<string, any> = {
       error,
       open: state.open,
       circular,
+      basic,
     };
 
     menuProps.scrolling = scrolling;
@@ -654,6 +662,9 @@ export interface SelectProps extends StrictSelectProps, SelectMenuProps {
 
 // ======================================================
 export interface StrictSelectProps {
+  /** Basic looking. */
+  basic?: boolean;
+
   /** Additional classes. */
   className?: string;
 

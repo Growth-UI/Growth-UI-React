@@ -30,6 +30,12 @@ export const StyledImage = styled.img<ImageProps>`
     float: ${floated};
   `}
 
+  ${({ fluid }) =>
+    fluid &&
+    `
+    width: 100%;
+  `}
+
   ${({ hidden }) =>
     hidden &&
     `
@@ -160,6 +166,9 @@ export interface StrictImageProps {
 
   /** An image can sit to the left or right of other content. */
   floated?: 'left' | 'right';
+
+  /** A image can take the width of its container. */
+  fluid?: boolean;
 
   /** An image can be hidden. */
   hidden?: boolean;

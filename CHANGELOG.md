@@ -1,3 +1,8 @@
+## [1.35.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.34.1...v1.35.0) (2022-07-15)
+
+### 🚀  Features
+* feat: add basic looking feature ([d58f9ea](https://github.com/Growth-UI/Growth-UI-React/commit/d58f9ea5ea7899afd204f80020bc7f865be022a7))
+
 ## [1.34.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.34.0...v1.34.1) (2022-07-13)
 
 ### 🐛  Fixes

@@ -6,6 +6,7 @@ import Analytics from './Analytics';
 import AngleDoubleLeft from './AngleDoubleLeft';
 import AngleDoubleRight from './AngleDoubleRight';
 import Apache from './Apache';
+import Apparel from './Apparel';
 import Apple from './Apple';
 import ApplePayColor from './ApplePayColor';
 import Archive from './Archive';
@@ -15,25 +16,34 @@ import Attach from './Attach';
 import Aws from './Aws';
 import Bank from './Bank';
 import BarChart from './BarChart';
+import Basketball from './Basketball';
+import Beer from './Beer';
 import Bill from './Bill';
 import Bold from './Bold';
 import Bookmark from './Bookmark';
 import Browser from './Browser';
+import Cake from './Cake';
 import Camera from './Camera';
 import Cart from './Cart';
 import Category from './Category';
+import Chair from './Apache';
 import ChatHelp from './ChatHelp';
 import Check from './Check';
 import ChevronDown from './ChevronDown';
 import ChevronLeft from './ChevronLeft';
 import ChevronRight from './ChevronRight';
 import ChevronUp from './ChevronUp';
+import Clock from './Clock';
 import Close from './Close';
+import Cloth from './Cloth';
 import Codepen from './Codepen';
 import CodeSlash from './CodeSlash';
+import Coffee from './Coffee';
+import CoffeeTogo from './CoffeeTogo';
 import Comment from './Comment';
 import Cpu from './Cpu';
 import Cookie from './Cookie';
+import Cosmetics from './Cosmetics';
 import ConfirmationNumber from './ConfirmationNumber';
 import Dashboard from './Dashboard';
 import Dashboard2 from './Dashboard2';
@@ -53,11 +63,15 @@ import Email from './Email';
 import EmailOutline from './EmailOutline';
 import ExcelFile from './ExcelFile';
 import FacebookSquare from './Facebook';
+import FastFood from './FastFood';
 import FileCopy from './FileCopy';
 import FileCopyOutline from './FileCopyOutline';
 import FileOutline from './FileOutline';
 import FilePdf from './FilePdf';
 import FolderOutline from './FolderOutline';
+import FoodBeverage from './FoodBeverage';
+import GameController from './GameController';
+import GasPump from './GasPump';
 import Github from './Github';
 import Global from './Global';
 import Heart from './Heart';
@@ -111,6 +125,7 @@ import React, { CSSProperties, FC, SVGProps, useEffect, useState } from 'react';
 import ReactLogo from './ReactLogo';
 import RefreshOutline from './RefreshOutline';
 import Republican from './Republican';
+import Restaurant from './Restaurant';
 import Rocket from './Rocket';
 import S3 from './S3';
 import School from './School';
@@ -126,6 +141,7 @@ import Shipping from './Shipping';
 import Shop from './Shop';
 import ShoppingBag from './ShoppingBag';
 import Slack from './Slack';
+import Sofa from './Sofa';
 import SpeakerPhone from './SpeakerPhone';
 import Star from './Star';
 import StarFill from './StarFill';
@@ -189,6 +205,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <AngleDoubleRight {...rest} style={style} />;
     case 'apache':
       return <Apache {...rest} style={style} />;
+    case 'apparel':
+      return <Apparel {...rest} style={style} />;
     case 'apple':
       return <Apple {...rest} style={style} />;
     case 'applepay-c':
@@ -207,6 +225,10 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Bank {...rest} style={style} />;
     case 'barchart':
       return <BarChart {...rest} style={style} />;
+    case 'basketball':
+      return <Basketball {...rest} style={style} />;
+    case 'beer':
+      return <Beer {...rest} style={style} />;
     case 'bill':
       return <Bill {...rest} style={style} />;
     case 'bold':
@@ -215,12 +237,16 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Bookmark {...rest} style={style} />;
     case 'browser':
       return <Browser {...rest} style={style} />;
+    case 'cake':
+      return <Cake {...rest} style={style} />;
     case 'camera':
       return <Camera {...rest} style={style} />;
     case 'cart':
       return <Cart {...rest} style={style} />;
     case 'category':
       return <Category {...rest} style={style} />;
+    case 'chair':
+      return <Chair {...rest} style={style} />;
     case 'chat help':
       return <ChatHelp {...rest} style={style} />;
     case 'check':
@@ -233,18 +259,28 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <ChevronRight {...rest} style={style} />;
     case 'chevron up':
       return <ChevronUp {...rest} style={style} />;
+    case 'clock':
+      return <Clock {...rest} style={style} />;
     case 'close':
       return <Close {...rest} style={style} />;
+    case 'cloth':
+      return <Cloth {...rest} style={style} />;
     case 'codepen':
       return <Codepen {...rest} style={style} />;
     case 'code slash':
       return <CodeSlash {...rest} style={style} />;
+    case 'coffee':
+      return <Coffee {...rest} style={style} />;
+    case 'coffee togo':
+      return <CoffeeTogo {...rest} style={style} />;
     case 'comment':
       return <Comment {...rest} style={style} />;
     case 'cpu':
       return <Cpu {...rest} style={style} />;
     case 'cookie':
       return <Cookie {...rest} style={style} />;
+    case 'cosmetics':
+      return <Cosmetics {...rest} style={style} />;
     case 'confirmation number':
       return <ConfirmationNumber {...rest} style={style} />;
     case 'dashboard':
@@ -283,6 +319,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <ExcelFile {...rest} style={style} />;
     case 'facebook':
       return <FacebookSquare {...rest} style={style} />;
+    case 'fastfood':
+      return <FastFood {...rest} style={style} />;
     case 'file copy':
       return <FileCopy {...rest} style={style} />;
     case 'file copy outline':
@@ -293,6 +331,12 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <FilePdf {...rest} style={style} />;
     case 'folder outline':
       return <FolderOutline {...rest} style={style} />;
+    case 'food beverage':
+      return <FoodBeverage {...rest} style={style} />;
+    case 'game controller':
+      return <GameController {...rest} style={style} />;
+    case 'gas pump':
+      return <GasPump {...rest} style={style} />;
     case 'github':
       return <Github {...rest} style={style} />;
     case 'global':
@@ -397,6 +441,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <RefreshOutline {...rest} style={style} />;
     case 'republican':
       return <Republican {...rest} style={style} />;
+    case 'restaurant':
+      return <Restaurant {...rest} style={style} />;
     case 'rocket':
       return <Rocket {...rest} style={style} />;
     case 's3':
@@ -427,6 +473,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <ShoppingBag {...rest} style={style} />;
     case 'slack':
       return <Slack {...rest} style={style} />;
+    case 'sofa':
+      return <Sofa {...rest} style={style} />;
     case 'speaker phone':
       return <SpeakerPhone {...rest} style={style} />;
     case 'star':

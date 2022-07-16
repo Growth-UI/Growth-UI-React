@@ -1,3 +1,8 @@
+## [1.37.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.36.0...v1.37.0) (2022-07-16)
+
+### 🚀  Features
+* style: no border-radius for basic ([aa67347](https://github.com/Growth-UI/Growth-UI-React/commit/aa6734777e3a3d847beeffc85fdffb1db0145b19))
+
 ## [1.36.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.35.0...v1.36.0) (2022-07-16)
 
 ### 🚀  Features

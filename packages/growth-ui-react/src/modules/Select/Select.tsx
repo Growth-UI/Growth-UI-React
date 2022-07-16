@@ -52,6 +52,7 @@ export const StyledSelect = styled.div<SelectProps>`
     basic &&
     `
     border: none;
+    border-radius: 0px;
     border-bottom: 1px solid var(--border);
   `}
 

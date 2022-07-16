@@ -1,3 +1,8 @@
+## [1.39.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.39.0...v1.39.1) (2022-07-16)
+
+### 🐛  Fixes
+* fix: fix misconfigured name -> icon mapping ([af65250](https://github.com/Growth-UI/Growth-UI-React/commit/af65250fb85268125923e1222c8195dad6a5eefe))
+
 ## [1.39.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.38.0...v1.39.0) (2022-07-16)
 
 ### 🚀  Features

@@ -14,6 +14,7 @@ export { default as SplitInput } from './addons/SplitInput';
 export type { SplitInputProps } from './addons/SplitInput';
 
 export { default as Grid, StyledGrid, StyledGridCol, StyledGridRow } from './collections/Grid';
+export { default as ImageList, StyledImageList, StyledImageListItem } from './collections/ImageList';
 export {
   default as Table,
   StyledTable,
@@ -26,6 +27,7 @@ export {
 export { default as Form, StyledForm, StyledFormGroup } from './collections/Form';
 export { default as Menu, StyledMenu, StyledMenuItem, StyledMenuMenu } from './collections/Menu';
 export type { GridColProps, GridProps, GridRowProps } from './collections/Grid';
+export type { ImageListItemProps, ImageListProps, ImageListItemBarProps } from './collections/ImageList';
 export type {
   TableBodyProps,
   TableCellProps,

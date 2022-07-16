@@ -1453,5 +1453,30 @@
       "title": "Flag",
       "description": "A flag is is used to represent a political state."
     }
+  },
+  "imagelist": {
+    "heading": "ImageList",
+    "subheading": "Image lists display a collection of images in an organized grid.",
+    "type": "collections",
+    "imagelist": {
+      "id": "imageList",
+      "title": "ImageList",
+      "description": ""
+    },
+    "titlebar": {
+      "id": "titlebar",
+      "title": "Title bar (standard)",
+      "description": ""
+    },
+    "thumbnail": {
+      "id": "thumbnail",
+      "title": "Title bar (w/ thumbnail)",
+      "description": ""
+    },
+    "responsive": {
+      "id": "responsive",
+      "title": "Responsive",
+      "description": ""
+    }
   }
 }

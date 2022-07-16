@@ -48,6 +48,7 @@ export const components = [
   // collections
   'form',
   'grid',
+  'imagelist',
   'menu',
   'table',
   // views
@@ -108,7 +109,7 @@ export const componentByType: Record<string, string[]> = {
     'stepper',
     'text-area',
   ],
-  collections: ['form', 'grid', 'menu', 'table'],
+  collections: ['form', 'grid', 'imagelist', 'menu', 'table'],
   views: ['calendar', 'card', 'comment', 'snackbar'],
   modules: [
     'accordion',
@@ -227,6 +228,9 @@ export const componentInfo: Record<
   },
   grid: {
     names: ['Grid', 'Grid.Col', 'Grid.Row'],
+  },
+  imagelist: {
+    names: ['ImageList', 'ImageList.Item', 'ImageList.ItemBar'],
   },
   menu: {
     names: ['Menu', 'Menu.Item', 'Menu.Menu', 'Menu.Heading'],
@@ -3830,6 +3834,97 @@ export const componentProps: Record<
       name: 'country',
       type: 'enum',
       enums: COUNTRIES,
+    },
+  ],
+  ImageList: [
+    {
+      description: 'A item may be borderless.',
+      name: 'borderless',
+      type: 'boolean',
+    },
+    {
+      description: 'Additional classes',
+      name: 'className',
+      type: '{string}',
+    },
+    {
+      description: 'Number of columns.',
+      name: 'cols',
+      type: 'number',
+      defaultValue: '4',
+    },
+    {
+      description: 'Fill the parent container with image.',
+      name: 'fill',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
+      description: 'The gap between items.',
+      name: 'gap',
+      type: '{number | string}',
+      defaultValue: '5',
+    },
+    {
+      description: 'Breakpoint for slide and minimum width of its items.',
+      name: 'responsive',
+      type: '{ [name: string]: { breakpoint: number, min?: number } }',
+      required: true,
+    },
+    {
+      description: 'A item may be rounded.',
+      name: 'rounded',
+      type: 'boolean',
+      defaultValue: 'true',
+    },
+    {
+      description: 'The height of row.',
+      name: 'rowHeight',
+      type: '{string | number}',
+    },
+    {
+      description: 'Custom styles.',
+      name: 'style',
+      type: 'CSSProperties',
+    },
+  ],
+  'ImageList.Item': [
+    {
+      description: 'Additional classes',
+      name: 'className',
+      type: '{string}',
+    },
+    {
+      description: 'Custom styles.',
+      name: 'style',
+      type: 'CSSProperties',
+    },
+  ],
+  'ImageList.ItemBar': [
+    {
+      description: 'Additional classes',
+      name: 'className',
+      type: '{string}',
+    },
+    {
+      description: 'Custom styles.',
+      name: 'style',
+      type: 'CSSProperties',
+    },
+    {
+      description: 'String or element serving as subtitle (support text).',
+      name: 'subtitle',
+      type: 'any',
+    },
+    {
+      description: 'Thumbnail image.',
+      name: 'thumbnail',
+      type: 'string',
+    },
+    {
+      description: 'Title to be displayed.',
+      name: 'title',
+      type: 'any',
     },
   ],
 };

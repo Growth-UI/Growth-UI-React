@@ -5,11 +5,13 @@ import AmexColor from './AmexColor';
 import Analytics from './Analytics';
 import AngleDoubleLeft from './AngleDoubleLeft';
 import AngleDoubleRight from './AngleDoubleRight';
+import Apache from './Apache';
 import Apple from './Apple';
 import ApplePayColor from './ApplePayColor';
 import Archive from './Archive';
 import ArrowDropdown from './ArrowDropdown';
 import ArrowRightCircleFill from './ArrowRightCircleFill';
+import Attach from './Attach';
 import Aws from './Aws';
 import Bank from './Bank';
 import BarChart from './BarChart';
@@ -30,25 +32,31 @@ import Close from './Close';
 import Codepen from './Codepen';
 import CodeSlash from './CodeSlash';
 import Comment from './Comment';
+import Cpu from './Cpu';
 import Cookie from './Cookie';
 import ConfirmationNumber from './ConfirmationNumber';
 import Dashboard from './Dashboard';
 import Dashboard2 from './Dashboard2';
+import Dashboard3 from './Dashboard3';
+import Database from './Database';
 import DatabaseSearch from './DatabaseSearch';
 import Democrat from './Democrat';
 import DiscoverColor from './DiscoverColor';
 import Documents from './Documents';
 import Donate from './Donate';
+import Doordash from './Doordash';
 import DotsHorizontalRounded from './DotsHorizontalRounded';
 import Download from './Download';
 import Drafts from './Drafts';
 import Edit from './Edit';
 import Email from './Email';
 import EmailOutline from './EmailOutline';
+import ExcelFile from './ExcelFile';
 import FacebookSquare from './Facebook';
 import FileCopy from './FileCopy';
 import FileCopyOutline from './FileCopyOutline';
 import FileOutline from './FileOutline';
+import FilePdf from './FilePdf';
 import FolderOutline from './FolderOutline';
 import Github from './Github';
 import Global from './Global';
@@ -69,12 +77,20 @@ import Location from './Location';
 import Lock from './Lock';
 import Log from './Log';
 import LogoutOutline from './LogoutOutline';
+import Mailbox from './Mailbox';
+import MailSend from './MailSend';
 import MastercardColor from './MastercardColor';
+import Memory from './Memory';
+import Memory2 from './Memory2';
 import Menu from './Menu';
 import Message from './Message';
 import Newspaper from './Newspaper';
+import Nextjs from './Nextjs';
+import Nginx from './Nginx';
 import Nodejs from './Nodejs';
+import Notification from './Notification';
 import Notifications from './Notifications';
+import NotificationActive from './NotificationsActive';
 import Npm from './Npm';
 import Package from './Package';
 import Paperclip from './Paperclip';
@@ -171,6 +187,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <AngleDoubleLeft {...rest} style={style} />;
     case 'angle double right':
       return <AngleDoubleRight {...rest} style={style} />;
+    case 'apache':
+      return <Apache {...rest} style={style} />;
     case 'apple':
       return <Apple {...rest} style={style} />;
     case 'applepay-c':
@@ -181,6 +199,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <ArrowDropdown {...rest} style={style} />;
     case 'arrow right circle fill':
       return <ArrowRightCircleFill {...rest} style={style} />;
+    case 'attach':
+      return <Attach {...rest} style={style} />;
     case 'aws':
       return <Aws {...rest} style={style} />;
     case 'bank':
@@ -221,6 +241,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <CodeSlash {...rest} style={style} />;
     case 'comment':
       return <Comment {...rest} style={style} />;
+    case 'cpu':
+      return <Cpu {...rest} style={style} />;
     case 'cookie':
       return <Cookie {...rest} style={style} />;
     case 'confirmation number':
@@ -229,6 +251,10 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Dashboard {...rest} style={style} />;
     case 'dashboard2':
       return <Dashboard2 {...rest} style={style} />;
+    case 'dashboard3':
+      return <Dashboard3 {...rest} style={style} />;
+    case 'database':
+      return <Database {...rest} style={style} />;
     case 'database search':
       return <DatabaseSearch {...rest} style={style} />;
     case 'democrat':
@@ -239,6 +265,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Documents {...rest} style={style} />;
     case 'donate':
       return <Donate {...rest} style={style} />;
+    case 'doordash':
+      return <Doordash {...rest} style={style} />;
     case 'dots horizontal rounded':
       return <DotsHorizontalRounded {...rest} style={style} />;
     case 'download':
@@ -251,6 +279,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Email {...rest} style={style} />;
     case 'email outline':
       return <EmailOutline {...rest} style={style} />;
+    case 'excelfile':
+      return <ExcelFile {...rest} style={style} />;
     case 'facebook':
       return <FacebookSquare {...rest} style={style} />;
     case 'file copy':
@@ -259,6 +289,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <FileCopyOutline {...rest} style={style} />;
     case 'file outline':
       return <FileOutline {...rest} style={style} />;
+    case 'filepdf':
+      return <FilePdf {...rest} style={style} />;
     case 'folder outline':
       return <FolderOutline {...rest} style={style} />;
     case 'github':
@@ -299,18 +331,34 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Log {...rest} style={style} />;
     case 'logout outline':
       return <LogoutOutline {...rest} style={style} />;
+    case 'mailbox':
+      return <Mailbox {...rest} style={style} />;
+    case 'mail send':
+      return <MailSend {...rest} style={style} />;
     case 'mastercard-c':
       return <MastercardColor {...rest} style={style} />;
+    case 'memory':
+      return <Memory {...rest} style={style} />;
+    case 'memory2':
+      return <Memory2 {...rest} style={style} />;
     case 'menu':
       return <Menu {...rest} style={style} />;
     case 'message':
       return <Message {...rest} style={style} />;
     case 'newspaper':
       return <Newspaper {...rest} style={style} />;
+    case 'nextjs':
+      return <Nextjs {...rest} style={style} />;
+    case 'nginx':
+      return <Nginx {...rest} style={style} />;
     case 'nodejs':
       return <Nodejs {...rest} style={style} />;
+    case 'notification':
+      return <Notification {...rest} style={style} />;
     case 'notifications':
       return <Notifications {...rest} style={style} />;
+    case 'notification active':
+      return <NotificationActive {...rest} style={style} />;
     case 'npm':
       return <Npm {...rest} style={style} />;
     case 'package':

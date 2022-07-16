@@ -35,7 +35,6 @@ import ChevronRight from './ChevronRight';
 import ChevronUp from './ChevronUp';
 import Clock from './Clock';
 import Close from './Close';
-import Cloth from './Cloth';
 import Codepen from './Codepen';
 import CodeSlash from './CodeSlash';
 import Coffee from './Coffee';
@@ -263,8 +262,6 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Clock {...rest} style={style} />;
     case 'close':
       return <Close {...rest} style={style} />;
-    case 'cloth':
-      return <Cloth {...rest} style={style} />;
     case 'codepen':
       return <Codepen {...rest} style={style} />;
     case 'code slash':

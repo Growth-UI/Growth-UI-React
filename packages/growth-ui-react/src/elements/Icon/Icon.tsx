@@ -26,7 +26,7 @@ import Cake from './Cake';
 import Camera from './Camera';
 import Cart from './Cart';
 import Category from './Category';
-import Chair from './Apache';
+import Chair from './Chair';
 import ChatHelp from './ChatHelp';
 import Check from './Check';
 import ChevronDown from './ChevronDown';

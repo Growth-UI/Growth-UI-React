@@ -1,3 +1,10 @@
+## [1.36.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.35.0...v1.36.0) (2022-07-16)
+
+### 🚀  Features
+* feat: add new component (ImageList) ([1ed45d3](https://github.com/Growth-UI/Growth-UI-React/commit/1ed45d3b1bf377a0a92cffbff5108ba12c37cf1c))
+* feat: add custom media query ([5eb5c6b](https://github.com/Growth-UI/Growth-UI-React/commit/5eb5c6b4a135c459e1645da9c9b87e20b08ec3b7))
+* feat: add fluid feature for image ([dc5e840](https://github.com/Growth-UI/Growth-UI-React/commit/dc5e840b00c811a3986feefe288e229789ef3b0f))
+
 ## [1.35.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.34.1...v1.35.0) (2022-07-15)
 
 ### 🚀  Features

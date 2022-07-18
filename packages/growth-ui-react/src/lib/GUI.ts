@@ -50,6 +50,7 @@ export const ICONS: GrowthICONS[] = [
   'bookmark',
   'browser',
   'cake',
+  'calendar',
   'camera',
   'cart',
   'category',

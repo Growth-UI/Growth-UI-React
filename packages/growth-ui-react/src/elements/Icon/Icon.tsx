@@ -23,6 +23,7 @@ import Bold from './Bold';
 import Bookmark from './Bookmark';
 import Browser from './Browser';
 import Cake from './Cake';
+import Calendar from './Calendar';
 import Camera from './Camera';
 import Cart from './Cart';
 import Category from './Category';
@@ -238,6 +239,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Browser {...rest} style={style} />;
     case 'cake':
       return <Cake {...rest} style={style} />;
+    case 'calendar':
+      return <Calendar {...rest} style={style} />;
     case 'camera':
       return <Camera {...rest} style={style} />;
     case 'cart':

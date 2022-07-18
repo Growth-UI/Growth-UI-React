@@ -184,6 +184,7 @@ export type GrowthICONS =
   | 'bookmark'
   | 'browser'
   | 'cake'
+  | 'calendar'
   | 'camera'
   | 'cart'
   | 'category'

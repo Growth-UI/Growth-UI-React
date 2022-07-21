@@ -1,3 +1,9 @@
+## [1.41.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.40.1...v1.41.0) (2022-07-21)
+
+### 🚀  Features
+* feat: merged ([1ddc235](https://github.com/Growth-UI/Growth-UI-React/commit/1ddc235cf00fa0665407f7f3c5d64fe70ce5dd8c))
+* feat: add hours format ([7da195e](https://github.com/Growth-UI/Growth-UI-React/commit/7da195e0ded34f4c9f4a1e1867863b644f888ef9))
+
 ## [1.40.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.40.0...v1.40.1) (2022-07-18)
 
 ### 📝  Documentation

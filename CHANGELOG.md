@@ -1,3 +1,8 @@
+## [1.40.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.40.0...v1.40.1) (2022-07-18)
+
+### 📝  Documentation
+* docs: fix example source code ([2109e36](https://github.com/Growth-UI/Growth-UI-React/commit/2109e362caf63ad1cf12f0b0debd1d2d2f4e959e))
+
 ## [1.39.2](https://github.com/Growth-UI/Growth-UI-React/compare/v1.39.1...v1.39.2) (2022-07-16)
 
 ### 🐛  Fixes

@@ -6,6 +6,13 @@ import Spacer from '@growth-ui/react/elements/Spacer';
 const DateInputExampleDateInput = () => (
   <div>
     <DateInput
+      mask="mm/dd/yyyy hh:mm:ss"
+      renderInput={(params) => (
+        <input {...params} placeholder="mm/dd/yyyy hh:mm:ss" />
+      )}
+    />
+    <Spacer size={30} />
+    <DateInput
       mask="mm.dd.yyyy"
       renderInput={(params) => <input {...params} placeholder="mm.dd.yyyy" />}
     />

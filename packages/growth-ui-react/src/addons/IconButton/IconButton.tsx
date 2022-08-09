@@ -29,7 +29,7 @@ export const StyledIconButton = styled.button`
 `;
 
 const IconButton: FC<IconButtonProps> = (props) => {
-  const { btnStyle = {}, name, size, ...rest } = props;
+  const { children, btnStyle = {}, name, size, ...rest } = props;
 
   const handleClick = (e: MouseEvent<HTMLElement>) => {
     ripple(e);
@@ -39,9 +39,13 @@ const IconButton: FC<IconButtonProps> = (props) => {
   const width = `${size || 25}px`;
   const height = `${size || 25}px`;
 
+  if (!children && !name) {
+    return <></>;
+  }
+
   return (
     <StyledIconButton onClick={handleClick} style={btnStyle}>
-      <Icon name={name} width={width} height={height} {...rest} />
+      {name ? <Icon name={name} width={width} height={height} {...rest} /> : children}
     </StyledIconButton>
   );
 };
@@ -52,7 +56,10 @@ export interface IconButtonProps extends StrictIconButtonProps {
 }
 
 // ======================================================
-export interface StrictIconButtonProps extends IconProps {
+export interface StrictIconButtonProps extends Partial<IconProps> {
+  /** Custom SVG Icon. */
+  children?: React.ReactNode;
+
   /** Custom styles of wrapper button. */
   btnStyle?: CSSProperties;
 

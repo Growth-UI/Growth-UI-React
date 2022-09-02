@@ -41,10 +41,11 @@ import CodeSlash from './CodeSlash';
 import Coffee from './Coffee';
 import CoffeeTogo from './CoffeeTogo';
 import Comment from './Comment';
-import Cpu from './Cpu';
+import ConfirmationNumber from './ConfirmationNumber';
 import Cookie from './Cookie';
 import Cosmetics from './Cosmetics';
-import ConfirmationNumber from './ConfirmationNumber';
+import Cpu from './Cpu';
+import Custom from './Custom';
 import Dashboard from './Dashboard';
 import Dashboard2 from './Dashboard2';
 import Dashboard3 from './Dashboard3';
@@ -103,8 +104,8 @@ import Nextjs from './Nextjs';
 import Nginx from './Nginx';
 import Nodejs from './Nodejs';
 import Notification from './Notification';
-import Notifications from './Notifications';
 import NotificationActive from './NotificationsActive';
+import Notifications from './Notifications';
 import Npm from './Npm';
 import Package from './Package';
 import Paperclip from './Paperclip';
@@ -168,7 +169,7 @@ import { COLORS, GrowthICONS } from '../../types';
 import { createShorthandFactory } from '../../lib';
 
 const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) => {
-  const { flipped, name, rotated, ...rest } = props;
+  const { children, flipped, name, rotated, ...rest } = props;
   const [style, setStyle] = useState<CSSProperties>({});
 
   useEffect(() => {
@@ -520,7 +521,11 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
     case 'youtube':
       return <Youtube {...rest} style={style} />;
     default:
-      return null;
+      return (
+        <Custom {...rest} style={style}>
+          {children}
+        </Custom>
+      );
   }
 };
 
@@ -540,6 +545,8 @@ export interface StrictIconProps {
   /** Additional classes. */
   className?: string;
 
+  children?: React.ReactNode;
+
   /** Color of the icon. */
   color?: COLORS;
 
@@ -547,7 +554,7 @@ export interface StrictIconProps {
   flipped?: boolean;
 
   /** Name of the icon. */
-  name: GrowthICONS;
+  name?: GrowthICONS;
 
   /** Icon can be rotated. */
   rotated?: 'clockwise' | 'counterclockwise';

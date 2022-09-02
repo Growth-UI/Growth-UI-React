@@ -1,3 +1,9 @@
+## [1.42.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.41.0...v1.42.0) (2022-08-09)
+
+### 🚀  Features
+* feat: merged ([e3798fe](https://github.com/Growth-UI/Growth-UI-React/commit/e3798fe28edfa57de2198ae08964060104fe874d))
+* feat: allows to use custom svg icon with IconButton ([3fde7af](https://github.com/Growth-UI/Growth-UI-React/commit/3fde7afe7863b335b59a85fab69bb1d7ee14be1a))
+
 ## [1.41.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.40.1...v1.41.0) (2022-07-21)
 
 ### 🚀  Features

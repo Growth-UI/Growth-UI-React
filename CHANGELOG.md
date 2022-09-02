@@ -1,3 +1,14 @@
+## [1.43.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.42.0...v1.43.0) (2022-09-02)
+
+### 🐛  Fixes
+* fix: merged ([bf28790](https://github.com/Growth-UI/Growth-UI-React/commit/bf28790b8c3634e570384a9916fea08059c03c9e))
+
+### 📝  Documentation
+* docs: add example for custom icon ([32d61bb](https://github.com/Growth-UI/Growth-UI-React/commit/32d61bbed80f96e7a39c284449f65884655f773e))
+
+### 🚀  Features
+* feat: allow custom icon ([2197005](https://github.com/Growth-UI/Growth-UI-React/commit/2197005b5f72ae8678e960a2ec76c603e14474bf))
+
 ## [1.42.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.41.0...v1.42.0) (2022-08-09)
 
 ### 🚀  Features

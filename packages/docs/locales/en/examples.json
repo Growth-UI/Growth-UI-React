@@ -147,6 +147,11 @@
       "id": "color",
       "title": "Color",
       "description": "An icon can be formatted with different colors."
+    },
+    "custom": {
+      "id": "custom",
+      "title": "Custom",
+      "description": "An icon can be customized with pre-built props."
     }
   },
   "image": {

@@ -21,6 +21,13 @@ const InputVariationsExamples = () => {
         description={t('examples:icon.color.description')}
         examplePath="elements/Icon/Variations/IconExampleColor"
       />
+
+      <ComponentExample
+        id={t('examples:icon.custom.id')}
+        title={t('examples:icon.custom.title')}
+        description={t('examples:icon.custom.description')}
+        examplePath="elements/Icon/Variations/IconExampleCustom"
+      />
     </ExampleSection>
   );
 };

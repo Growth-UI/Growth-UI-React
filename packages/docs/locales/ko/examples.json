@@ -147,6 +147,11 @@
       "id": "color",
       "title": "Color",
       "description": "An icon can be formatted with different colors."
+    },
+    "custom": {
+      "id": "custom",
+      "title": "Custom",
+      "description": "An icon can be customized with pre-built props."
     }
   },
   "image": {
@@ -1461,7 +1466,22 @@
     "imagelist": {
       "id": "imageList",
       "title": "ImageList",
-      "description": "Image lists display a collection of images in an organized grid."
+      "description": ""
+    },
+    "titlebar": {
+      "id": "titlebar",
+      "title": "Title bar (standard)",
+      "description": ""
+    },
+    "thumbnail": {
+      "id": "thumbnail",
+      "title": "Title bar (w/ thumbnail)",
+      "description": ""
+    },
+    "responsive": {
+      "id": "responsive",
+      "title": "Responsive",
+      "description": ""
     }
   }
 }

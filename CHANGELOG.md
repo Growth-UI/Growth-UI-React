@@ -1,3 +1,8 @@
+## [1.44.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.44.0...v1.44.1) (2022-09-08)
+
+### 🐛  Fixes
+* fix: default cursor on disbleHover ([2338bdf](https://github.com/Growth-UI/Growth-UI-React/commit/2338bdf3c0b7822ae93b77d67ce5d2d2fe8fe987))
+
 ## [1.44.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.43.2...v1.44.0) (2022-09-08)
 
 ### 🚀  Features

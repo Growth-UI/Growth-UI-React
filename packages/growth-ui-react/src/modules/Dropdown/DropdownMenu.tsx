@@ -50,7 +50,15 @@ export const StyledDropdownMenu = styled.div<DropdownMenuProps>`
 const DropdownMenu: FC<DropdownMenuProps> = (props) => {
   const { children, ...rest } = props;
 
-  return <StyledDropdownMenu {...rest}>{children}</StyledDropdownMenu>;
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
+  };
+
+  return (
+    <StyledDropdownMenu onClick={handleClick} {...rest}>
+      {children}
+    </StyledDropdownMenu>
+  );
 };
 
 // ======================================================

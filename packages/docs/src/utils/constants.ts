@@ -2008,6 +2008,11 @@ export const componentProps: Record<
       type: 'string',
     },
     {
+      description: 'Hover effect will be disabled.',
+      name: 'disableHover',
+      type: 'boolean',
+    },
+    {
       description: 'Initial value or value array if multiple.',
       name: 'defaultValue',
       type: 'string',
@@ -2127,6 +2132,11 @@ export const componentProps: Record<
     {
       description: 'A dropdown item can be disabled.',
       name: 'disabled',
+      type: 'boolean',
+    },
+    {
+      description: 'Hover effect will be disabled.',
+      name: 'disableHover',
       type: 'boolean',
     },
     {

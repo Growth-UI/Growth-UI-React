@@ -21,9 +21,13 @@ export const StyledDropdownItem = styled.div<DropdownItemProps>`
     opacity: 0.6;
   `}
 
-  &:hover {
-    background: var(--emphasis-secondary);
-  }
+  ${({ disableHover = false }) =>
+    !disableHover &&
+    `
+    &:hover {
+      background: var(--emphasis-secondary);
+    }
+  `}
 
   & > .description {
     float: right !important;
@@ -89,6 +93,9 @@ export interface StrictDropdownItemProps {
 
   /** A dropdown item can be disabled. */
   disabled?: boolean;
+
+  /** Hover effect will be disabled. */
+  disableHover?: boolean;
 
   /** Shorthand for Icon. */
   icon?: GrowthICONS;

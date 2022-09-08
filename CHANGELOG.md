@@ -1,3 +1,9 @@
+## [1.43.2](https://github.com/Growth-UI/Growth-UI-React/compare/v1.43.1...v1.43.2) (2022-09-08)
+
+### 🐛  Fixes
+* fix: merged ([f068cb6](https://github.com/Growth-UI/Growth-UI-React/commit/f068cb6ab0ced2d97483a956d8caa6c7017d1e00))
+* fix: stop propagation on click menu ([4c5fc84](https://github.com/Growth-UI/Growth-UI-React/commit/4c5fc846d17881eade9bd90e9306e943f243061d))
+
 ## [1.43.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.43.0...v1.43.1) (2022-09-02)
 
 ### 🐛  Fixes

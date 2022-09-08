@@ -1,3 +1,8 @@
+## [1.44.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.43.2...v1.44.0) (2022-09-08)
+
+### 🚀  Features
+* feat: disable hover effect ([74a543b](https://github.com/Growth-UI/Growth-UI-React/commit/74a543b4a2ce8c92ede7e84911df89b568bcac18))
+
 ## [1.43.2](https://github.com/Growth-UI/Growth-UI-React/compare/v1.43.1...v1.43.2) (2022-09-08)
 
 ### 🐛  Fixes

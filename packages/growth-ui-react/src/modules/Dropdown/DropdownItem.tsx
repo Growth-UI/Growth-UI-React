@@ -24,6 +24,8 @@ export const StyledDropdownItem = styled.div<DropdownItemProps>`
   ${({ disableHover = false }) =>
     !disableHover &&
     `
+    cursor: default;
+
     &:hover {
       background: var(--emphasis-secondary);
     }

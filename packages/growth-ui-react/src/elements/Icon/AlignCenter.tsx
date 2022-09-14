@@ -12,8 +12,8 @@ export default function AlignCenter(props: SVGProps<SVGSVGElement>): JSX.Element
       role="img"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      color={color}
       {...props}
+      color={color}
     >
       <title>FormatAlignCenter icon</title>
       <rect width="24" height="24" fill="none"></rect>

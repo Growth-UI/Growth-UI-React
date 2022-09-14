@@ -12,8 +12,8 @@ export default function Heading(props: SVGProps<SVGSVGElement>): JSX.Element {
       role="img"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      color={color}
       {...props}
+      color={color}
     >
       <title>Heading icon</title>
       <path d="M18 20V4h-3v6H9V4H6v16h3v-7h6v7z"></path>

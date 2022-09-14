@@ -1,6 +1,10 @@
 import Activity from './Activity';
 import Add from './Add';
 import Airplane from './Airplane';
+import AlignCenter from './AlignCenter';
+import AlignJustify from './AlignJustify';
+import AlignLeft from './AlignLeft';
+import AlignRight from './AlignRight';
 import AmexColor from './AmexColor';
 import Analytics from './Analytics';
 import AngleDoubleLeft from './AngleDoubleLeft';
@@ -71,10 +75,12 @@ import FileOutline from './FileOutline';
 import FilePdf from './FilePdf';
 import FolderOutline from './FolderOutline';
 import FoodBeverage from './FoodBeverage';
+import FormatQuote from './FormatQuote';
 import GameController from './GameController';
 import GasPump from './GasPump';
 import Github from './Github';
 import Global from './Global';
+import Heading from './Heading';
 import Heart from './Heart';
 import Home from './Home';
 import Image from './Image';
@@ -158,6 +164,8 @@ import Trash from './Trash';
 import TriangleDown from './TriangleDown';
 import TriangleUp from './TriangleUp';
 import Twitter from './Twitter';
+import TypeH1 from './TypeH1';
+import TypeH2 from './TypeH2';
 import Underline from './Underline';
 import User from './User';
 import VideoSecurity from './VideoSecurity';
@@ -196,6 +204,14 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Add {...rest} style={style} />;
     case 'airplane':
       return <Airplane {...rest} style={style} />;
+    case 'align center':
+      return <AlignCenter {...rest} style={style} />;
+    case 'align justify':
+      return <AlignJustify {...rest} style={style} />;
+    case 'align left':
+      return <AlignLeft {...rest} style={style} />;
+    case 'align right':
+      return <AlignRight {...rest} style={style} />;
     case 'amex-c':
       return <AmexColor {...rest} style={style} />;
     case 'analytics':
@@ -322,6 +338,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <FacebookSquare {...rest} style={style} />;
     case 'fastfood':
       return <FastFood {...rest} style={style} />;
+    case 'format quote':
+      return <FormatQuote {...rest} style={style} />;
     case 'file copy':
       return <FileCopy {...rest} style={style} />;
     case 'file copy outline':
@@ -342,6 +360,8 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <Github {...rest} style={style} />;
     case 'global':
       return <Global {...rest} style={style} />;
+    case 'heading':
+      return <Heading {...rest} style={style} />;
     case 'heart':
       return <Heart {...rest} style={style} />;
     case 'home':
@@ -506,6 +526,10 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <TriangleUp {...rest} style={style} />;
     case 'twitter':
       return <Twitter {...rest} style={style} />;
+    case 'type h1':
+      return <TypeH1 {...rest} style={style} />;
+    case 'type h2':
+      return <TypeH2 {...rest} style={style} />;
     case 'underline':
       return <Underline {...rest} style={style} />;
     case 'user':

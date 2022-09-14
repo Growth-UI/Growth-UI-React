@@ -1,3 +1,8 @@
+## [1.45.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.45.0...v1.45.1) (2022-09-14)
+
+### 🐛  Fixes
+* fix: fix prop orders ([84fcbd7](https://github.com/Growth-UI/Growth-UI-React/commit/84fcbd7c72ef5c46c2625f62f722ddca884ee20e))
+
 ## [1.45.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.44.1...v1.45.0) (2022-09-14)
 
 ### 🐛  Fixes

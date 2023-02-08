@@ -67,6 +67,8 @@ import Edit from './Edit';
 import Email from './Email';
 import EmailOutline from './EmailOutline';
 import ExcelFile from './ExcelFile';
+import EyeOutlined from './EyeOutlined';
+import EyeInvisibleOutlined from './EyeInvisibleOutlined';
 import FacebookSquare from './Facebook';
 import FastFood from './FastFood';
 import FileCopy from './FileCopy';
@@ -334,6 +336,10 @@ const Icon: FC<IconProps & SVGProps<SVGSVGElement>> & IconComponents = (props) =
       return <EmailOutline {...rest} style={style} />;
     case 'excelfile':
       return <ExcelFile {...rest} style={style} />;
+    case 'eye outline':
+      return <EyeOutlined {...rest} style={style} />;
+    case 'eye invisible outline':
+      return <EyeInvisibleOutlined {...rest} style={style} />;
     case 'facebook':
       return <FacebookSquare {...rest} style={style} />;
     case 'fastfood':

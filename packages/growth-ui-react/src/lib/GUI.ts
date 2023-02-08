@@ -92,6 +92,8 @@ export const ICONS: GrowthICONS[] = [
   'email',
   'email outline',
   'excelfile',
+  'eye outline',
+  'eye invisible outline',
   'fastfood',
   'file copy',
   'file copy outline',

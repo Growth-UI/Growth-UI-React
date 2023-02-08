@@ -228,6 +228,8 @@ export type GrowthICONS =
   | 'email'
   | 'email outline'
   | 'excelfile'
+  | 'eye outline'
+  | 'eye invisible outline'
   | 'facebook'
   | 'fastfood'
   | 'file copy'

@@ -1761,9 +1761,13 @@ export const countryToFlag = {
 };
 
 const Flag: FC<FlagProps> = (props) => {
-  const { name, ...rest } = props;
+  const { name, isoAlpha2, ...rest } = props;
 
-  return <StyledFlag {...rest}>{countryToFlag[name]}</StyledFlag>;
+  if (name) {
+    return <StyledFlag {...rest}>{countryToFlag[name]}</StyledFlag>;
+  }
+
+  return <StyledFlag {...rest}>{countryOptions.find((c) => c.iso === isoAlpha2)?.flag}</StyledFlag>;
 };
 
 // ======================================================
@@ -1777,7 +1781,10 @@ export interface StrictFlagProps {
   className?: string;
 
   /** Country name. */
-  name: Country;
+  name?: Country;
+
+  /** Country ISO Alpha2 */
+  isoAlpha2?: string;
 
   /** Custom styles. */
   style?: CSSProperties;

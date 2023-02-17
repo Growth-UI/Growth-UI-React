@@ -3840,6 +3840,11 @@ export const componentProps: Record<
       type: 'enum',
       enums: COUNTRIES,
     },
+    {
+      description: 'Country ISO Alpha2.',
+      name: 'isoAlpha2',
+      type: '{string}',
+    },
   ],
   ImageList: [
     {

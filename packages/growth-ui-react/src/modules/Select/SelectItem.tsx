@@ -1,9 +1,9 @@
+import Icon, { IconProps } from '../../elements/Icon';
+import Image, { ImageProps } from '../../elements/Image';
 import Paragraph from '../../elements/Paragraph';
 import React, { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 import { createShorthandFactory } from '../../lib';
-import Icon, { IconProps } from '../../elements/Icon';
-import { ImageProps } from '../../elements/Image';
 import { invoke } from 'lodash';
 
 export const StyledSelectItem = styled.div<SelectItemProps>`
@@ -46,10 +46,17 @@ const SelectItem: FC<SelectItemProps> & SelectItemComponents = (props) => {
     }
   };
 
+  const renderImage = () => {
+    if (image) {
+      return <Image {...image} />;
+    }
+  };
+
   if (children) {
     return (
       <StyledSelectItem {...rest} onClick={handleClick}>
         {renderIcon()}
+        {renderImage()}
         {children}
       </StyledSelectItem>
     );

@@ -1,3 +1,15 @@
+## [1.47.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.46.0...v1.47.0) (2023-02-20)
+
+### 🐛  Fixes
+* fix: version fix ([9aa44df](https://github.com/Growth-UI/Growth-UI-React/commit/9aa44df5a5fca2482cd5b5c32d173091008f77ba))
+* fix: fix version ([444ff56](https://github.com/Growth-UI/Growth-UI-React/commit/444ff560c1e4bd0109247addbea9cd13606011ca))
+* fix: version fix ([7d0005c](https://github.com/Growth-UI/Growth-UI-React/commit/7d0005c5001af25ab8805e1429c9197204a0b58e))
+* fix: fix version ([6b0cd6c](https://github.com/Growth-UI/Growth-UI-React/commit/6b0cd6c0e275848e4fdc3589c3debb29da11e9ec))
+* fix: forgot to add image rendering for image prop ([e32f32a](https://github.com/Growth-UI/Growth-UI-React/commit/e32f32a005988fff5956dfe03514210944827839))
+
+### 🚀  Features
+* feat: add isoAlpha2 prop ([d1e5755](https://github.com/Growth-UI/Growth-UI-React/commit/d1e5755ad74485e01b890f59a6e8612fe732e4ed))
+
 ## [1.45.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.45.0...v1.45.1) (2022-09-14)
 
 ### 🐛  Fixes

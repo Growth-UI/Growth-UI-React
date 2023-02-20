@@ -8,7 +8,9 @@
     "growth-ui-react",
     "react",
     "ui",
-    "react-component"
+    "react-component",
+    "@growth-ui/react",
+    "growth"
   ],
   "homepage": "https://react.growth-ui.com",
   "private": true,

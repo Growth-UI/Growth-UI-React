@@ -3,10 +3,6 @@ import styled from 'styled-components';
 
 export const StyledTableFooter = styled.tfoot<TableFooterProps>`
   background: #f9fafb;
-
-  @media (prefers-color-scheme: dark) {
-    background: rgba(0, 0, 0, 0.6);
-  }
 `;
 
 const TableFooter: FC<TableFooterProps> = (props) => {

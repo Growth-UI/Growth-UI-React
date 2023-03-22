@@ -1,3 +1,8 @@
+## [1.47.1](https://github.com/Growth-UI/Growth-UI-React/compare/v1.47.0...v1.47.1) (2023-03-22)
+
+### 🐛  Fixes
+* fix: background color ([ef1d737](https://github.com/Growth-UI/Growth-UI-React/commit/ef1d737004a579fadaf6747983d7ff4e7d72eac3))
+
 ## [1.47.0](https://github.com/Growth-UI/Growth-UI-React/compare/v1.46.0...v1.47.0) (2023-02-20)
 
 ### 🐛  Fixes
